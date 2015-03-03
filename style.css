@@ -25,7 +25,6 @@ h3 {
 	font-size: 60%
 }
 #flip {
-	padding-left: 100px;
 	text-align: center;
 	font-family: "Roboto";
 	font-weight: bold;
@@ -33,13 +32,17 @@ h3 {
 
 
 .card-container {
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
-  height: 25px;
-  perspective: 600;
-  position: absolute;
-  width: 50px;
+  height: 35px;
+  perspective: 6000;
+  position: relative;
+  width: 100px;
 }
 .card {
+  margin-left: auto;
+  margin-right: auto;
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
