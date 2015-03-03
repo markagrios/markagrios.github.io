@@ -1,11 +1,8 @@
+#head {
+  color: black;
+  margin-top: 50px;
+}
 h1 {
   color: purple;
   text-align: center;
-}
-head {
-  color: maroon;
-  margin-left: 20px;
-}
-#menu {
-  color: blue;
 }
