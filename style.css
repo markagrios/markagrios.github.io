@@ -25,26 +25,25 @@ h3 {
 	font-size: 60%
 }
 #flip {
+	padding-left: 100px;
 	text-align: center;
+	font-family: "Roboto";
+	font-weight: bold;
 }
 
 
-body {
-  font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
-  margin: 12px 0;
-}
 .card-container {
   cursor: pointer;
-  height: 40px;
+  height: 25px;
   perspective: 600;
-  position: relative;
-  width: 130px;
+  position: absolute;
+  width: 50px;
 }
 .card {
   height: 100%;
-  position: absolute;
+  position: relative;
   transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
   width: 100%;
 }
 .card:hover {
@@ -52,7 +51,7 @@ body {
 }
 .card .side {
   backface-visibility: hidden;
-  border-radius: 6px;
+  border-radius: 11px;
   color: white;
   background: #870B0B;
   height: 100%;
@@ -62,8 +61,7 @@ body {
 }
 .card .back {
   background: #870B0B;
-  color: #870B0B;
-  line-height: 150px;
+  color: white;
   text-align: center;
   color: white;
   transform: rotateX(-180deg);
