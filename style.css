@@ -1,6 +1,8 @@
-#head {
-  color: black;
+#main {
+  font-family: "Merriweather Sans";
+  text-align: center;
   margin-top: 150px;
+  color: black;
 }
 h1 {
   color: black;
