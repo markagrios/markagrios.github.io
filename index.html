@@ -39,17 +39,17 @@
     
     <div id="main">
 		Mark Agrios
-			<p id="date">
+			<h1 id="date">
 			<script>
 				var today = new Date();
 				var day = today.day();
 				var date = today.date();
-				var month = today.month();
+				var month = today.month()+1;
 				var year = today.FullYear();
 				
-				document.write(day+"."+month+"."+date+"."+year);
+				document.write(day +"."+ month +"."+ date +"."+ year);
 			</script>
-			</p>
+			</h1>
     </div>
     
     
