@@ -1,10 +1,10 @@
 #main {
   font-family: "Merriweather Sans";
-  text-align: center;
   margin-top: 150px;
+  text-align: center;
   color: black;
 }
 h1 {
-  color: black;
-  text-align: center;
+	font-family: "Roboto";
+	font-size: 100%;
 }

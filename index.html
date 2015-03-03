@@ -9,21 +9,19 @@
   <body>  
     <div id="main">
 		Mark Agrios
-			
-			<script type="javascript">
-				var today = new Date();
-				var day = today.day();
-				var date = today.date();
-				var month = today.month()+1;
-				var year = today.FullYear();
-				
-				document.write(day +"."+ month +"."+ date +"."+ year);
-			</script>
-			
+
+		<h1>
+   		<script type="text/javascript">
+			var d = new Date();
+			var month = d.getMonth() + 1;
+			var monthNames = ["Janurary","Feburary","March","April","May","June","July","August","September","October","November","December"];
+			var day = d.getDate();
+			var year = d.getFullYear();
+			var date = monthNames[month] + "." + day + "." + year;
+			document.write(date);
+		</script>
+		</h1>
     </div>
-    
-    
-    
 
     
     
