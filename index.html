@@ -42,8 +42,12 @@
 			<p id="date">
 			<script>
 				var date = new Date();
-				<!-- document.getElementById("date").innerHTML = date.toString(); -->
-				document.write(date);
+				var day = date.day();
+				var date = date.date();
+				var month = date.month();
+				var year = date.FullYear();
+				
+				document.write(day+"."+month+"."+date+"."+year);
 			</script>
 			</p>
     </div>
