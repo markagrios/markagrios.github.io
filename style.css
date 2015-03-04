@@ -1,3 +1,10 @@
+#basedbox {
+	z-index: -2;
+    width: 32px;
+    height: 32px;
+    background: #870B0B;
+    position: absolute;
+}
 #topboxD {
 	z-index: -2;
     width: 32px;
@@ -53,10 +60,17 @@ h3 {
 	color: grey;
 	text-align: bottom-right;
 }
-#content {
-	font-family: "Roboto";
-	text-align: center;
-	font-size: 60%
+/***************END OF STATIC STUFF*********************************/
+.thebox {
+	z-index: -2;
+    width: 32px;
+    height: 32px;
+    background: #870B0B;
+    position: relative;
+}
+@-webkit-keyframes moveArts {
+    0%   {top: 0px; left: 0px;}
+    100% {top: 200px; left: 200px;}
 }
 #flip {
 	text-align: center;
@@ -66,7 +80,6 @@ h3 {
 #leftF, #rightF {
 	display: inline-block;
 	width: 40%;
-	/*height: 25%;*/
 }
 .card-container {
   cursor: pointer;
@@ -85,12 +98,6 @@ h3 {
 .card:hover {
   transform: rotateX(-180deg);
 }
-.card:hover ~ #menuA {
-	color: black;
-}
-.card:hover ~ #menuS {
-	color: black;
-}
 .card .side {
   backface-visibility: hidden;
   border-radius: 11px;
@@ -107,10 +114,4 @@ h3 {
   text-align: center;
   transform: rotateX(-180deg);
  }
-#menuA, #menuS {
-	font-family: "Roboto";
-	background: white;
-	color: white;
-	text-align: center;
-	padding: 15px;
- }
+ /**********************END OF FLIPPY BUTTONS AND MENUS**************/
