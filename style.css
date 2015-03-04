@@ -65,10 +65,9 @@ h3 {
 }
 #leftF, #rightF {
 	display: inline-block;
-	width: 35%;
-	height: 25%;
+	width: 40%;
+	/*height: 25%;*/
 }
-
 .card-container {
   cursor: pointer;
   height: 45px;
@@ -86,6 +85,12 @@ h3 {
 .card:hover {
   transform: rotateX(-180deg);
 }
+.card:hover ~ #menuA {
+	color: black;
+}
+.card:hover ~ #menuS {
+	color: black;
+}
 .card .side {
   backface-visibility: hidden;
   border-radius: 11px;
@@ -100,6 +105,12 @@ h3 {
   background: #870B0B;
   color: white;
   text-align: center;
-  color: white;
   transform: rotateX(-180deg);
+ }
+#menuA, #menuS {
+	font-family: "Roboto";
+	background: white;
+	color: white;
+	text-align: center;
+	padding: 15px;
  }
