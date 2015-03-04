@@ -1,24 +1,39 @@
-#topbox1 {
-	z-index: -1;
-    width: 50px;
-    height: 50px;
+#topboxD {
+	z-index: -2;
+    width: 32px;
+    height: 32px;
     background: white;
-    position: relative;
-    -webkit-animation: mymove 3s;
-    animation: mymove 3s;
-    -webkit-animation-delay: -.4s;
-    animation-delay: -.4s;
+    position: absolute;
+    -webkit-animation: Qmove_down 3s;
+    animation: Qmove_down  3s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
     animation-timing-function:ease-out;
 }
-@-webkit-keyframes mymove {
-    0%   {top: 120px; left: 0px; background: #870B0B;}
-    100% {top: 120px; left: 1000px; background: white;} /*make it end at any window width?*/
+#topboxR {
+	z-index: -2;
+    width: 32px;
+    height: 32px;
+    background: white;
+    position: absolute;
+    -webkit-animation: Qmove_right  3s;
+    animation: Qmove_right  3s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    animation-timing-function:ease-out;
 }
-
+@-webkit-keyframes Qmove_down {
+    0%   {top: 0px; left: 0px; background: #870B0B;}
+    100% {top: 200px; left: 0px; background: white;} /*make it end at any window width?*/
+}
+@-webkit-keyframes Qmove_right {
+    0%   {top: 0px; left: 0px; background: #870B0B;}
+    100% {top: 0px; left: 200px; background: white;} /*make it end at any window width?*/
+}
 
 #main {
   font-family: "Merriweather Sans";
-  margin-top: 45px;
+  margin-top: 65px;
   text-align: center;
   color: black;
 }
@@ -36,7 +51,7 @@ h3 {
 	font-family: "Merriweather Sans";
 	font-size: 60%;
 	color: grey;
-	text-align: top-left;
+	text-align: bottom-right;
 }
 #content {
 	font-family: "Roboto";
