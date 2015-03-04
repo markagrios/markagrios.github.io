@@ -1,3 +1,40 @@
+#topbox1 {
+    width: 50px;
+    height: 50px;
+    background: white;
+    position: relative;
+    -webkit-animation: mymove 3s;
+    animation: mymove 3s;
+    -webkit-animation-delay: -.4s;
+    animation-delay: -.4s;
+    animation-timing-function:ease-out;
+}
+#topbox2 {
+    width: 50px;
+    height: 50px;
+    background: white;
+    position: relative;
+    -webkit-animation: mymove 3s;
+    animation: mymove 3s;
+    -webkit-animation-delay: -.2s;
+    animation-delay: -.2s;
+    animation-timing-function:ease-out;
+}
+#topbox3 {
+    width: 50px;
+    height: 50px;
+    background: white;
+    position: relative;
+    -webkit-animation: mymove 3s;
+    animation: mymove 3s;
+    animation-timing-function:ease-out;
+}
+@-webkit-keyframes mymove {
+    0%   {top: 0px; left: 0px; background: #870B0B;}
+    100% {top: 0px; left: 1000px; background: white;}
+}
+
+
 #main {
   font-family: "Merriweather Sans";
   margin-top: 100px;
@@ -7,10 +44,11 @@
 h1 {
 	font-family: "Roboto";
 	font-size: 100%;
-	color: #870B0B
+	color: #870B0B;
 }
-h2 {
+h2, h4 {
 	font-family: "Roboto";
+	font-size: 90%;
 	text-align: center;
 }
 h3 {
@@ -29,20 +67,20 @@ h3 {
 	font-family: "Roboto";
 	font-weight: bold;
 }
-
+#leftF, #rightF {
+	display: inline-block;
+	width: 35%;
+	height: 25%;
+}
 
 .card-container {
-  margin-left: auto;
-  margin-right: auto;
   cursor: pointer;
-  height: 35px;
+  height: 45px;
   perspective: 6000;
   position: relative;
   width: 100px;
 }
 .card {
-  margin-left: auto;
-  margin-right: auto;
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
@@ -56,7 +94,7 @@ h3 {
   backface-visibility: hidden;
   border-radius: 11px;
   color: white;
-  background: #870B0B;
+  background: grey;
   height: 100%;
   position: absolute;
   overflow: hidden;
@@ -68,4 +106,4 @@ h3 {
   text-align: center;
   color: white;
   transform: rotateX(-180deg);
-}
+ }
