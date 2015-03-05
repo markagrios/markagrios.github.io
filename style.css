@@ -121,24 +121,25 @@ h3 {
   transform: rotateX(-180deg);
  }
  /**********************END OF FLIPPY BUTTONS AND MENUS**************/
-/*.doing {
+#wrapper {
+  margin-right: 200px;
+}
+.doing {
 	font-family: "Roboto";
-	padding-top: 20px;
-	color: black;
-	vertical-align: text-top;
-}*/
-#doingA {
-	font-family: "Roboto";
-	padding-top: 20px;
 	color: black;
 }
-#doingS {
-	font-family: "Roboto";
-	padding-top: 20px;
-	color: black;
+#doingA {
+  float: left;
+  width: 12%;
+  padding-left: 200px;
 } 
- 
- 
+#doingS {
+  float:right;
+  width: 12%;
+}
+#cleared {
+  clear: both;
+}
  
  
  
