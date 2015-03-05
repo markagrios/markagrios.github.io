@@ -2,12 +2,13 @@
 <head>
   <title>markagrios</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
 </head>
   <body>  
 
-	<div id="basedbox"></div>
+	<img id="basedbox" src="thebox.png">
 	<div id="topboxD"></div>
 	<div id="topboxR"></div>
 	<div class="thebox"></div>
@@ -37,20 +38,70 @@
 			<div id="leftF" class="card">
 				<div class="side">Arts</div>
 				<div class="side back">Arts</div>
-			</div>
+			</div>		
 		</div>
+		
+			<div id="doingA">
+				<div>walnuts</div>
+				<div>walnuts</div>
+				<div>walnuts</div>
+				<div>walnuts</div>
+			</div>	
 		
 		<div id="rightF" class="card-container">
 			<div id="rightF" class="card">
 				<div class="side">Sciences</div>
 				<div class="side back">Sciences</div>	
-			</div>
+			</div>			
 		</div>
+		
+			<div id="doingS">
+				<div>walnuts</div>
+				<div>walnuts</div>
+				<div>walnuts</div>
+				<div>walnuts</div>
+			</div>
 		
 	</div>
 
 	
 	<h3>Visit my friend <a href="http://cabrera.io">Alex</a>!</h3>
+	
+	
+	
+<script>
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+});
+</script>
+</head>
+<body>
+
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+	
+<script>
+$(function() {
+	
+	$("#leftF").on("mouseover", function() {
+		$("#doingA").fadeToggle(200);	
+	});
+	$("#rightF").on("mouseover", function() {
+		$("#doingS").fadeToggle(200);	
+	});
+	
+});
+</script>
+	
+	
+	
+	
+	
+	
+	
 	
   </body>
 </html>
