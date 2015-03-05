@@ -83,7 +83,11 @@ h3 {
 	font-family: "Roboto";
 	font-weight: bold;
 }
-#leftF, #rightF {
+#leftF {
+	display: inline-block;
+	width: 40%;
+}
+#rightF {
 	display: inline-block;
 	width: 40%;
 }
@@ -121,14 +125,13 @@ h3 {
   transform: rotateX(-180deg);
  }
  /**********************END OF FLIPPY BUTTONS AND MENUS**************/
- .doing {
+.doing {
 	font-family: "Roboto";
 	padding-top: 20px;
 	color: black;
-	display: none;
-	position: fixed;
- }
- 
+	vertical-align: text-top;
+}
+
  
  
  

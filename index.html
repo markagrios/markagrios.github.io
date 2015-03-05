@@ -38,38 +38,35 @@
 			<div id="leftF" class="card">
 				<div class="side">Arts</div>
 				<div class="side back">Arts</div>
-			</div>		
+			</div>
+		
+		<div id="doingA" class="doing">
+			<div>Arts</div>
+			<div>walnuts</div>
+			<div>walnuts</div>
+			<div>walnuts</div>
 		</div>
 		
-			<div id="doingA">
-				<div>walnuts</div>
-				<div>walnuts</div>
-				<div>walnuts</div>
-				<div>walnuts</div>
-			</div>	
+		</div>
 		
 		<div id="rightF" class="card-container">
 			<div id="rightF" class="card">
 				<div class="side">Sciences</div>
 				<div class="side back">Sciences</div>	
 			</div>			
+			
+		<div id="doingS" class="doing">
+			<div>Sciences</div>
+			<div>walnuts</div>
+			<div>walnuts</div>
+			<div>walnuts</div>
 		</div>
-		
-			<div id="doingS">
-				<div>walnuts</div>
-				<div>walnuts</div>
-				<div>walnuts</div>
-				<div>walnuts</div>
-			</div>
-		
+			
+		</div>
 	</div>
 
-	
-	<h3>Visit my friend <a href="http://cabrera.io">Alex</a>!</h3>
-	
-	
-	
-<script>
+
+<!--<script>
 $(document).ready(function(){
     $("p").click(function(){
         $(this).hide();
@@ -81,16 +78,16 @@ $(document).ready(function(){
 
 <p>If you click on me, I will disappear.</p>
 <p>Click me away!</p>
-<p>Click me too!</p>
+<p>Click me too!</p>-->
 	
 <script>
 $(function() {
 	
-	$("#leftF").on("mouseover", function() {
-		$("#doingA").fadeToggle(200);	
+	$("#leftF.card").on("mouseover", function() {
+		$("#doingA").fadeToggle(300);	
 	});
-	$("#rightF").on("mouseover", function() {
-		$("#doingS").fadeToggle(200);	
+	$("#rightF.card").on("mouseover", function() {
+		$("#doingS").fadeToggle(300);	
 	});
 	
 });
