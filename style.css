@@ -122,24 +122,21 @@ h3 {
  }
  /**********************END OF FLIPPY BUTTONS AND MENUS**************/
 #wrapper {
-  margin-right: 200px;
+	width: 100%;
 }
 .doing {
 	font-family: "Roboto";
 	color: black;
+	position: relative;
+	width: 20%;
 }
 #doingA {
   float: left;
-  width: 12%;
-  padding-left: 200px;
 } 
 #doingS {
   float:right;
-  width: 12%;
 }
-#cleared {
-  clear: both;
-}
+
  
  
  
