@@ -39,6 +39,14 @@
 				<div class="side">Arts</div>
 				<div class="side back">Arts</div>
 			</div>
+		</div>
+		
+		<div id="rightF" class="card-container">
+			<div id="rightF" class="card">
+				<div class="side">Sciences</div>
+				<div class="side back">Sciences</div>	
+			</div>
+		</div>
 		
 		<div id="doingA" class="doing">
 			<div>Arts</div>
@@ -46,23 +54,13 @@
 			<div>walnuts</div>
 			<div>walnuts</div>
 		</div>
-		
-		</div>
-		
-		<div id="rightF" class="card-container">
-			<div id="rightF" class="card">
-				<div class="side">Sciences</div>
-				<div class="side back">Sciences</div>	
-			</div>			
-			
 		<div id="doingS" class="doing">
 			<div>Sciences</div>
 			<div>walnuts</div>
 			<div>walnuts</div>
 			<div>walnuts</div>
 		</div>
-			
-		</div>
+		
 	</div>
 
 
@@ -83,11 +81,11 @@ $(document).ready(function(){
 <script>
 $(function() {
 	
-	$("#leftF.card").on("mouseover", function() {
-		$("#doingA").fadeToggle(300);	
+	$("#leftF.card").on("click", function() {
+		$("#doingA").fadeToggle(500);	
 	});
-	$("#rightF.card").on("mouseover", function() {
-		$("#doingS").fadeToggle(300);	
+	$("#rightF.card").on("click", function() {
+		$("#doingS").fadeToggle(500);	
 	});
 	
 });
