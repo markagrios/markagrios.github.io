@@ -83,7 +83,12 @@ h3 {
 	font-family: "Roboto";
 	font-weight: bold;
 }
-#leftF,#rightF {
+#leftF {
+	display: inline-block;
+	width: 40%;
+	position: relative;
+}
+#rightF {
 	display: inline-block;
 	width: 40%;
 	position: relative;
@@ -128,21 +133,24 @@ h3 {
 	font-family: "Roboto";
 	color: black;
 	position: relative;
-	width: 20%;
+	width: 10%;
+	display: inline-block;
 }
 #doingA {
   float: left;
+  padding-left: 170px;
 } 
 #doingS {
   float:right;
+  padding-right: 170px;
+}
+#clear {
+	clear: both;
 }
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
+
+
+
+
+
