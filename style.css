@@ -136,19 +136,25 @@ h3 {
 }
 .doing {
 	font-family: "Roboto";
-	font-weight: bold;
 	color: black;
-	display: inline-block;
 	position: relative;
+	left: -80px;
+	right: 80px;
+	display: inline-block;
 	padding-top: 20px;
+	width: 0%;
+}
+#spacer {
+	display: inline;
+	position: relative;
+	padding-left: 310px;
+	padding-right: 50px;
 }
 #doingA {
-	left: -70px;
-	padding-right: 30px;
+	left: 20px;
 } 
 #doingS {
-	right: -90px;
-	padding-left: 30px;
+	right: 0px;
 }
 #clear {
 	clear: both;
