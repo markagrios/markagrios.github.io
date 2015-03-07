@@ -134,6 +134,9 @@ h3 {
 #wrapper {
 	width: 100%;
 }
+.stuff:hover {
+	color: #870B0B;
+}
 .doing {
 	font-family: "Roboto";
 	color: black;
