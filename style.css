@@ -134,6 +134,10 @@ h3 {
 #wrapper {
 	width: 100%;
 }
+.subject {
+	text-decoration: none;
+	color: black;
+}
 .subject:hover {
 	color: #870B0B;
 }

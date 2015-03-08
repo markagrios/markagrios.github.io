@@ -21,11 +21,11 @@
 		<h1>
    		<script type="text/javascript">
 			var d = new Date();
-			var month = d.getMonth() + 1;
+			var month = d.getMonth();
 			var monthNames = ["Janurary","Feburary","March","April","May","June","July","August","September","October","November","December"];
 			var day = d.getDate();
 			var year = d.getFullYear();
-			var date = monthNames[month - 1] + "." + day + "." + year;
+			var date = monthNames[month] + "." + day + "." + year;
 			document.write(date);
 		</script>
 		</h1>
@@ -52,19 +52,19 @@
 		
 	<div id="wrapper">
 		<div id="doingA" class="doing">
-			<p class="subject">Mathematics</p>
-			<p class="subject">Music</p>
-			<p class="subject">Language</p>
-			<p class="subject">Photography</p>
-			<p class="subject">Performance</p> <!--WHO DOES THIS NOT TURN RED???-->
+			<p><a href="markagrios.net/arts/math" class="subject">Mathematics</a></p>
+			<p><a href="markagrios.net/arts/music" class="subject">Music</a></p>
+			<p><a href="markagrios.net/arts/language" class="subject">Language</a></p>
+			<p><a href="markagrios.net/arts/photography" class="subject">Photography</a></p>
+			<p><a href="markagrios.net/arts/performance" class="subject">Performance</a></p>
 		  </div>
 		<div id="spacer"></div>
 		  <div id="doingS" class="doing">
-			<p class="subject">Physics</p>
-			<p class="subject">Biology</p>
-			<p class="subject">Chemistry</p>
-			<p class="subject">Computation</p>
-			<p class="subject">Cosmology</p>
+			<p><a href="markagrios.net/sciences/physics" class="subject">Physics</a></p>
+			<p><a href="markagrios.net/sciences/biology" class="subject">Biology</a></p>
+			<p><a href="markagrios.net/sciences/chemistry" class="subject">Chemistry</a></p>
+			<p><a href="markagrios.net/sciences/computation" class="subject">Computation</a></p>
+			<p><a href="markagrios.net/sciences/cosmology" class="subject">Cosmology</a></p>
 		  </div>
 	</div>
 	<div id="clear"></div>
@@ -81,10 +81,10 @@ $("#doingS").hide();
 $(function() {
 	
 	$("#leftF.card").on("click", function() {
-		$("#doingA").fadeToggle(500);	
+		$("#doingA").fadeToggle(450);	
 	});
 	$("#rightF.card").on("click", function() {
-		$("#doingS").fadeToggle(500);	
+		$("#doingS").fadeToggle(450);	
 	});
 		
 });
