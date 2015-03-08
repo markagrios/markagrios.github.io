@@ -134,10 +134,12 @@ h3 {
 #wrapper {
 	width: 100%;
 }
-.stuff:hover {
+.subject:hover {
 	color: #870B0B;
 }
+
 .doing {
+	text-align: center;
 	font-family: "Roboto";
 	color: black;
 	position: relative;
@@ -148,6 +150,7 @@ h3 {
 	width: 0%;
 }
 #spacer {
+	z-index: -5;
 	display: inline;
 	position: relative;
 	padding-left: 310px;
