@@ -1,50 +1,54 @@
-#basedbox {
-	z-index: 5;
-    width: 32px;
-    height: 32px;
-    background: #870B0B;
-    position: absolute;
-    padding: 0px;
+#me {
+	z-index: 10;
+	font-size: 200%;
+	cursor: pointer;
 }
-#topboxD {
-	z-index: -2;
-    width: 32px;
-    height: 32px;
-    background: white;
-    position: absolute;
-    -webkit-animation: Qmove_down 3s;
-    animation: Qmove_down  3s;
-    -webkit-animation-delay: 0s;
-    animation-delay: 0s;
-    animation-timing-function:ease-out;
+#check {
+	display: none;
 }
-#topboxR {
-	z-index: -2;
-    width: 32px;
-    height: 32px;
-    background: white;
-    position: absolute;
-    -webkit-animation: Qmove_right  3s;
-    animation: Qmove_right  3s;
-    -webkit-animation-delay: 0s;
-    animation-delay: 0s;
-    animation-timing-function:ease-out;
-}
-@-webkit-keyframes Qmove_down {
-    0%   {top: 0px; left: 0px; background: #870B0B;}
-    100% {top: 200px; left: 0px; background: white;} /*make it end at any window width?*/
-}
-@-webkit-keyframes Qmove_right {
-    0%   {top: 0px; left: 0px; background: #870B0B;}
-    100% {top: 0px; left: 200px; background: white;} /*make it end at any window width?*/
-}
+.Bpuff {
+	z-index: -5;
+	width: 13px;
+	height: 13px;
 
+}
+.Mpuff {
+	z-index: -5;
+	width: 10px;
+	height: 10px;
+}
+.Spuff {
+	z-index: -5;
+	width: 7px;
+	height: 7px;
+}
+#me:hover ~ .Bpuff {
+	/*-moz-transform: translateX(100px) translateY(100px);
+	-webkit-transform: translateX(100px) translateY(100px);
+	-o-transform: translateX(100px) translateY(100px);
+	-ms-transform: translateX(100px) translateY(100px);
+	transform: translateX(100px) translateY(100px);*/
+	-webkit-animation-name: puff1;
+	animation-name: puff1;
+    -webkit-animation: puff1  2s;
+    animation: puff1  2s;
+    animation-timing-function:ease-out;
+}
+@-webkit-keyframes puff1 {
+    0% {top: 100px; left: 200px; display: show; background: #870B0B;}
+    100% {top: 100px; left: 200px; display: hidden; background: white;}
+}
+@keyframes puff1 {
+    0% {top: 100px; left: 200px; display: show; background: #870B0B;}
+    100% {top: 100px; left: 200px; display: hidden; background: white;}	
+}
 #main {
-  font-family: "Merriweather Sans";
-  margin-top: 65px;
-  text-align: center;
-  color: black;
-  position: relative;
+	z-index: 5;
+	font-family: "Lobster";
+	margin-top: 65px;
+	text-align: center;
+	color: black;
+	position: relative;
 }
 h1 {
 	font-family: "Roboto";
@@ -69,14 +73,6 @@ h3 {
     height: 32px;
     background: #870B0B;
     position: relative;
-}
-#basedbox:hover ~ .thebox {
-    -webkit-animation: moveArts .5s;
-    animation: moveArts .5s;
-}
-@-webkit-keyframes moveArts {
-    0%   {top: 0px; left: 0px;}
-    100% {top: 300px; left: 200px;}
 }
 #flip {
 	text-align: center;
@@ -141,7 +137,6 @@ h3 {
 .subject:hover {
 	color: #870B0B;
 }
-
 .doing {
 	text-align: center;
 	font-family: "Roboto";
@@ -171,7 +166,9 @@ h3 {
 }
 
 
-
+/*something:hover::after {
+	content: "walnuts";
+}*/
 
 
 

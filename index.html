@@ -2,6 +2,7 @@
 <head>
   <title>markagrios</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="css/animations.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
@@ -9,15 +10,17 @@
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 </head>
   <body>  
-
-	<img id="basedbox" src="thebox.png">
-	<div id="topboxD"></div>
-	<div id="topboxR"></div>
-	<div class="thebox"></div>
-
+	  
     <div id="main">
 		
-		Mark Agrios
+		<div>
+			<a id="me">Mark Agrios</a>
+			<img class="Bpuff" src="puff.png">
+			<img class="Mpuff" src="puff.png">
+			<img class="Spuff" src="puff.png">
+		</div>
+		<div id="check">check me out</div>
+		
 		<h1>
    		<script type="text/javascript">
 			var d = new Date();
@@ -86,6 +89,12 @@ $(function() {
 	$("#rightF.card").on("click", function() {
 		$("#doingS").fadeToggle(450);	
 	});
+	
+	$("#me").hover(
+		function() {$("#check").show();},
+		function() {$("#check").hide();}
+		
+	);
 		
 });
 </script>
