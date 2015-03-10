@@ -1,0 +1,175 @@
+#me {
+	z-index: 10;
+	font-size: 200%;
+	cursor: pointer;
+}
+#check {
+	display: none;
+}
+.Bpuff {
+	z-index: -5;
+	width: 13px;
+	height: 13px;
+
+}
+.Mpuff {
+	z-index: -5;
+	width: 10px;
+	height: 10px;
+}
+.Spuff {
+	z-index: -5;
+	width: 7px;
+	height: 7px;
+}
+#me:hover ~ .Bpuff {
+	/*-moz-transform: translateX(100px) translateY(100px);
+	-webkit-transform: translateX(100px) translateY(100px);
+	-o-transform: translateX(100px) translateY(100px);
+	-ms-transform: translateX(100px) translateY(100px);
+	transform: translateX(100px) translateY(100px);*/
+	-webkit-animation-name: puff1;
+	animation-name: puff1;
+    -webkit-animation: puff1  2s;
+    animation: puff1  2s;
+    animation-timing-function:ease-out;
+}
+@-webkit-keyframes puff1 {
+    0% {top: 100px; left: 200px; display: show; background: #870B0B;}
+    100% {top: 100px; left: 200px; display: hidden; background: white;}
+}
+@keyframes puff1 {
+    0% {top: 100px; left: 200px; display: show; background: #870B0B;}
+    100% {top: 100px; left: 200px; display: hidden; background: white;}	
+}
+#main {
+	z-index: 5;
+	font-family: "Lobster";
+	margin-top: 65px;
+	text-align: center;
+	color: black;
+	position: relative;
+}
+h1 {
+	font-family: "Roboto";
+	font-size: 100%;
+	color: #870B0B;
+}
+h2, h4 {
+	font-family: "Roboto";
+	font-size: 90%;
+	text-align: center;
+}
+h3 {
+	font-family: "Merriweather Sans";
+	font-size: 60%;
+	color: grey;
+	text-align: bottom-right;
+}
+/***************END OF STATIC STUFF*********************************/
+.thebox {
+	z-index: -4;
+    width: 32px;
+    height: 32px;
+    background: #870B0B;
+    position: relative;
+}
+#flip {
+	text-align: center;
+	font-family: "Roboto";
+	font-weight: bold;
+	width: 100%;
+}
+#leftF {
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	left: -10px;
+	padding-right: 30px;
+}
+#rightF {
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	right: -10px;
+	padding-left: 30px;
+}
+.card-container {
+  cursor: pointer;
+  height: 40px;
+  perspective: 6000;
+  position: relative;
+}
+.card {
+  height: 45px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all .5s ease-in-out;
+  width: 100px;
+}
+.card:hover {
+  transform: rotateX(-180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 11px;
+  color: white;
+  background: grey;
+  height: 45px;
+  position: absolute;
+  overflow: hidden;
+  width: 100px;
+}
+.card .back {
+  background: #870B0B;
+  color: white;
+  text-align: center;
+  transform: rotateX(-180deg);
+ }
+ /**********************END OF FLIPPY BUTTONS AND MENUS**************/
+#wrapper {
+	width: 100%;
+}
+.subject {
+	text-decoration: none;
+	color: black;
+}
+.subject:hover {
+	color: #870B0B;
+}
+.doing {
+	text-align: center;
+	font-family: "Roboto";
+	color: black;
+	position: relative;
+	left: -80px;
+	right: 80px;
+	display: inline-block;
+	padding-top: 20px;
+	width: 0%;
+}
+#spacer {
+	z-index: -5;
+	display: inline;
+	position: relative;
+	padding-left: 310px;
+	padding-right: 50px;
+}
+#doingA {
+	left: 20px;
+} 
+#doingS {
+	right: 0px;
+}
+#clear {
+	clear: both;
+}
+
+
+/*something:hover::after {
+	content: "walnuts";
+}*/
+
+
+
+

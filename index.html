@@ -10,11 +10,14 @@
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 </head>
   <body>  
-	  
+	  markagrios.net is currently under lots of renovation so many things might not seem quite right at this point.
     <div id="main">
 		
 		<div>
-			<a id="me">Mark Agrios</a>
+			<img id="testpuff" class="Spuff" src="puff.png">
+			<img class="Mpuff" src="puff.png">
+			<img class="Bpuff" src="puff.png">
+			<span id="name"><a class="me" href="aboutme">Mark Agrios</a></span>
 			<img class="Bpuff" src="puff.png">
 			<img class="Mpuff" src="puff.png">
 			<img class="Spuff" src="puff.png">
@@ -33,68 +36,24 @@
 		</script>
 		</h1>
 		
-		<h2>I strive to learn, and that is all.</h2>
-		<h4>See what I'm doing</h4>
-		
-	</div>	
+		<p class="test">walnuts</p>
+		<p class="test">walnuts</p>
+		<p class="test">walnuts</p>
+		<p class="test">walnuts</p>
 
-	<div id="flip">	
-		<div id="leftF" class="card-container">
-			<div id="leftF" class="card">
-				<div class="side">Arts</div>
-				<div class="side back">Arts</div>
-			</div>
-		</div>
-		
-		<div id="rightF" class="card-container">
-			<div id="rightF" class="card">
-				<div class="side">Sciences</div>
-				<div class="side back">Sciences</div>	
-			</div>
-		</div>
-		
-	<div id="wrapper">
-		<div id="doingA" class="doing">
-			<p><a href="math" class="subject">Mathematics</a></p>
-			<p><a href="music" class="subject">Music</a></p>
-			<p><a href="language" class="subject">Language</a></p>
-			<p><a href="photography" class="subject">Photography</a></p>
-			<p><a href="performance" class="subject">Performance</a></p>
-		  </div>
-		<div id="spacer"></div>
-		  <div id="doingS" class="doing">
-			<p><a href="physics" class="subject">Physics</a></p>
-			<p><a href="biology" class="subject">Biology</a></p>
-			<p><a href="chemistry" class="subject">Chemistry</a></p>
-			<p><a href="computation" class="subject">Computation</a></p>
-			<p><a href="cosmology" class="subject">Cosmology</a></p>
-		  </div>
-	</div>
-	<div id="clear"></div>
-	
-	</div>
 	
 	
 
 	
 <script>
-$("#doingA").hide();
-$("#doingS").hide();
-
 $(function() {
 	
-	$("#leftF.card").on("click", function() {
-		$("#doingA").fadeToggle(450);	
-	});
-	$("#rightF.card").on("click", function() {
-		$("#doingS").fadeToggle(450);	
-	});
-	
-	$("#me").hover(
+	$("#name").hover(
 		function() {$("#check").show();},
 		function() {$("#check").hide();}
-		
+
 	);
+
 		
 });
 </script>
@@ -108,3 +67,4 @@ $(function() {
 	
   </body>
 </html>
+

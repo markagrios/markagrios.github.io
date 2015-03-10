@@ -1,0 +1,113 @@
+<html>
+<head>
+  <title>markagrios</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+</head>
+  <body>  
+	  
+    <div id="main">
+		
+		<div>
+			<img class="Spuff" src="puff.png">
+			<img class="Mpuff" src="puff.png">
+			<img class="Bpuff" src="puff.png">
+			<a id="me">Mark Agrios</a>
+			<img class="Bpuff" src="puff.png">
+			<img class="Mpuff" src="puff.png">
+			<img class="Spuff" src="puff.png">
+		</div>
+		<div id="check">check me out</div>
+		
+		<h1>
+   		<script type="text/javascript">
+			var d = new Date();
+			var month = d.getMonth();
+			var monthNames = ["Janurary","Feburary","March","April","May","June","July","August","September","October","November","December"];
+			var day = d.getDate();
+			var year = d.getFullYear();
+			var date = monthNames[month] + "." + day + "." + year;
+			document.write(date);
+		</script>
+		</h1>
+		
+		<h2>I strive to learn, and that is all.</h2>
+		<h4>See what I'm doing</h4>
+		
+	</div>	
+
+	<div id="flip">	
+		<div id="leftF" class="card-container">
+			<div id="leftF" class="card">
+				<div class="side">Arts</div>
+				<div class="side back">Arts</div>
+			</div>
+		</div>
+		
+		<div id="rightF" class="card-container">
+			<div id="rightF" class="card">
+				<div class="side">Sciences</div>
+				<div class="side back">Sciences</div>	
+			</div>
+		</div>
+		
+	<div id="wrapper">
+		<div id="doingA" class="doing">
+			<p><a href="math" class="subject">Mathematics</a></p>
+			<p><a href="music" class="subject">Music</a></p>
+			<p><a href="language" class="subject">Language</a></p>
+			<p><a href="photography" class="subject">Photography</a></p>
+			<p><a href="performance" class="subject">Performance</a></p>
+		  </div>
+		<div id="spacer"></div>
+		  <div id="doingS" class="doing">
+			<p><a href="physics" class="subject">Physics</a></p>
+			<p><a href="biology" class="subject">Biology</a></p>
+			<p><a href="chemistry" class="subject">Chemistry</a></p>
+			<p><a href="computation" class="subject">Computation</a></p>
+			<p><a href="cosmology" class="subject">Cosmology</a></p>
+		  </div>
+	</div>
+	<div id="clear"></div>
+	
+	</div>
+	
+	
+
+	
+<script>
+$("#doingA").hide();
+$("#doingS").hide();
+
+$(function() {
+	
+	$("#leftF.card").on("click", function() {
+		$("#doingA").fadeToggle(450);	
+	});
+	$("#rightF.card").on("click", function() {
+		$("#doingS").fadeToggle(450);	
+	});
+	
+	$("#me").hover(
+		function() {$("#check").show();},
+		function() {$("#check").hide();}
+		
+	);
+		
+});
+</script>
+	
+	
+	
+	
+	
+	
+	
+	
+  </body>
+</html>

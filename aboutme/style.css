@@ -1,0 +1,16 @@
+#main {
+	font-family: "Lobster";
+	text-align: center;
+	font-size: 300%;
+}
+.content {
+	font-family: "Merriweather Sans";
+	font-size: 30%;
+	text-align: left;
+	padding-left: 40px;
+}
+.toptitle {
+	font-family: "Lobster";
+	font-size: 50%;
+	text-align: left;
+}
