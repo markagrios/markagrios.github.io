@@ -1,24 +1,100 @@
 body {
-	background-color: #929292;
+	background-color: #6E6E6E;
 }
-div {
+#titlecontainer {
 	height: 130px;
 	width: 130px;
+	opacity: 1;
 	position: relative;
+	cursor: pointer;
+	z-index: 1;
 }
-#titlepuff {    
-	width: 100px;
-	height: 100px;
-	background: red;
+#titlepuff {
+	position: absolute;
+	width: 130px;
+	height: 130px;
+	opacity: 1;
+	background: #870B0B;
+	-moz-border-radius: 65px;
+	-webkit-border-radius: 65px;
+	border-radius: 65px;
+    z-index: -1
+}
+.title {
+	position: relative;
+	text-align: center;
+	font-family: "Lobster";
+	color: white;
+	text-decoration: none;
+}
+#me {
+	padding-top: 40px;
+	font-size: 130%;
+}
+#check {
+	padding-top: 0px;
+	font-size: 90%;
+	display: none;
+}
+#menucontainer {
+	height: 30px;
+	width: 130px;
+	position: relative;
+	cursor: pointer;
+	z-index: 1;
+	padding-top: 20px;
+}
+.menupuff {
+	height: 30px;
+	width: 130px;
+	position: relative;
+	cursor: pointer;
+	z-index: 1;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+	z-index: -1;
+}
+#menutitle {
+	position: relative;
+	text-align: center;
+	font-family: "Lobster";
+	color: white;
+	text-decoration: none;
+	font-size: 90%;
+	top: -40px;
+}
+.submenupuff {
+	height: 30px;
+	width: 130px;
+	position: relative;
+	cursor: pointer;
+	z-index: 1;
+	top: -35px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	left: 25px;
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
-    z-index: -1
+	/*display: none;*/
 }
-p {
-	text-align: center;
-	padding-top: 45px;
+.subject {
+	padding-left: 0px;
+	top: 0px;
+	left: 0px;
+	font-family: "Lobster";
+	color: white;
+	/*display: none;*/
 }
+
+
+
+
+
+
 /*
 .me {
 	z-index: 10;

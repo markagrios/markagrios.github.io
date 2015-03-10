@@ -11,19 +11,41 @@
 </head>
 <body>
 markagrios.net is under severe renovation, hopefully soon everything will be back more wonderful than before.
-	<div>
-		<img id="titlepuff" src="puff.png"/>
-		<p>walnuts</p>
+	<div id="titlecontainer">
+		<img id="titlepuff" class="titlepuff" src="puff.png"/>
+		<p id="me" class="title">Mark Agrios</p>
+		<p id="check" class="title"><a href="aboutme" class="title">check me out.</a></p>
 	</div>
-	 
+	
+	<div id="menucontainer">
+		<img id="menupuff" class="menupuff" src="puff.png"/>
+		<p id="menutitle">See what I'm doing</p>
+			<img id="artpuff" class="submenupuff" src="puff.png"/>
+				<p id="arts" class="subject">Arts</p>
+			<img id="sciencepuff" class="submenupuff" src="puff.png"/>
+				<p id="science" class="subject">Science</p>
+	</div>
 	 
 
 	 
 	 
 	 
 	 
-	 
-	 
+<script>
+$(function() {
+	
+	$("#titlecontainer").hover(
+		function() {$("#check").slideDown();},
+		function() {$("#check").slideUp();}
+	);
+	$("#menucontainer").click(
+		function() {$(".submenupuff").fadeToggle(700);}
+	);
+
+
+		
+});
+</script>
 	 
 	 
 </body>
