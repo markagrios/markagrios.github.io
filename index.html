@@ -15,9 +15,10 @@ markagrios.net is under severe renovation, hopefully soon everything will be bac
 	<div id="titlecontainer" class="title">
 		<img id="titlepuff" class="title" src="puff.png"/>
 		<p id="me" class="title">Mark Agrios 
+			<a id="prebar">see what I'm doing</a>
 			<a id="check" class="barcontent" href="aboutme">check me out</a>
-			<a id="check" class="barcontent" href="aboutme">arts</a>
-			<a id="check" class="barcontent" href="aboutme">sciences</a>
+			<a id="arts" class="barcontent" href="aboutme">arts</a>
+			<a id="sciences" class="barcontent" href="aboutme">sciences</a>
 		</p>
 	</div>
 	
@@ -27,7 +28,7 @@ markagrios.net is under severe renovation, hopefully soon everything will be bac
 		<img id="menupuff" class="menu" src="puff.png"/>
 		<p id="menutitle" class="menu">See what I'm doing</p>
 	</div>
-		
+	
 	<!--	
 			<img id="artpuff" class="submenupuff" src="puff.png"/>
 				<p id="arts" class="subject">Arts</p>
@@ -36,21 +37,19 @@ markagrios.net is under severe renovation, hopefully soon everything will be bac
 	-->
 	 
 	 
-	 
-	 
+	
 <script>
 $(function() {
 	
 	$("#titlecontainer").hover(
-		function() {$(".barcontent").fadeIn();},
-		function() {$(".barcontent").fadeOut();}
+		function() {$("#prebar").fadeOut(1); $(".barcontent").fadeIn();},
+		function() {$(".barcontent").fadeOut(1); $("#prebar").fadeIn();}
 	);
 
 
 		
 });
 </script>
-	 
 	 
 </body>
 </html>

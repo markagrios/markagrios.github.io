@@ -36,19 +36,20 @@ body {
 	padding-left: 10px;
 	font-size: 130%;
 }
-#check {
+#prebar {
+	text-align: center;
+	padding-left: 20px;
+}
+.barcontent {
 	position: relative;
-	padding-left: 10px;
+	padding-left: 30px;
 	font-size: 90%;
-
+	display: none;
 	left: 10px;
 	text-decoration: none;
 	color: white;
 }
-#check:hover:after {
-	content: " *";
-}
-#arts:hover:after {
+#check:hover:after,#arts:hover:after,#sciences:hover:after {
 	content: " *";
 }
 #bar {
@@ -60,7 +61,8 @@ body {
 	-webkit-border-radius: 12px;
 	border-radius: 12px;
 	background: #870B0B;
-	z-index: -5;
+	z-index: 0;
+	cursor: pointer;
 }
 .menu {
 	display: none;
