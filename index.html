@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="css/animations.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 </head>
@@ -16,26 +16,37 @@ markagrios.net is under severe renovation, hopefully soon everything will be bac
 		<img id="titlepuff" class="title" src="puff.png"/>
 		<p id="me" class="title">Mark Agrios 
 			<a id="prebar">see what I'm doing...</a>
-			<a id="check" class="barcontent" href="aboutme">check me out</a>
-			<a id="arts" class="barcontent" href="aboutme">arts</a>
-			<a id="sciences" class="barcontent" href="aboutme">sciences</a>
+			<a id="check" class="barcontent">check me out</a>
+			<a id="arts" class="barcontent">arts</a>
+			<a id="sciences" class="barcontent">sciences</a>
 		</p>
 	</div>
 	
 	<div id="bar"></div>
 	
-	<div id="menucontainer" class="menu">
-		<img id="menupuff" class="menu" src="puff.png"/>
-		<p id="menutitle" class="menu"></p>
+	<div id="quote"></div>
+	
+	<div id="aboutme">
+		<a class="contentheader">About me.</a>
+			<p class="content">walnuts</p>
+		<a class="contentheader">What I love.</a>
+			<p class="content">Everything</p>
+		<a class="contentheader">What I love to do.</a>
+			<p class="content">A lot.</p>	
 	</div>
 	
-
-	 
-	 
+	<div id="arts">
+		<!-- list of stuff, opacity low, higher on hover, maybe float up depending on orientation -->
+	</div>
+	
+	<div id="sciences">
+		<!-- list of stuff, opacity low, higher on hover, maybe float up depending on orientation -->
+	</div>
 	
 <script>
 $(function() {
 	
+	/******** TITLE BAR *********/
 	$("#prebar").hover(
 		function() {$("#prebar").fadeOut(0); $(".barcontent").fadeIn();}
 	);
@@ -43,6 +54,10 @@ $(function() {
 		function() {$(".barcontent").fadeOut(0); $("#prebar").fadeIn();}
 	);
 
+	/******** PAGES *********/
+	$("#check").click(
+		function() {$("#aboutme").fadeIn(800);}
+	);
 
 
 		
