@@ -14,7 +14,11 @@ markagrios.net is under severe renovation, hopefully soon everything will be bac
 		
 	<div id="titlecontainer" class="title">
 		<img id="titlepuff" class="title" src="puff.png"/>
-		<p id="me" class="title">Mark Agrios <a id="check" href="aboutme">check me out</a></p>
+		<p id="me" class="title">Mark Agrios 
+			<a id="check" class="barcontent" href="aboutme">check me out</a>
+			<a id="check" class="barcontent" href="aboutme">arts</a>
+			<a id="check" class="barcontent" href="aboutme">sciences</a>
+		</p>
 	</div>
 	
 	<div id="bar"></div>
@@ -38,8 +42,8 @@ markagrios.net is under severe renovation, hopefully soon everything will be bac
 $(function() {
 	
 	$("#titlecontainer").hover(
-		function() {$("#check").fadeIn();},
-		function() {$("#check").fadeOut();}
+		function() {$(".barcontent").fadeIn();},
+		function() {$(".barcontent").fadeOut();}
 	);
 
 
