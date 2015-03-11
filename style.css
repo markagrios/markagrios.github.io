@@ -1,5 +1,5 @@
 body {
-	background-color: #6E6E6E;
+	background-color: #BAB1B3;
 }
 #titlecontainer {
 	height: 130px;
@@ -96,29 +96,6 @@ body {
 	text-decoration: none;
 	font-size: 90%;
 	top: -40px;
-}
-.submenupuff {
-	height: 30px;
-	width: 130px;
-	position: relative;
-	cursor: pointer;
-	z-index: 1;
-	top: -35px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	left: 25px;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
-	/*display: none;*/
-}
-.subject {
-	padding-left: 0px;
-	top: 0px;
-	left: 0px;
-	font-family: "Lobster";
-	color: white;
-	/*display: none;*/
 }
 
 
