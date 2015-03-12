@@ -1,6 +1,11 @@
 body {
 	background-color: #BAB1B3;
 }
+h1 {
+	font-size: 80%;
+	text-align: right;
+	color: grey;
+}
 /**********TITLE BAR THINGY*****************************/
 #titlecontainer {
 	height: 130px;
@@ -50,7 +55,7 @@ body {
 	color: white;
 	cursor: pointer;
 }
-#check:hover:after,#arts:hover:after,#sciences:hover:after {
+#BARcheck:hover:after,#BARpages:hover:after,#BARsayhi:hover:after {
 	content: "+";
 }
 #bar {
@@ -76,7 +81,7 @@ body {
 	font-size: 130%;
 	margin-left: 30px;
 }
-#aboutme,#sayhi { /*include #pages when not testing*/
+#aboutme,#sayhi,#pages { /*include #pages when not testing*/
 	display: none;
 	padding-left: 80px;
 }

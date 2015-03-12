@@ -10,15 +10,14 @@
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 </head>
 <body>
-markagrios.net is under severe renovation, hopefully soon everything will be back more wonderful than before.
-		
+<h1>Visit my friend <a href="https://www.cabrera.io">Alex</a></h1>		
 	<div id="titlecontainer" class="title">
 		<img id="titlepuff" class="title" src="puff.png"/>
 		<p id="me" class="title">Mark Agrios 
 			<a id="prebar">see what I'm doing...</a>
-			<a id="check" class="barcontent">check me out</a>
-			<a id="arts" class="barcontent">pages</a>
-			<a id="sciences" class="barcontent">say hi</a>
+			<a id="BARcheck" class="barcontent">check me out</a>
+			<a id="BARpages" class="barcontent">pages</a>
+			<a id="BARsayhi" class="barcontent">say hi</a>
 		</p>
 	</div>
 	
@@ -43,7 +42,7 @@ markagrios.net is under severe renovation, hopefully soon everything will be bac
 	</div>
 
 	<div id="pages">
-		<p class="content">Welcome to my pages! Here I write about topics that interest me. Whether it's impressionist art or vector tensors, I attempt to explain subjects simply in a way that makes them interesting for people not usually curious about that particular area</p>
+		<p class="content">Welcome to my pages! Here I write about topics that interest me. Whether it's impressionist art or vector tensors, I attempt to simply explain subjects I find fascinating in a way that makes them interesting for people not usually reading in such fields.</p>
 		<p class="contentheader">Thoughts worth writing about.</p>
 		<p class="content">
 			<a class="pagessubject">Arts</a>
@@ -64,14 +63,27 @@ $(function() {
 	);
 
 	/******** CONTENT *********/
-	$("#check").click(
+	$("#BARpages").click(
+		function() {
+			$("#sayhi").fadeOut(0);
+			$("#aboutme").fadeOut(0);
+			$("#pages").fadeIn(800);
+		}
+	);
+	$("#BARcheck").click(
 		function() {
 			$("#sayhi").fadeOut(0);
 			$("#pages").fadeOut(0);
 			$("#aboutme").fadeIn(800);
 		}
 	);
-
+	$("#BARsayhi").click(
+		function() {
+			$("#pages").fadeOut(0);
+			$("#aboutme").fadeOut(0);
+			$("#sayhi").fadeIn(800);
+		}
+	);
 
 		
 });
