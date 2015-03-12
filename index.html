@@ -35,12 +35,21 @@ markagrios.net is under severe renovation, hopefully soon everything will be bac
 			<p class="content">A lot.</p>	
 	</div>
 	
-	<div id="arts">
-		<!-- list of stuff, opacity low, higher on hover, maybe float up depending on orientation -->
+	<div id="sayhi">
+		<a class="contentheader">Walnuts</a>
+			<p class="content">Walnuts</p>
+		<a class="contentheader">Walnuts</a>
+			<p class="content">Walnuts</p>		
 	</div>
-	
-	<div id="sciences">
-		<!-- list of stuff, opacity low, higher on hover, maybe float up depending on orientation -->
+
+	<div id="pages">
+		<p class="content">Welcome to my pages! Here I write about topics that interest me. Whether it's impressionist art or vector tensors, I attempt to explain subjects simply in a way that makes them interesting for people not usually curious about that particular area</p>
+		<p class="contentheader">Thoughts worth writing about.</p>
+		<p class="content">
+			<a class="pagessubject">Arts</a>
+			<a class="pagessubject">Sciences</a>
+			<a class="pagessubject">Throw a dart</a>
+		</p>
 	</div>
 
 <script>
@@ -54,9 +63,13 @@ $(function() {
 		function() {$(".barcontent").fadeOut(0); $("#prebar").fadeIn();}
 	);
 
-	/******** PAGES *********/
+	/******** CONTENT *********/
 	$("#check").click(
-		function() {$("#aboutme").fadeIn(800);}
+		function() {
+			$("#sayhi").fadeOut(0);
+			$("#pages").fadeOut(0);
+			$("#aboutme").fadeIn(800);
+		}
 	);
 
 

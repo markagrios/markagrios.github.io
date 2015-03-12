@@ -76,9 +76,16 @@ body {
 	font-size: 130%;
 	margin-left: 30px;
 }
-#aboutme,#arts,#sciences {
+#aboutme,#sayhi { /*include #pages when not testing*/
 	display: none;
 	padding-left: 80px;
+}
+.pagessubject {
+	padding-left: 20px;
+	cursor: pointer;
+}
+.pagessubject:hover:after {
+	content: "+";
 }
 
 
