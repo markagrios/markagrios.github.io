@@ -82,7 +82,7 @@ h1 {
 	margin-left: 30px;
 }
 #aboutme,#sayhi,#pages { /*include #pages when not testing*/
-	display: none;
+	/*display: none;*/
 	padding-left: 80px;
 }
 .pagessubject {
