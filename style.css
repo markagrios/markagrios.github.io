@@ -88,9 +88,11 @@ h1 {
 .pagessubject {
 	padding-left: 20px;
 	cursor: pointer;
+	color: #A39D9E;
 }
-.pagessubject:hover:after {
+.pagessubject:hover .pagessubject:hover:after {
 	content: "+";
+	color: black;
 }
 
 
