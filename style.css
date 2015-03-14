@@ -85,6 +85,13 @@ h1 {
 	display: none;
 	padding-left: 80px;
 }
+#cabreralink {
+	font-family: "Yanone Kaffeesatz";
+	color: black;
+}
+#cabreralink:hover {
+	color: #870B0B;
+}
 .pagessubject {
 	padding-left: 20px;
 	cursor: pointer;
