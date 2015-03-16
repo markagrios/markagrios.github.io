@@ -104,7 +104,7 @@ h1 {
 	content: "+";
 }
 #thearts,#thesciences {
-	/*display: none;*/
+	display: none;
 	margin-left: 110px;
 }
 .page {
@@ -115,7 +115,14 @@ h1 {
 .page:hover:before {
 	content: "+";
 }
-
+.pagetitle {
+	display: none;
+	font-family: "Lobster";
+}
+.pagecontent {
+	display: none;
+	font-family: "Yanone Kaffeesatz";
+}
 
 
 
