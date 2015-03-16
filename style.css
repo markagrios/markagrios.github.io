@@ -103,7 +103,18 @@ h1 {
 .pagessubject:hover:after {
 	content: "+";
 }
-
+#thearts,#thesciences {
+	/*display: none;*/
+	margin-left: 110px;
+}
+.page {
+	font-family: "Yanone Kaffeesatz";
+	font-size: 130%;
+	cursor: pointer;
+}
+.page:hover:before {
+	content: "+";
+}
 
 
 

@@ -35,8 +35,16 @@
 			spent my four years of high school on the robotics team being co-captain the last three years.
 			In middle school at around the time I learned to ride a unicycle, I picked up the art of performing magic. Since then
 			I have explored and created many of my own illusions and have performed on the streets of Washington
-			D.C. doing tricks with everyday items and hypnotizing spectators.
-			</p> <!-- add stuff about art/music -->
+			D.C. doing tricks with everyday items and hypnotizing spectators. I've always been interested 
+			in music. I appreciate the structure and complexities that lie within a piece of music 
+			and I like taking apart movements and see what makes certain parts so enjoyable. The only 
+			visual art media I am somewhat involved in is photography. I enjoy exploring with light and 
+			contrast so black and white prints (especially of nature) I often find intriguing. However, 
+			more than music and photography, I find language the most amazing. With my practice in the art
+			of hypnotism, I have come to appreciate the small facets of meaning we can put into spoken
+			language. The deep ambiguity of speech only seems ambiguous because of the lack of conscious
+			thought we put into it. I find this truly astounding.
+			</p>
 		<a class="contentheader">What I love.</a>
 			<p class="content">Everything</p>
 		<a class="contentheader">What I do.</a>
@@ -45,10 +53,21 @@
 			competitions to sort through different colored balls using camera interpolation. Most of
 			what I do in the field of computers focuses on certain concepts such as color identification, 
 			infinite sequences, or the random map generator on <a id="cabreralink" href="https://www.cabrera.io/conquest" target="_blank">cabrera.io</a>
-			(in progress) as opposed to practically developed computer applications. 
+			(in progress) as opposed to practically developed computer applications. My fascination with 
+			music lead to me teaching myself how to read music and basic music theory after I already 
+			taught myself to play the basics on piano, guitar, bass, and ukulele. I'm currently in the 
+			process of learning Korean which is very nice to take a break from the western cyrillic 
+			alphabet. It is interesting to see what vowels and consonants different spoken languages 
+			have that others do not. My love for things dexterous and physics makes my unicycle-riding
+			more fun than it should be. It is hard for me even to comprehend what and how my brain 
+			communicates with my muscles as I balance on a single point on a plane with most of the 
+			weight relatively high. It's the mix of brain functions and physics and skill that makes not 
+			only riding a unicycle fun but also thinking about it. This website is an effort to mix 
+			functionality with aesthetics which is one of the more enjoyable wars I've fought in my 
+			lifelong journey. I believe most of my inspiration for my design and layout comes from my love 
+			for the color red (darkish deep red specifically) and subtle class found in simple but not 
+			minimal design. If you're wondering, the hex value of this red I use is #870B0B.
 			</p>
-		<a class="contentheader">Aspirations</a>
-			<p class="content">...</p>	
 	</div>
 	
 	<div id="sayhi">
@@ -61,9 +80,21 @@
 		<p class="content">Welcome to my pages! Here I write about topics that interest me. Whether it's impressionist art or vector tensors, I attempt to simply explain subjects I find fascinating in a way that makes them interesting for people not usually reading in such fields.</p>
 		<p class="contentheader">Thoughts worth writing about.</p>
 		<p class="content">
-			<a class="pagessubject">Arts</a>
-			<a class="pagessubject">Sciences</a>
+			<a id="subjectarts" class="pagessubject">Arts</a>
+			<a id="subjectsciences" class="pagessubject">Sciences</a>
 			<a class="pagessubject">Throw a dart</a>
+				<div id="thearts">
+					<div><a class="page">Walnuts</a></div>
+					<div><a class="page">Walnuts</a></div>
+					<div><a class="page">Walnuts</a></div>
+					<div><a class="page">Walnuts</a></div>
+				</div>
+				<div id="thesciences">
+					<div><a class="page">Walnuts</a></div>
+					<div><a class="page">Walnuts</a></div>
+					<div><a class="page">Walnuts</a></div>
+					<div><a class="page">Walnuts</a></div>
+				</div>
 		</p>
 	</div>
 
@@ -101,6 +132,19 @@ $(function() {
 		}
 	);
 
+	/********* PAGES MENU ***********/
+	$("#subjectarts").click(
+		function() {
+			$("#thesciences").fadeOut(0);
+			$("#thearts").fadeIn(800);
+		}
+	);
+	$("#subjectsciences").click(
+		function() {
+			$("#thearts").fadeOut(0);
+			$("#thesciences").fadeIn(800);
+		}
+	);
 		
 });
 </script>
