@@ -127,7 +127,7 @@ h1 {
 	font-size: 120%;
 	margin-left: 17px;
 }
-#hatemath { /*keep comma-ing for each page*/
+#hatemath,#thouughts { /*keep comma-ing for each page*/
 	display: none;
 }
 

@@ -84,12 +84,50 @@
 			<a id="subjectsciences" class="pagessubject">Sciences</a>
 			<a class="pagessubject">Throw a dart</a>
 				<div id="thearts">
-					<div id="thouughts"><a class="page">Thouughts on Language</a>
-						<p class="pagetitle">Not a typo.</p>
+					<div id="thouughtsclick"><a class="page">Thouughts on Language</a>
+						<div id="thouughts">
+							<p class="pagetitle">Is a word greater than the sum of its parts?</p>
 							<p class="pagecontent">
-							The title of this page uses the word "thouughts." The usual word "thoughts" with 
-							an extra 'u.'
+							The title of this page uses the word "thouughts" the usual word "thoughts," but, with 
+							an intensional extra u. Does the word "thouughts" gain anything by having an extra u? Did you pronounce 
+							it differently in your head? Would it lose any meaning if the u wasn't there 
+							at all? As we talk or write or think from one person to the next, there's a 
+							certain amount of information that gets transfered from one place to another. 
+							Spoken language is vocalizations that people of a certain culture agree to assign 
+							meaning to, written language is the same but using small pictures. It is an 
+							interesting practice to see how small digressions from the normal might convey 
+							different meaning. As a magician and hypnotist I am obliged to say presentation is everything 
+							and that is not far from the truth about language. In this day when lots of 
+							conversations are had through text, I must say that different forms of punctuation 
+							can carry subtle differences in meaning. [Sentence]. [Sentence] is different than 
+							[Sentence]. [sentence] having the second sentence not have a capital letter, both 
+							of which are different than [sentence] *new line* [sentence] and other discrepancies 
+							of sorts. 
 							</p>
+							<p class="pagetitle">Where does meaning come from?</p>
+							<p class="pagecontent">
+							The subtle difference in formatting text messages is rather similar to body 
+							language in spoken language. It makes us wonder where the inherent meaning of a 
+							word, phrase, sentence etc. comes from. It surely isn't in just the spoken words 
+							or written text. Humans learn visually and auditorally but also through action 
+							and self questioning. As we develope as humans, we are trained to pick up on 
+							hints and clues that are used around us to gain an understanding of how to convey 
+							certain meaning to the rest of the world.
+							</p>
+							<p class="pagetitle">This is starting to sound quite science-y...</p>
+							<p class="page content">
+							I personally deplore making the distinction between art and science because I 
+							find too many examples that span both, language being one. I want to emphasize 
+							that the language we use today, whether it's English, Korean, German, sign language, 
+							is the foundation on which we understand the world. We know things because people 
+							tell us or we read it or we discover it. A person's ability to use language to 
+							ellicit emotion or stimulate a culture or anything is as scientific as it is 
+							artistic. My favorite author, F. Scott Fitzgerald, writes page after page that 
+							allows me to visualize what he is trying to say. Not just vocabulary but also 
+							the attention to syllables in a word or structure of a sentence in relation to 
+							the preceeding one. 
+							</p>
+						</div>
 					</div>
 					<div class="more"><a>More soon to come...</a></div>
 				</div>
@@ -209,6 +247,12 @@ $(function() {
 	);
 	
 	/********** INDIVIDUAL PAGES *******/
+	$("#thouughtsclick").click( <!-- make it click again to fade out -->
+		function() {
+			$(".more").fadeOut(0);
+			$("#thouughts").fadeIn(800);
+		}
+	);	
 	$("#hatemathclick").click( <!-- make it click again to fade out -->
 		function() {
 			$(".more").fadeOut(0);
