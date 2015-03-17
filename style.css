@@ -115,13 +115,20 @@ h1 {
 .page:hover:before {
 	content: "+";
 }
+.more {
+	font-family: "Yanone Kaffeesatz";
+	font-size: 130%;
+}
 .pagetitle {
-	display: none;
 	font-family: "Lobster";
 }
 .pagecontent {
-	display: none;
 	font-family: "Yanone Kaffeesatz";
+	font-size: 120%;
+	margin-left: 17px;
+}
+#hatemath { /*keep comma-ing for each page*/
+	display: none;
 }
 
 

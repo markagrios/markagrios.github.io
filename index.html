@@ -84,18 +84,77 @@
 			<a id="subjectsciences" class="pagessubject">Sciences</a>
 			<a class="pagessubject">Throw a dart</a>
 				<div id="thearts">
-					<div><a class="page">Thouughts on Language</a>
-						<p class="pagetitle">How much do we speak?</p>
-							<p class="pagecontent"></p>
+					<div id="thouughts"><a class="page">Thouughts on Language</a>
+						<p class="pagetitle">Not a typo.</p>
+							<p class="pagecontent">
+							The title of this page uses the word "thouughts." The usual word "thoughts" with 
+							an extra 'u.'
+							</p>
 					</div>
-					<div><a class="page">More soon to come...</a></div>
+					<div class="more"><a>More soon to come...</a></div>
 				</div>
 				<div id="thesciences">
-					<div><a class="page">Information</a>
-						<p class="pagetitle"></p>
-							<p class="pagecontent"></p>
+					<div id="hatemathclick"><a class="page">People's distaste with Mathematics.</a>
+						<div id="hatemath">
+						<p class="pagetitle">Why do some people hate math?</p>
+							<p class="pagecontent">
+							People love learning. Some people will say they don't because they associate it 
+							with school but people do indeed love to learn. A majority of what people enjoy 
+							learning is the world around them and how it works. Mathematics is a tool. No 
+							one appreciates tools. People will look at the very first airplane and find it 
+							truly amazing, man conquering the ancient dream of flight. How many people stop 
+							and think about what tools the Wright brothers used to construct their flying 
+							machine?
+							</p>
+							<p class="pagecontent">
+							People don't like being told what to do. Many will say rules are meant to be 
+							broken. It is driven too deep into people's head that you can never break the 
+							rules of math. This is the biggest deal breaker for people learning mathematics. 
+							People go through school learning about the controversial art movements of Monet 
+							or the disputed works of Voltaire. People learn how often change must take place 
+							in order for any progress to be made. People also learn how you must always do 
+							math this very specific way if you want the right answers. We are not taught, 
+							however, how much mathematics has changed since its beginnings. The ancient 
+							Greeks believed only in rational numbers, number that can be expressed as a 
+							ratio of two integers (-1/2, 10, 54/11). The square root of 2 is not rational. 
+							It is very easy to constuct, take to lines of length 1 and form a right angle, 
+							the length between the two endpoints not touching is the square root of 2. 
+							Similarly, the square root of -1 is a bit harder to grasp. Take a number line 
+							from negative infinity to positive infinity, any "real" number will be on that 
+							line, I could have 2 eggs, the ratio of the circle's perimeter to its diameter 
+							is pi which is to the right of 3, I can be $1000 in debt which is far to the 
+							left of 0. The square root of -1 will not be on that line. When people discovered 
+							these "numbers that can't exist" the threw them out, they said "we can't use 
+							these, they make no sense." Imagine going through art school painting pictures 
+							of fruit, and one day you decided to paint a  picture of your friend deeply 
+							focused on his painting of fruit. Your first question when your teacher tells 
+							you "all of art is about painting fruit" would be "why?" People looked up at the 
+							sky and saw birds and thought that man should someday fly. Lots of the world 
+							said "no, man doesn't fly, birds fly, but not man."
+							</p>
+							<p class="pagecontent">
+							Every concept has rules. If I drop this bowl of noodles, it will fall and smash. 
+							Gravity is relatively easy so grasp. However, rules only apply to what follows 
+							them. This is probably the most counter-intuitive idea I've discovered, it's 
+							bizarrely backwards. There is no universal space called "rules" that everything 
+							in the universe fits in; there are pockets of rules that each have a set of things 
+							they apply to and each pocket of rules is different. A simple rule in mathematics 
+							is that if you square a number you will always have a positive result. When the 
+							idea of the number 'i' was accepted the idea that it didn't play by that rule 
+							was also accepted.  
+							</p>
+							<p class="pagecontent">
+							When people say the hate math, most of the time they are saying the hate all 
+							the rules math has. They are not taught the beauty math has similar to art and 
+							music. The philosophy of math lies deep within the practice rather than the 
+							outcome. Most other fields' true elegance is contained in the finished product, 
+							a six voice fugue, an impressionist landscape, a flying machine that actually 
+							flies. The study of mathematics appreciates finding connections. Somehow linking 
+							these two seemingly unrelated ideas is a victory in this realm. 
+							</p>
+						</div>
 					</div>
-					<div><a class="page">More soon to come...</a></div>
+					<div class="more"><a>More soon to come...</a></div>
 
 				</div>
 		</p>
@@ -145,10 +204,18 @@ $(function() {
 	$("#subjectsciences").click(
 		function() {
 			$("#thearts").fadeOut(0);
-			$("#thesciences").fadeIn(800);
+			$("#thesciences").fadeToggle(800);
 		}
 	);
-		
+	
+	/********** INDIVIDUAL PAGES *******/
+	$("#hatemathclick").click( <!-- make it click again to fade out -->
+		function() {
+			$(".more").fadeOut(0);
+			$("#hatemath").fadeIn(800);
+		}
+	);
+
 });
 </script>
 	 
