@@ -215,13 +215,13 @@ $(function() {
 	/********** INDIVIDUAL PAGES *******/
 	$("#thouughtsclick").click( <!-- make it click again to fade out -->
 		function() {
-			$(".more").fadeOut(0);
+			$(".more").fadeToggle(0);
 			$("#thouughts").fadeToggle(800);
 		}
 	);	
 	$("#hatemathclick").click( <!-- make it click again to fade out -->
 		function() {
-			$(".more").fadeOut(0);
+			$(".more").fadeToggle(0);
 			$("#hatemath").fadeToggle(800);
 		}
 	);
