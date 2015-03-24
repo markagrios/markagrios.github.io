@@ -23,6 +23,18 @@
 	
 	<div id="bar"></div>
 	
+	<div id="date">
+   		<script type="text/javascript">
+			var d = new Date();
+			var month = d.getMonth();
+			var monthNames = ["Janurary","Feburary","March","April","May","June","July","August","September","October","November","December"];
+			var day = d.getDate();
+			var year = d.getFullYear();
+			var date = monthNames[month] + "." + day + "." + year;
+			document.write(date);
+		</script>
+	</div>
+	
 	<div id="quote"></div>
 	
 	<div id="aboutme">
