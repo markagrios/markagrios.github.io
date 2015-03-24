@@ -71,6 +71,11 @@ h1 {
 	cursor: pointer;
 }
 /********** CONTENT *****************************/
+#date {
+	font-family: "Lobster";
+	text-align: center;
+	font-size: 400%;
+}
 .contentheader {
 	font-family: "Lobster";
 	font-size: 200%;
