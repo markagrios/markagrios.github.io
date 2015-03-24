@@ -34,6 +34,20 @@
 			document.write(date);
 		</script>
 	</div>
+	<div id="time">
+	<script>
+		function startTime() {
+		    var today=new Date();
+		    var h=today.getHours();
+		    var m=today.getMinutes();
+		    var s=today.getSeconds();
+		    m = checkTime(m);
+		    s = checkTime(s);
+		    var time = h+":"+m+":"+s;
+		}
+		document.write(time);
+	</script>
+	</div>
 	
 	<div id="quote"></div>
 	
