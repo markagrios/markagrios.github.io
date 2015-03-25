@@ -75,6 +75,7 @@ h1 {
 	font-family: "Lobster";
 	text-align: center;
 	font-size: 400%;
+	margin-top: -80px;
 }
 #time {
 	font-family: "Lobster";
@@ -140,6 +141,23 @@ h1 {
 #hatemath,#thouughts { /*keep comma-ing for each page*/
 	display: none;
 }
+
+
+
+
+
+#puff {
+	height: 40px;
+	width: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	display: block;
+}
+#puff:hover {
+	opacity: .90;
+}
+
 
 
 
