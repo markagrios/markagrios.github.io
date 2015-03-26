@@ -5,52 +5,271 @@
   <link rel="stylesheet" href="css/animations.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 </head>
-  <body>  
-	  
-	<div id="dock">
-		<div id="leftdock">
-			<a id="name">.Mark Agrios.</a>
-		</div>
-		<div id="rightdock">
-			<a id="aboutme" class="dockclick">about me</a>
-			<a id="pages" class="dockclick">pages</a>
-			<a id="sayhi" class="dockclick">say hi</a>
-			<a id="bar" class="docknoclick">|</a>
-			<a id="dateclock" class="docknoclick">dateclock here</a>
-		</div>
+<body>
+<h1>Visit my friend <a href="https://www.cabrera.io">Alex</a></h1>		
+	
+	<div id="titlecontainer" class="title">
+		<img id="titlepuff" class="title" src="puff.png"/>
+		<p id="me" class="title">Mark Agrios 
+			<a id="prebar">see what I'm doing...</a>
+			<a id="BARcheck" class="barcontent">check me out</a>
+			<a id="BARpages" class="barcontent">pages</a>
+			<a id="BARsayhi" class="barcontent">say hi</a>
+		</p>
 	</div>
-	<img id="toppicture" src="puff.png"/>
 	
+	<div id="bar"></div>
+	
+	<div id="date">
+   		<script type="text/javascript">
+			var d = new Date();
+			var month = d.getMonth();
+			var monthNames = ["Janurary","Feburary","March","April","May","June","July","August","September","October","November","December"];
+			var day = d.getDate();
+			var year = d.getFullYear();
+			var date = monthNames[month] + "." + day + "." + year;
+			document.write(date);
+		</script>
+	</div>
+	<script>
+	function startTime() {
+	    var today=new Date();
+	    var h=today.getHours() % 12;
+	    var m=today.getMinutes();
+	    var s=today.getSeconds();
+	    m = checkTime(m);
+	    s = checkTime(s);
+	    document.getElementById('time').innerHTML = h+":"+m+":"+s;
+	    var t = setTimeout(function(){startTime()},500);
+	}
+	
+	function checkTime(i) {
+	    if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
+	    return i;
+	}
+	</script>
 	
 
+	<body onload="startTime()">
+	<div id="time"></div>
+	<div id="quote"></div>
+	
+	<div id="aboutme">
+		<a class="contentheader">About me.</a>
+			<p class="content">
+			Hey! I'm Mark! I'm a senior in high school interested in everything I don't already know. 
+			Most of my curiousity lies within the realm of sciences and math rather than the arts
+			but I love it all just the same. I've been involved in my high school's TSA (Technology
+			Students Association) chapter for four years and was vice president my junior year. I have also
+			spent my four years of high school on the robotics team being co-captain the last three years.
+			In middle school at around the time I learned to ride a unicycle, I picked up the art of performing magic. Since then
+			I have explored and created many of my own illusions and have performed on the streets of Washington
+			D.C. doing tricks with everyday items and hypnotizing spectators. I've always been interested 
+			in music. I appreciate the structure and complexities that lie within a piece of music 
+			and I like taking apart movements and see what makes certain parts so enjoyable. The only 
+			visual art media I am somewhat involved in is photography. I enjoy exploring with light and 
+			contrast so black and white prints (especially of nature) I often find intriguing. However, 
+			more than music and photography, I find language the most amazing. With my practice in the art
+			of hypnotism, I have come to appreciate the small facets of meaning we can put into spoken
+			language. The deep ambiguity of speech only seems ambiguous because of the lack of conscious
+			thought we put into it. I find this truly astounding.
+			</p>
+		<a class="contentheader">What I love.</a>
+			<p class="content">Everything</p>
+		<a class="contentheader">What I do.</a>
+			<p class="content">
+			Quite a lot, I believe. My curiosity with information has led to the robots we used in our 
+			competitions to sort through different colored balls using camera interpolation. Most of
+			what I do in the field of computers focuses on certain concepts such as color identification, 
+			infinite sequences, or the random map generator on <a id="cabreralink" href="https://www.cabrera.io/conquest" target="_blank">cabrera.io</a>
+			(in progress) as opposed to practically developed computer applications. My fascination with 
+			music lead to me teaching myself how to read music and basic music theory after I already 
+			taught myself to play the basics on piano, guitar, bass, and ukulele. I'm currently in the 
+			process of learning Korean which is very nice to take a break from the western cyrillic 
+			alphabet. It is interesting to see what vowels and consonants different spoken languages 
+			have that others do not. My love for things dexterous and physics makes my unicycle-riding
+			more fun than it should be. It is hard for me even to comprehend what and how my brain 
+			communicates with my muscles as I balance on a single point on a plane with most of the 
+			weight relatively high. It's the mix of brain functions and physics and skill that makes not 
+			only riding a unicycle fun but also thinking about it. This website is an effort to mix 
+			functionality with aesthetics which is one of the more enjoyable wars I've fought in my 
+			lifelong journey. I believe most of my inspiration for my design and layout comes from my love 
+			for the color red (darkish deep red specifically) and subtle class found in simple but not 
+			minimal design. If you're wondering, the hex value of this red I use is #870B0B.
+			</p>
+	</div>
+	
+	<div id="sayhi">
+		<a class="contentheader">Hi!</a>
+			<p class="content">I love talking to people!</p>
+			<p class="content">Shoot me an email at magrios@gmail.com</p>		
+	</div>
+
+	<div id="pages">
+		<p class="content">Welcome to my pages! Here I write about topics that interest me. Whether it's impressionist art or vector tensors, I attempt to simply explain subjects I find fascinating in a way that makes them interesting for people not usually reading in such fields.</p>
+		<p class="contentheader">Thoughts worth writing about.</p>
+		<p class="content">
+			<a id="subjectarts" class="pagessubject">Arts</a>
+			<a id="subjectsciences" class="pagessubject">Sciences</a>
+			<a class="pagessubject">Throw a dart</a>
+				<div id="thearts">
+					<div id="thouughtsclick"><a class="page">Thouughts on Language</a>
+						<div id="thouughts">
+							<p class="pagetitle">"Words words words."</p>
+							<p class="pagecontent">
+							The title of this page uses the words "thoughts" but an extra 'u.' I did this 
+							to try to point out how much that letter actually contributes to the word 
+							because what sound does the u add to the already shot 'o' sound? Did 
+							you pronounce it differently in your head? Did you even notice it? I've always 
+							been fascinated with information but here I want to talk about the less science-y 
+							side of it. 
+							</p>
+							<p class="pagecontent">
+							
+							</p>
+						</div>
+					</div>
+					<div class="more"><a>More soon to come...</a></div>
+				</div>
+				<div id="thesciences">
+					<div id="hatemathclick"><a class="page">People's distaste with Mathematics.</a>
+						<div id="hatemath">
+						<p class="pagetitle">Why do some people hate math?</p>
+							<p class="pagecontent">
+							Most people actually don't hate mathematics because they do not know exactly 
+							what mathematics is or rather what it can be. People are taught in school about 
+							how rote and concrete math is and you cannot stray from the rules. I have to 
+							say that this is untrue. What people learn in school is applied mathematics, it 
+							is the model of how this and function in the world we live in when the entirety 
+							of mathematics truly much large and much more beautiful.
+							</p>
+							<p class="pagecontent">
+							The biggest obstacle that people face with math is mistaking its function for 
+							its purpose. The true function of math that we see is to explain the world around 
+							us in a concrete way. Its purpose is actually much more magnificent because of 
+							its simplicity. Mathematics is its own entity, it is a formal system of which 
+							certain truths are accepted and the rest is all interpretation from there. The 
+							reason mathematics is taught is for its function, it is a tool. The thing people 
+							don't appreciate about mathematics is that they see it as only a tool. There has 
+							never been a person who looked at the Wright brothers' flying machine and glorified 
+							the tools used to build it, nor looked at Picasso's art and pay any attention 
+							to the paintbrushes he used.So when someone says the hate mathematics they are really saying that they have 
+							failed to understand the potential of the tools they were given.
+							</p>
+							<p class="pagetitle">How could one stop "hating" math?</p>
+							<p class="pagecontent">
+							This problem should be addressed really in two ways. There are people that dislike 
+							the idea of all the rules and do not find value in the function and purpose of 
+							math and other are simply just "bad" at math and that is why they hate it. "Bad" 
+							is not the best word to be used here, many people how are "bad" at math simply 
+							had trouble grasping the abstract concepts of what they were taught or just enjoyed 
+							other subject more in their schooling career. Again, math is a tool and that 
+							function is taught at an early age. Children first learn to count and then add 
+							and then multiply etc. They people who dislike math, most likely, never stepped 
+							past the question of "what more can math do besides explain what's around me?" 
+							That is a perfectly rational notion to entertain, when given an object, oh say, 
+							an iPhone, people new to this object often have the question of "what else can 
+							it do?" Mathematics is the same way, people who do not follow their natural 
+							curiosity of pursuing something's potential, no matter how abstract 
+							or concrete it may be, are often the ones who end up with a distaste for mathematics.
+							</p>
+							<p class="pagetitle">What kind of people are mathematicians?</p>
+							<p class="pagecontent">
+							Many people find mathematicians and scientists the most concrete and unimaginative 
+							people. This does have some truth in it, but, the people who find no interest in 
+							math and science are often very rational. They didn't look at the line 1+1=2 and 
+							ask why, they accepted it for what the world agreed on and continued. This is not 
+							at all a bad thing, people have different interests and ideas. The idea of mathematics 
+							beyond what most people see it as is a very amorphous concept and generally people 
+							who find interest in the real world seem to sway in the opposite direction as 
+							math and more towards science, music, art, literature, because they find more 
+							value in the finished product rather than the tools.
+							</p>
+						</div>
+					</div>
+					<div class="more"><a>More soon to come...</a></div>
+
+				</div>
+		</p>
+	</div>
 
 
-<p>walnuts</p>
-<p>walnuts</p>
-<p>walnuts</p>
-<p>walnuts</p>
-<p>walnuts</p>
-<p>walnuts</p>
-<p>walnuts</p>
-<p>walnuts</p>
-<p>walnuts</p>
-<p>walnuts</p>
-<p>walnuts</p>
-<p>walnuts</p>
-<p>walnuts</p>
-<p>walnuts</p>
-<p>walnuts</p>
-<p>walnuts</p>
-<p>walnuts</p>
-<p>walnuts</p>
-<p>walnuts</p>
-<p>walnuts</p>
-<p>walnuts</p>
+	<img id="puff" src="puff.png"/>
 
-	  
-  </body>
+
+<script>
+$(function() {
+	
+	/******** TITLE BAR *********/
+	$("#prebar").hover(
+		function() {$("#prebar").fadeOut(0); $(".barcontent").fadeIn();}
+	);
+	$("#bar").mouseleave(
+		function() {$(".barcontent").fadeOut(0); $("#prebar").fadeIn();}
+	);
+
+	/******** CONTENT *********/
+	$("#BARpages").click(
+		function() {
+			$("#sayhi").fadeOut(0);
+			$("#aboutme").fadeOut(0);
+			$("#pages").fadeIn(800);
+		}
+	);
+	$("#BARcheck").click(
+		function() {
+			$("#sayhi").fadeOut(0);
+			$("#pages").fadeOut(0);
+			$("#aboutme").fadeIn(800);
+		}
+	);
+	$("#BARsayhi").click(
+		function() {
+			$("#pages").fadeOut(0);
+			$("#aboutme").fadeOut(0);
+			$("#sayhi").fadeIn(800);
+		}
+	);
+
+	/********* PAGES MENU ***********/
+	$("#subjectarts").click(
+		function() {
+			$("#thesciences").fadeOut(0);
+			$("#thearts").fadeIn(800);
+		}
+	);
+	$("#subjectsciences").click(
+		function() {
+			$("#thearts").fadeOut(0);
+			$("#thesciences").fadeToggle(800);
+		}
+	);
+	
+	/********** INDIVIDUAL PAGES *******/
+	$("#thouughtsclick").click( <!-- make it click again to fade out -->
+		function() {
+			$(".more").fadeToggle(0);
+			$("#thouughts").fadeToggle(800);
+		}
+	);	
+	$("#hatemathclick").click( <!-- make it click again to fade out -->
+		function() {
+			$(".more").fadeToggle(0);
+			$("#hatemath").fadeToggle(800);
+		}
+	);
+
+});
+</script>
+	 
+</body>
 </html>
+
+
+
+
+
