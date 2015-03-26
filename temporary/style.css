@@ -2,20 +2,42 @@ body {
 	margin: 0px;
 	background-color: #FEFEFE;
 }
-#topdock {
-	background-color: #EDEDED;
+#dock {
+	font-family: "Lobster";
+	background-color: #ECECEC;
 	height: 40px;
 	width: 100%;
 	position: fixed;
-	border-bottom: 50px;
-	box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.1); 
-/*	-moz-border-bottom-left-radius: 30px;
-	-webkit-border-bottom-left-radius: 30px;
-	border-bottom-left-radius: 30px;
-	-moz-border-bottom-right-radius: 30px;
-	-webkit-border-bottom-right-radius: 30px;
-	border-bottom-right-radius: 30px;*/
-	
+	box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.15); 
+}
+#leftdock {
+	text-align: left;
+	width: 49%;
+	display: inline-block;
+	float: left;
+}
+#rightdock {
+	text-align: right;
+	width: 49%;
+	display: inline-block;
+	float: right;
+	padding-top: 8px;
+}
+.dockclick, .docknoclick {
+	padding-right: 10px;
+	opacity: .4;
+}
+.dockclick {cursor: pointer;}
+.dockclick:hover {
+	opacity: .7;
+	font-size: 103%;
+}
+#toppicture {
+	height: 250px;
+	width: 100%;
+	padding-top: 50px;
+	border-style: solid none;
+	border-color: #000000;
 }
 #name {
 	font-family: "Lobster";
