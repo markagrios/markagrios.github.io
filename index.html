@@ -7,28 +7,137 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
 </head>
-  <body>  
-	  
+  <body> 
+	<body onload="startTime()">
 	<div id="dock">
 		<div id="leftdock">
-			<a id="name">.Mark Agrios.</a>
+			<a id="name">Mark Agrios</a>
 		</div>
 		<div id="rightdock">
 			<a id="aboutme" class="dockclick">about me</a>
 			<a id="pages" class="dockclick">pages</a>
 			<a id="sayhi" class="dockclick">say hi</a>
 			<a id="bar" class="docknoclick">|</a>
-			<a id="dateclock" class="docknoclick">dateclock here</a>
+			<a id="time" class="docknoclick"></a>
+			<a id="date" class="docknoclick">
+			   	<script type="text/javascript">
+					var d = new Date();
+					var month = d.getMonth();
+					var monthNames = ["Janurary","Feburary","March","April","May","June","July","August","September","October","November","December"];
+					var day = d.getDate();
+					var year = d.getFullYear();
+					var date = monthNames[month] + "." + day + "." + year;
+					document.write(date);
+				</script>
+			</a>
 		</div>
 	</div>
 	<img id="toppicture" src="puff.png"/>
 	
+	markagrios.net is under heavy renovation at the moment. Hopeully soon everything will be back 
+	and more fabulous than before. Thank you for you patience.
+
+	<div id="animationcontainer">
+		<a>Walnuts</a>
+	</div>
+<!--	
+	<div id="aboutme">
+		<a class="contentheader">About me.</a>
+			<p class="content">
+			Hey! I'm Mark! I'm a senior in high school interested in everything I don't already know. 
+			Most of my curiousity lies within the realm of sciences and math rather than the arts
+			but I love it all just the same. I've been involved in my high school's TSA (Technology
+			Students Association) chapter for four years and was vice president my junior year. I have also
+			spent my four years of high school on the robotics team being co-captain the last three years.
+			In middle school at around the time I learned to ride a unicycle, I picked up the art of performing magic. Since then
+			I have explored and created many of my own illusions and have performed on the streets of Washington
+			D.C. doing tricks with everyday items and hypnotizing spectators. I've always been interested 
+			in music. I appreciate the structure and complexities that lie within a piece of music 
+			and I like taking apart movements and see what makes certain parts so enjoyable. The only 
+			visual art media I am somewhat involved in is photography. I enjoy exploring with light and 
+			contrast so black and white prints (especially of nature) I often find intriguing. However, 
+			more than music and photography, I find language the most amazing. With my practice in the art
+			of hypnotism, I have come to appreciate the small facets of meaning we can put into spoken
+			language. The deep ambiguity of speech only seems ambiguous because of the lack of conscious
+			thought we put into it. I find this truly astounding.
+			</p>
+		<a class="contentheader">What I love.</a>
+			<p class="content">Everything</p>
+		<a class="contentheader">What I do.</a>
+			<p class="content">
+			Quite a lot, I believe. My curiosity with information has led to the robots we used in our 
+			competitions to sort through different colored balls using camera interpolation. Most of
+			what I do in the field of computers focuses on certain concepts such as color identification, 
+			infinite sequences, or the random map generator on <a id="cabreralink" href="https://www.cabrera.io/conquest" target="_blank">cabrera.io</a>
+			(in progress) as opposed to practically developed computer applications. My fascination with 
+			music lead to me teaching myself how to read music and basic music theory after I already 
+			taught myself to play the basics on piano, guitar, bass, and ukulele. I'm currently in the 
+			process of learning Korean which is very nice to take a break from the western cyrillic 
+			alphabet. It is interesting to see what vowels and consonants different spoken languages 
+			have that others do not. My love for things dexterous and physics makes my unicycle-riding
+			more fun than it should be. It is hard for me even to comprehend what and how my brain 
+			communicates with my muscles as I balance on a single point on a plane with most of the 
+			weight relatively high. It's the mix of brain functions and physics and skill that makes not 
+			only riding a unicycle fun but also thinking about it. This website is an effort to mix 
+			functionality with aesthetics which is one of the more enjoyable wars I've fought in my 
+			lifelong journey. I believe most of my inspiration for my design and layout comes from my love 
+			for the color red (darkish deep red specifically) and subtle class found in simple but not 
+			minimal design. If you're wondering, the hex value of this red I use is #870B0B.
+			</p>
+	</div>
 	
+	<div id="sayhi">
+		<a class="contentheader">Hi!</a>
+			<p class="content">I love talking to people!</p>
+			<p class="content">Shoot me an email at magrios@gmail.com</p>		
+	</div>
 
-
-
+	-->
+	
+	
+	
+	
+	
+	
+	
+	<script>
+	function startTime() {
+	    var today=new Date();
+	    var h=today.getHours() % 12;
+	    var m=today.getMinutes();
+	    m = checkTime(m);
+	    document.getElementById('time').innerHTML = h+":"+m;
+	    var t = setTimeout(function(){startTime()},500);
+	}
+	
+	function checkTime(i) {
+	    if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
+	    return i;
+	}
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 <p>walnuts</p>
 <p>walnuts</p>
 <p>walnuts</p>
@@ -50,7 +159,13 @@
 <p>walnuts</p>
 <p>walnuts</p>
 <p>walnuts</p>
-
+<p>walnuts</p>
+<p>walnuts</p>
+<p>walnuts</p>
+<p>walnuts</p>
+<p>walnuts</p>
+<p>walnuts</p>
+<p>walnuts</p>
 	  
   </body>
 </html>

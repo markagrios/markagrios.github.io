@@ -1,6 +1,6 @@
 body {
 	margin: 0px;
-	background-color: #FEFEFE;
+	background-color: #F4F4F4;
 }
 #dock {
 	font-family: "Lobster";
@@ -23,6 +23,14 @@ body {
 	float: right;
 	padding-top: 8px;
 }
+#name {
+	font-family: "Lobster";
+	font-size: 130%;
+    line-height: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+}
 .dockclick, .docknoclick {
 	padding-right: 12px;
 	opacity: .4;
@@ -35,16 +43,36 @@ body {
 #toppicture {
 	height: 250px;
 	width: 100%;
-	padding-top: 50px;
+	padding-top: 30px;
 	border-style: solid none;
 	border-color: #000000;
 }
-#name {
+#animationcontainer {
+	text-align: center;
+	font-family: "Lobster";
+	font-size: 400%;
+	padding-top: 30px;
+	cursor: default;
+}
+/*
+.contentheader {
 	font-family: "Lobster";
 	font-size: 130%;
-    line-height: 35px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 20px;
+	border: 0px;
 }
+.content{
+	font-family: "Yanone Kaffeesatz";
+	font-size: 130%;
+	margin-left: 30px;
+}
+#aboutme,#sayhi,#pages {
+	padding-left: 80px;
+}*/
+
+
+
+
+
+
+
 
