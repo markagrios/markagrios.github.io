@@ -7,12 +7,12 @@ body {
 	height: 40px;
 	width: 100%;
 	position: fixed;
-	-moz-border-bottom-left-radius: 65px;
-	-webkit-border-bottom-left-radius: 65px;
-	border-bottom-left-radius: 65px;
-	-moz-border-bottom-right-radius: 65px;
-	-webkit-border-bottom-right-radius: 65px;
-	border-bottom-right-radius: 65px;
+	-moz-border-bottom-left-radius: 30px;
+	-webkit-border-bottom-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	-moz-border-bottom-right-radius: 30px;
+	-webkit-border-bottom-right-radius: 30px;
+	border-bottom-right-radius: 30px;
 	
 }
 #name {
