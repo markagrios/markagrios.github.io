@@ -7,9 +7,9 @@ body {
 	height: 40px;
 	width: 100%;
 	position: fixed;
-	-moz-border-radius: 65px;
-	-webkit-border-radius: 65px;
-	border-radius: 65px;
+	-moz-border-bottom-radius: 65px;
+	-webkit-border-bottom-radius: 65px;
+	border-bottom-radius: 65px;
 }
 #name {
 	font-family: "Lobster";
