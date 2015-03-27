@@ -54,7 +54,7 @@ body {
 	padding-top: 30px;
 	cursor: default;
 }
-/*
+
 .contentheader {
 	font-family: "Lobster";
 	font-size: 130%;
@@ -65,9 +65,9 @@ body {
 	font-size: 130%;
 	margin-left: 30px;
 }
-#aboutme,#sayhi,#pages {
+#aboutmecontent,#sayhicontent {
 	padding-left: 80px;
-}*/
+}
 
 
 
