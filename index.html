@@ -16,9 +16,9 @@
 			<a id="name">Mark Agrios</a>
 		</div>
 		<div id="rightdock">
-			<a id="aboutme" class="dockclick">about me</a>
-			<a id="pages" class="dockclick">pages</a>
-			<a id="sayhi" class="dockclick">say hi</a>
+			<a id="aboutme" class="dockclick" href="#aboutmecontent">about me</a>
+			<a id="pages" class="dockclick" href="#pagecontent">pages</a>
+			<a id="sayhi" class="dockclick" href="#sayhicontent">say hi</a>
 			<a id="bar" class="docknoclick">|</a>
 			<a id="time" class="docknoclick"></a>
 			<a id="date" class="docknoclick">
@@ -40,7 +40,7 @@
 	and more fabulous than before. Thank you for you patience.
 
 	<div id="animationcontainer">
-		<a>Walnuts</a>
+		<a>White Gold</a>
 	</div>
 	
 	
@@ -72,7 +72,7 @@
 			competitions to sort through different colored balls using camera interpolation. Most of
 			what I do in the field of computers focuses on certain concepts such as color identification, 
 			infinite sequences, or the random map generator on <a id="cabreralink" href="https://www.cabrera.io/conquest" target="_blank">cabrera.io</a>
-			(in progress) as opposed to practically developed computer applications. My fascination with 
+			(in progress, press "R" to load a new map) as opposed to practically developed computer applications. My fascination with 
 			music lead to me teaching myself how to read music and basic music theory after I already 
 			taught myself to play the basics on piano, guitar, bass, and ukulele. I'm currently in the 
 			process of learning Korean which is very nice to take a break from the western cyrillic 
@@ -85,14 +85,18 @@
 			functionality with aesthetics which is one of the more enjoyable wars I've fought in my 
 			lifelong journey. I believe most of my inspiration for my design and layout comes from my love 
 			for the color red (darkish deep red specifically) and subtle class found in simple but not 
-			minimal design. If you're wondering, the hex value of this red I use is #870B0B.
+			minimal design.
 			</p>
 	</div>
 	
 	<div id="sayhicontent">
-		<a class="contentheader">Hi!</a>
-			<p class="content">I love talking to people!</p>
-			<p class="content">Shoot me an email at magrios@gmail.com</p>		
+		<p id="sayhiwords" class="contentheader">I love talking to people!</p>
+		
+		<div align="center" id="iconcontainer">
+			<a class="tossing" href="https://www.github.com/markagrios"><img id="githublogo" src="githublogo.png"/></a>
+			<a class="tossing"><img id="inboxicon" src="inboxicon.jpg"/></a>
+			<a class="tossing"><img id="cardicon" src="cardicon.png"/></a>
+		</div>
 	</div>
 	
 	
@@ -115,8 +119,13 @@
 	    if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
 	    return i;
 	}
+	
+	<!-- DOCK BUTTONS -->
+
+	<!-- ------------ -->
 	</script>
 	
+<h1>Visit my friends <a href="https://cabrera.io">Alex</a> and <a href="">Carling</a></h1>	
 	
 	
 	
@@ -135,8 +144,7 @@
 	
 	
 	
-	
-	
+<!--
 <p>walnuts</p>
 <p>walnuts</p>
 <p>walnuts</p>
@@ -165,6 +173,6 @@
 <p>walnuts</p>
 <p>walnuts</p>
 <p>walnuts</p>
-	  
+-->
   </body>
 </html>

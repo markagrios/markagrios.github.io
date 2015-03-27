@@ -1,7 +1,8 @@
 body {
 	margin: 0px;
-	background-color: #F4F4F4;
+	background-color: #FDFDFD;
 }
+h1 {font-family: "Merriweather Sans"; font-size: 70%;}
 #dock {
 	font-family: "Lobster";
 	background-color: #ECECEC;
@@ -12,13 +13,13 @@ body {
 }
 #leftdock {
 	text-align: left;
-	width: 49%;
+	width: 50%;
 	display: inline-block;
 	float: left;
 }
 #rightdock {
 	text-align: right;
-	width: 49%;
+	width: 50%;
 	display: inline-block;
 	float: right;
 	padding-top: 8px;
@@ -35,7 +36,11 @@ body {
 	padding-right: 12px;
 	opacity: .4;
 }
-.dockclick {cursor: pointer;}
+.dockclick {
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+}
 .dockclick:hover {
 	opacity: .7;
 	font-size: 103%;
@@ -54,7 +59,6 @@ body {
 	padding-top: 30px;
 	cursor: default;
 }
-
 .contentheader {
 	font-family: "Lobster";
 	font-size: 130%;
@@ -65,8 +69,57 @@ body {
 	font-size: 130%;
 	margin-left: 30px;
 }
-#aboutmecontent,#sayhicontent {
+#cabreralink {color: black;}
+#aboutmecontent {
+	padding-top: 45px;
 	padding-left: 80px;
+}
+#sayhicontent {
+	padding-bottom: 90px;
+}
+#sayhiwords {
+	text-align: center;
+}
+#githublogo,#inboxicon,#cardicon {
+	height: 40px;
+	width: 40px;
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.tossing {
+	animation-name: tossing;
+	-webkit-animation-name: tossing;	
+
+	animation-duration: 2.5s;	
+	-webkit-animation-duration: 2.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes tossing {
+	0% {
+		transform: rotate(-8deg);	
+	}
+	50% {
+		transform: rotate(8deg);
+	}
+	100% {
+		transform: rotate(-8deg);	
+	}						
+}
+
+@-webkit-keyframes tossing {
+	0% {
+		-webkit-transform: rotate(-8deg);	
+	}
+	50% {
+		-webkit-transform: rotate(8deg);
+	}
+	100% {
+		-webkit-transform: rotate(-8deg);	
+	}				
 }
 
 
