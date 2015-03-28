@@ -104,7 +104,7 @@
 	<script>
 	function startTime() {
 	    var today=new Date();
-	    var h=today.getHours() % 12;
+	    var h=today.getHours() % 12 + 12;
 	    var m=today.getMinutes();
 	    m = checkTime(m);
 	    document.getElementById('time').innerHTML = h+":"+m;
