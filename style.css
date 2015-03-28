@@ -46,7 +46,7 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%;}
 	font-size: 103%;
 }
 #toppicture {
-	height: 250px;
+	height: 240px;
 	width: 100%;
 	padding-top: 30px;
 	border-style: solid none;
@@ -56,8 +56,17 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%;}
 	text-align: center;
 	font-family: "Lobster";
 	font-size: 400%;
-	padding-top: 30px;
+	padding-top: 0px;
 	cursor: default;
+}
+#animate {
+	height: 300px;
+	width: 300px;
+	animation-name: main;
+	-webkit-animation-name: main;	
+
+	animation-duration: 2.5s;	
+	-webkit-animation-duration: 2.5s;
 }
 .contentheader {
 	font-family: "Lobster";
@@ -98,6 +107,52 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%;}
 	-webkit-animation-iteration-count: infinite;
 }
 
+
+
+
+
+
+
+
+/********** ANIMATIONS **************/
+@keyframes main {
+	0% {
+		transform: rotate(20deg) scaleX(.1);
+	}
+	20% {
+			
+		transform: scaleY(.2);	
+	}
+	40% {
+		transform: rotate(-20deg) scaleX(.2);
+	}
+	60% {
+		transform: scaleY(.2);
+	}
+	80% {
+		transform: scaleX(1) scaleY(1);
+	}
+	100% {}
+}
+@-webkit-keyframes main {
+	0% {
+		-webkit-transform: rotate(20deg) scaleX(.1);
+	}
+	20% {
+			
+		-webkit-transform: scaleY(.2);	
+	}
+	40% {
+		-webkit-transform: rotate(-20deg) scaleX(.2);
+	}
+	60% {
+		-webkit-transform: scaleY(.2);
+	}
+	80% {
+		-webkit-transform: scaleX(1) scaleY(1);
+	}
+	100% {}
+}
 @keyframes tossing {
 	0% {
 		transform: rotate(-8deg);	
@@ -109,7 +164,6 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%;}
 		transform: rotate(-8deg);	
 	}						
 }
-
 @-webkit-keyframes tossing {
 	0% {
 		-webkit-transform: rotate(-8deg);	
@@ -121,7 +175,6 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%;}
 		-webkit-transform: rotate(-8deg);	
 	}				
 }
-
 
 
 
