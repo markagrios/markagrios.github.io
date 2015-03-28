@@ -16,9 +16,9 @@
 			<a id="name">Mark Agrios</a>
 		</div>
 		<div id="rightdock">
-			<a id="aboutme" class="dockclick" href="#aboutmecontent">about me</a>
-			<a id="pages" class="dockclick" href="#pagecontent">pages</a>
-			<a id="sayhi" class="dockclick" href="#sayhicontent">say hi</a>
+			<a id="aboutme" class="dockclick">about me</a>
+			<a id="pages" class="dockclick">pages</a>
+			<a id="sayhi" class="dockclick">say hi</a>
 			<a id="bar" class="docknoclick">|</a>
 			<a id="time" class="docknoclick"></a>
 			<a id="date" class="docknoclick">
@@ -56,11 +56,7 @@
 			in music. I appreciate the structure and complexities that lie within a piece of music 
 			and I like taking apart movements and see what makes certain parts so enjoyable. The only 
 			visual art media I am somewhat involved in is photography. I enjoy exploring with light and 
-			contrast so black and white prints (especially of nature) I often find intriguing. However, 
-			more than music and photography, I find language the most amazing. With my practice in the art
-			of hypnotism, I have come to appreciate the small facets of meaning we can put into spoken
-			language. The deep ambiguity of speech only seems ambiguous because of the lack of conscious
-			thought we put into it. I find this truly astounding.
+			contrast so black and white prints (especially of nature) I often find intriguing.
 			</p>
 		<a class="contentheader">What I love.</a>
 			<p class="content">Everything</p>
@@ -68,7 +64,7 @@
 			<p class="content">
 			Quite a lot, I believe. My curiosity with information has led to the robots we used in our 
 			competitions to sort through different colored balls using camera interpolation. Most of
-			what I do in the field of computers focuses on certain concepts such as color identification, 
+			what I do in the field of computers focus on certain concepts such as color identification, 
 			infinite sequences, or the random map generator on <a id="cabreralink" href="https://www.cabrera.io/conquest" target="_blank">cabrera.io</a>
 			(in progress, press "R" to load a new map) as opposed to practically developed computer applications. My fascination with 
 			music lead to me teaching myself how to read music and basic music theory after I already 
@@ -87,13 +83,16 @@
 	</div>
 	
 	<div id="sayhicontent">
-		<p id="sayhiwords" class="contentheader">I love talking to people!</p>
+		<p class="contentheader sayhiwords">I love talking to people!</p>
 		
 		<div align="center" id="iconcontainer">
 			<a class="tossing" href="https://www.github.com/markagrios"><img id="githublogo" src="githublogo.png"/></a>
 			<a class="tossing"><img id="inboxicon" src="inboxicon.jpg"/></a>
-			<a class="tossing"><img id="cardicon" src="cardicon.png"/></a>
+			<a class="tossing"><img id="musicicon" src="musicicon.png"/></a>
 		</div>
+		<div id="myemail" class="sayhiwords bottomwords">shoot me an email at magrios@gmail.com!</div>
+		<div id="mygithub" class="sayhiwords bottomwords">Check out my projects!</div>
+		<div id="mymusic" class="sayhiwords bottomwords">Listen to my jams!</div> <!link to my pandora >
 	</div>
 	
 	
@@ -120,10 +119,50 @@
 	<!-- DOCK BUTTONS -->
 
 	<!-- ------------ -->
+	
+	<!------SAY HI------>
+	$("#inboxicon").mouseover(
+		function() {
+			$("#mygithub").hide(0);
+			$("#mymusic").hide(0);
+			$("#myemail").fadeIn();
+		}
+
+	)
+	.mouseleave(
+		function() {
+			$("#myemail").hide();
+		}
+	);
+	$("#githublogo").mouseover(
+		function() {
+			$("#myemail").hide(0);
+			$("#mymusic").hide(0);
+			$("#mygithub").fadeIn();
+		}
+
+	)
+	.mouseleave(
+		function() {
+			$("#mygithub").hide();
+		}
+	);
+	$("#musicicon").mouseover(
+		function() {
+			$("#myemail").hide(0);
+			$("#mygithub").hide(0);
+			$("#mymusic").fadeIn();
+		}
+
+	)
+	.mouseleave(
+		function() {
+			$("#mymusic").hide();
+		}
+	);
+	<!-- ------------ -->
 	</script>
-	
-<h1>Visit my friends <a href="https://cabrera.io">Alex</a> and <a href="https://rubyhearts.bigcartel.com">Carling</a></h1>	
-	
+		
 	
 	
 	
@@ -139,7 +178,8 @@
 	
 	
 	
-	
+	<h1>Visit my friends <a href="https://cabrera.io">Alex</a> and <a href="https://rubyhearts.bigcartel.com">Carling</a></h1>	
+
 	
 <!--
 <p>walnuts</p>

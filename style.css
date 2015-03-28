@@ -2,7 +2,7 @@ body {
 	margin: 0px;
 	background-color: #FDFDFD;
 }
-h1 {font-family: "Merriweather Sans"; font-size: 70%;}
+h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 20px;}
 #dock {
 	font-family: "Lobster";
 	background-color: #ECECEC;
@@ -82,14 +82,21 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%;}
 #aboutmecontent {
 	padding-top: 45px;
 	padding-left: 80px;
+	width: 90%;
 }
 #sayhicontent {
-	padding-bottom: 90px;
+	padding-bottom: 50px;
 }
-#sayhiwords {
+.sayhiwords {
 	text-align: center;
+	font-family: "Lobster";
+	padding-top: 5px;
 }
-#githublogo,#inboxicon,#cardicon {
+.bottomwords {
+	display: none;
+	font-size: 110%;
+}
+#githublogo,#inboxicon,#musicicon {
 	height: 40px;
 	width: 40px;
 	display: inline-block;
@@ -106,7 +113,16 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%;}
 	animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
 }
+.tossing:hover {
+	animation-name: spin;
+	-webkit-animation-name: spin;	
 
+	animation-duration: .3s;	
+	-webkit-animation-duration: .3s;
+
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+}
 
 
 
@@ -175,7 +191,24 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%;}
 		-webkit-transform: rotate(-8deg);	
 	}				
 }
-
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+		opacity: .2;
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		opacity: .2;
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
 
 
 
