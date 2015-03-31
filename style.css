@@ -96,7 +96,11 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 20px;}
 	display: none;
 	font-size: 110%;
 }
+#contact_form {
+	display: none;
+}
 #githublogo,#inboxicon,#musicicon {
+	cursor: pointer;
 	height: 40px;
 	width: 40px;
 	display: inline-block;

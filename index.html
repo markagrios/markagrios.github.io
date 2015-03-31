@@ -93,6 +93,24 @@
 		<div id="myemail" class="sayhiwords bottomwords">shoot me an email at magrios@gmail.com!</div>
 		<div id="mygithub" class="sayhiwords bottomwords">Check out my projects!</div>
 		<div id="mymusic" class="sayhiwords bottomwords">Listen to my jams!</div> <!link to my pandora >
+
+<form id="contact_form" class="sayhiwords bottomwords" action="#" method="POST" enctype="multipart/form-data">
+	<div class="row">
+		<label for="yourname">Your name:</label><br />
+		<input id="yourname" class="input" name="name" type="text" value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="email">Your email:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="message">Words of wisdom:</label><br />
+		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+	</div>
+	<input id="submit_button" type="submit" value="Send email" />
+</form>	
+	
+
 	</div>
 	
 	
@@ -104,7 +122,7 @@
 	<script>
 	function startTime() {
 	    var today=new Date();
-	    var h=today.getHours() % 12 + 12;
+	    var h=today.getHours() % 12;
 	    var m=today.getMinutes();
 	    m = checkTime(m);
 	    document.getElementById('time').innerHTML = h+":"+m;
@@ -117,7 +135,21 @@
 	}
 	
 	<!-- DOCK BUTTONS -->
-
+	$("#aboutme").click(
+		function() {
+			
+		}
+	);
+	$("#pages").click(
+		function() {
+			
+		}
+	);
+	$("#sayhi").click(
+		function() {
+			
+		}
+	);
 	<!-- ------------ -->
 	
 	<!------SAY HI------>
@@ -132,6 +164,11 @@
 	.mouseleave(
 		function() {
 			$("#myemail").hide();
+		}
+	);
+	$("#inboxicon").click(
+		function() {
+			$("#contact_form").fadeIn();
 		}
 	);
 	$("#githublogo").mouseover(
