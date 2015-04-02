@@ -34,7 +34,7 @@
 			</a>
 		</div>
 	</div>
-	<img id="toppicture" src="cranes.jpg"/>
+	<img id="toppicture" src="greycranes.png"/>
 	
 
 	<div id="animationcontainer">
@@ -122,7 +122,7 @@
 	<script>
 	function startTime() {
 	    var today=new Date();
-	    var h=today.getHours() % 12;
+	    var h=today.getHours() % 13;
 	    var m=today.getMinutes();
 	    m = checkTime(m);
 	    document.getElementById('time').innerHTML = h+":"+m;
@@ -168,14 +168,13 @@
 	);
 	$("#inboxicon").click(
 		function() {
-			$("#contact_form").fadeIn();
+			$("#contact_form").slideToggle();
 		}
 	);
 	$("#githublogo").mouseover(
 		function() {
 			$("#myemail").hide(0);
 			$("#mymusic").hide(0);
-			$("#contact_form").hide(0);
 			$("#mygithub").fadeIn();
 		}
 
@@ -189,7 +188,6 @@
 		function() {
 			$("#myemail").hide(0);
 			$("#mygithub").hide(0);
-			$("#contact_form").hide(0);
 			$("#mymusic").fadeIn();
 		}
 

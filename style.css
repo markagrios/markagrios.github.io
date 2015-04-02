@@ -2,7 +2,7 @@ body {
 	margin: 0px;
 	background-color: #FDFDFD;
 }
-h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 20px;}
+h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float: bottom;}
 #dock {
 	font-family: "Lobster";
 	background-color: #ECECEC;
@@ -98,6 +98,9 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 20px;}
 }
 #contact_form {
 	display: none;
+}
+#submit_button {
+	font-family: "Lobster";
 }
 #githublogo,#inboxicon,#musicicon {
 	cursor: pointer;
