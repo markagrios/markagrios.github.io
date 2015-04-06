@@ -103,7 +103,7 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	font-family: "Lobster";
 }
 #githublogo,#inboxicon,#musicicon {
-	cursor: pointer;
+
 	height: 40px;
 	width: 40px;
 	display: inline-block;
