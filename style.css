@@ -68,6 +68,12 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	animation-duration: 2.5s;	
 	-webkit-animation-duration: 2.5s;
 }
+#general {
+	background-color: #FCFCFC;
+	font-family: "Merriweather Sans";
+	padding-left: 100px;
+	padding-right: 100px;
+}
 .contentheader {
 	font-family: "Lobster";
 	font-size: 130%;
