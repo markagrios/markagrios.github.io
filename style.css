@@ -71,8 +71,13 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 #general {
 	background-color: #FCFCFC;
 	font-family: "Merriweather Sans";
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 300px;
+	padding-right: 300px;
+}
+.lobster {
+	font-family: "Lobster";
+	font-size: 120%;
+	text-align: center;
 }
 .contentheader {
 	font-family: "Lobster";
@@ -109,7 +114,6 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	font-family: "Lobster";
 }
 #githublogo,#inboxicon,#musicicon {
-
 	height: 40px;
 	width: 40px;
 	display: inline-block;
@@ -184,24 +188,24 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 }
 @keyframes tossing {
 	0% {
-		transform: rotate(-8deg);	
+		transform: rotate(-13deg);	
 	}
 	50% {
-		transform: rotate(8deg);
+		transform: rotate(13deg);
 	}
 	100% {
-		transform: rotate(-8deg);	
+		transform: rotate(-13deg);	
 	}						
 }
 @-webkit-keyframes tossing {
 	0% {
-		-webkit-transform: rotate(-8deg);	
+		-webkit-transform: rotate(-13deg);	
 	}
 	50% {
-		-webkit-transform: rotate(8deg);
+		-webkit-transform: rotate(13deg);
 	}
 	100% {
-		-webkit-transform: rotate(-8deg);	
+		-webkit-transform: rotate(-13deg);	
 	}				
 }
 @keyframes spin {
