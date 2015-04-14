@@ -17,8 +17,8 @@
 			<a id="name">Mark Agrios</a>
 		</div>
 		<div id="rightdock">
-			<a id="aboutme" class="dockclick" href="aboutme">about me</a>
-			<a id="pages" class="dockclick" href="pages">pages</a>
+			<a id="aboutme" class="dockclick">about me</a>
+			<a id="pages" class="dockclick">pages</a>
 			<a id="sayhi" class="dockclick">say hi</a>
 			<a id="bar" class="docknoclick">|</a>
 			<a id="time" class="docknoclick"></a>
@@ -62,6 +62,16 @@
 		Check out the bar at the top to learn more about me, read my blurbs on some topics, or to contact me.
 		</p>
 
+	</div>
+	
+	<div id="aboutmecontent">
+		<p class="lobster">
+		About me.
+		</p>
+		<p>
+		As student from Washington D.C. I've found my way to the robotics club and the Technology Students 
+		Association of my highschool
+		</p>
 	</div>
 
 	<!--
@@ -113,7 +123,7 @@
 	<!-- DOCK BUTTONS -->
 	$("#aboutme").click(
 		function() {
-			
+			$("#aboutmecontent").slideToggle(400);
 		}
 	);
 	$("#pages").click(

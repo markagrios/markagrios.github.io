@@ -74,6 +74,13 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	padding-left: 300px;
 	padding-right: 300px;
 }
+#aboutmecontent {
+	background-color: #FCFCFC;
+	font-family: "Merriweather Sans";
+	padding-left: 300px;
+	padding-right: 300px;
+	/*display: none;*/
+}
 .lobster {
 	font-family: "Lobster";
 	font-size: 120%;
@@ -90,11 +97,7 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	margin-left: 30px;
 }
 #cabreralink {color: black;}
-#aboutmecontent {
-	padding-top: 45px;
-	padding-left: 80px;
-	width: 90%;
-}
+
 #sayhicontent {
 	padding-bottom: 50px;
 }
