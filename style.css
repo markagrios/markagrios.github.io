@@ -2,6 +2,7 @@ body {
 	margin: 0px;
 	background-color: #FDFDFD;
 }
+#separator {visibility: hidden;}
 h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float: bottom;}
 #dock {
 	font-family: "Lobster";
