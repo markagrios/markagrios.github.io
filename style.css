@@ -81,6 +81,10 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	padding-right: 300px;
 	/*display: none;*/
 }
+#aboutmecontent.a {
+	text-decoration: none;
+	color: A85151;
+}
 .lobster {
 	font-family: "Lobster";
 	font-size: 120%;
