@@ -82,8 +82,8 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	/*display: none;*/
 }
 .links {
-	text-decoration: none;
-	color: A85151;
+	text-decoration: underline dotted 4FA9AB;
+	color: 4FA9AB;
 }
 .lobster {
 	font-family: "Lobster";
