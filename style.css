@@ -2,7 +2,7 @@ body {
 	margin: 0px;
 	background-color: #FDFDFD;
 }
-#separator {visibility: hidden;}
+.separator {height: 1%; visibility: hidden;}
 h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float: bottom;}
 #dock {
 	font-family: "Lobster";
@@ -69,6 +69,10 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	animation-duration: 2.5s;	
 	-webkit-animation-duration: 2.5s;
 }
+.contenticon {
+	height: 50px;
+	width: 50px;
+}
 #general {
 	background-color: #FCFCFC;
 	font-family: "Merriweather Sans";
@@ -80,11 +84,21 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	font-family: "Merriweather Sans";
 	padding-left: 300px;
 	padding-right: 300px;
-	/*display: none;*/
+	//display: none;
+}
+#pagescontent {
+	background-color: #FCFCFC;
+	font-family: "Merriweather Sans";
+	padding-left: 300px;
+	padding-right: 300px;
+	//display: none;
 }
 .links {
 	text-decoration: none;
 	color: 369091;
+}
+.links:hover {
+	color: #870B0B;
 }
 .lobster {
 	font-family: "Lobster";
@@ -120,6 +134,22 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 }
 #submit_button {
 	font-family: "Lobster";
+}
+.contenticon {
+	animation-name: hatch;
+	-webkit-animation-name: hatch;	
+
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;
+
+	transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%; 
+
+	visibility: visible !important;	
 }
 #githublogo,#inboxicon,#musicicon {
 	height: 40px;
@@ -233,6 +263,53 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	100% {
 		-webkit-transform: rotate(360deg);
 	}
+}
+@keyframes hatch {
+	0% {
+		transform: rotate(0deg) scaleY(0.6);
+	}
+	20% {
+		transform: rotate(-2deg) scaleY(1.05);
+	}
+	35% {
+		transform: rotate(2deg) scaleY(1);
+	}
+	50% {
+		transform: rotate(-2deg);
+	}	
+	65% {
+		transform: rotate(1deg);
+	}	
+	80% {
+		transform: rotate(-1deg);
+	}		
+	100% {
+		transform: rotate(0deg);
+	}									
+}
+
+@-webkit-keyframes hatch {
+	0% {
+		-webkit-transform: rotate(0deg) scaleY(0.6);
+	}
+	20% {
+		-webkit-transform: rotate(-2deg) scaleY(1.05);
+	}
+	35% {
+		-webkit-transform: rotate(2deg) scaleY(1);
+	}
+	50% {
+		-webkit-transform: rotate(-2deg);
+	}	
+	65% {
+		-webkit-transform: rotate(1deg);
+	}	
+	80% {
+		-webkit-transform: rotate(-1deg);
+	}		
+	100% {
+		-webkit-transform: rotate(0deg);
+	}		
 }
 
 

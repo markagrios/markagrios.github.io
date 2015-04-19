@@ -37,12 +37,6 @@
 	</div>
 
 	<img id="toppicture" src="greycranes.png"/>
-	
-
-
-	markagrios.net is currently under minor renovation and since my computer ate itself it might not be up and functional as fast 
-	as I want it to be but in time all the content and buttons will be back up again.
-
 
 	<div id="animationcontainer">
 		<a><img id="animate" src="me.png"/></a>
@@ -63,10 +57,12 @@
 		</p>
 
 	</div>
+	<div class="separator">.</div>
+	<div class="separator">.</div>
 	
-	<div id="separator">.</div>
-	
+	<div class="separator">.</div>
 	<div id="aboutmecontent">
+		<div align="center"><img src="person.png" class="contenticon"/></div>
 		<p class="lobster">
 		About me.
 		</p>
@@ -83,16 +79,22 @@
 		</p>
 	</div>
 
-	<!--
-	<div>  cool swipey thing like Cabrera 
-		<p class="lobster">See what I've been reading lately!</p>
-		<p class="reading"></p>
-		<p class="reading"></p>
-		<p class="reading"></p>
-		<p class="reading"></p>
-	</div>
-	-->
 
+	<div class="separator">.</div>
+	<div id="pagescontent">
+		<div align="center"><img src="quill.png" class="contenticon"/></div>
+		<p class="lobster">
+		Pages.
+		</p>
+		<p>
+		Hey! This is where I'll type up short blurbs/essays about topics that interest me.
+		</p>
+		<p>
+		
+		</p>
+	</div>
+
+	<div class="separator">.</div>
 	<div id="sayhicontent">
 		<p class="contentheader sayhiwords">I love talking to people!</p>
 		
@@ -132,12 +134,14 @@
 	<!-- DOCK BUTTONS -->
 	$("#aboutme").click(
 		function() {
+			$("#pagescontent").fadeOut(0);
 			$("#aboutmecontent").slideToggle(400);
 		}
 	);
 	$("#pages").click(
 		function() {
-			
+			$("#aboutmecontent").fadeOut(0);
+			$("#pagescontent").slideToggle(400);
 		}
 	);
 	$("#sayhi").click(
