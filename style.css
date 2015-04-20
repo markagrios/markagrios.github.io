@@ -207,20 +207,13 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 }
 @-webkit-keyframes main {
 	0% {
-		-webkit-transform: rotate(20deg) scaleX(.1);
+		-webkit-transform: translateX(-100%) scaleX(1.5);
 	}
-	20% {
-			
-		-webkit-transform: scaleY(.2);	
+	10% {
+		-webkit-transform: scaleX(.8);
 	}
-	40% {
-		-webkit-transform: rotate(-20deg) scaleX(.2);
-	}
-	60% {
-		-webkit-transform: scaleY(.2);
-	}
-	80% {
-		-webkit-transform: scaleX(1) scaleY(1);
+	30% {
+		-webkit-transform: scaleX(1);
 	}
 	100% {}
 }
@@ -287,7 +280,6 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 		transform: rotate(0deg);
 	}									
 }
-
 @-webkit-keyframes hatch {
 	0% {
 		-webkit-transform: rotate(0deg) scaleY(0.6);
