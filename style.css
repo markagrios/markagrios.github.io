@@ -84,14 +84,14 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	font-family: "Merriweather Sans";
 	padding-left: 300px;
 	padding-right: 300px;
-	//display: none;
+	display: none;
 }
 #pagescontent {
 	background-color: #FCFCFC;
 	font-family: "Merriweather Sans";
 	padding-left: 300px;
 	padding-right: 300px;
-	//display: none;
+	display: none;
 }
 .links {
 	text-decoration: none;
@@ -104,16 +104,6 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	font-family: "Lobster";
 	font-size: 120%;
 	text-align: center;
-}
-.contentheader {
-	font-family: "Lobster";
-	font-size: 130%;
-	border: 0px;
-}
-.content{
-	font-family: "Yanone Kaffeesatz";
-	font-size: 130%;
-	margin-left: 30px;
 }
 #cabreralink {color: black;}
 
@@ -303,9 +293,6 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 		-webkit-transform: rotate(0deg);
 	}		
 }
-
-
-
 
 
 
