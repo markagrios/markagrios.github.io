@@ -93,6 +93,21 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	padding-right: 300px;
 	display: none;
 }
+.pagesbutton {
+	font-family: "Lobster";
+	font-size: 120%;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-shadow: 5px 5px 5px #888888;
+	height: 30px;
+	width: 200px;
+	border-radius: 5px;
+	background-color: #D8D8D8;
+	cursor: pointer;
+}
+.pagesbutton:active {
+	background-color: #C0C0C0;
+}
 .links {
 	text-decoration: none;
 	color: 369091;
@@ -112,7 +127,6 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 }
 .sayhiwords {
 	text-align: center;
-	font-family: "Lobster";
 	padding-top: 5px;
 }
 .bottomwords {
