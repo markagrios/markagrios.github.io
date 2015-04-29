@@ -86,6 +86,13 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	padding-right: 300px;
 	display: none;
 }
+.links {
+	text-decoration: none;
+	color: 369091;
+}
+.links:hover {
+	color: #870B0B;
+}
 #pagescontent {
 	background-color: #FCFCFC;
 	font-family: "Merriweather Sans";
@@ -98,22 +105,34 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	font-size: 120%;
 	padding-left: 10px;
 	padding-right: 10px;
-	box-shadow: 5px 5px 5px #888888;
+	box-shadow: 0px 3px 0px #888888;
 	height: 30px;
 	width: 200px;
 	border-radius: 5px;
 	background-color: #D8D8D8;
 	cursor: pointer;
 }
+.topics {
+	padding-top: 10px;
+	font-family: "Lobster";
+	font-size: 110%;
+}
+.shift:hover {
+	
+	animation-name: shift;
+	-webkit-animation-name: shift;	
+
+	animation-duration: .2s;	
+	-webkit-animation-duration: .2s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;
+	
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+}
 .pagesbutton:active {
 	background-color: #C0C0C0;
-}
-.links {
-	text-decoration: none;
-	color: 369091;
-}
-.links:hover {
-	color: #870B0B;
 }
 .lobster {
 	font-family: "Lobster";
@@ -307,6 +326,22 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 		-webkit-transform: rotate(0deg);
 	}		
 }
-
-
+@keyframes shift {
+	0% {
+		transform: translateX(0%);
+		opacity: .3;
+	}
+	100% {
+		transform: translateX(2%);
+	}
+}
+@-webkit-keyframes shift {
+	0% {
+		-webkit-transform: translateX(0%);
+		opacity: .3;
+	}
+	100% {
+		-webkit-transform: translateX(2%);
+	}
+}
 
