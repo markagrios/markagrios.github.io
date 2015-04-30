@@ -69,7 +69,7 @@
 		About me.
 		</p>
 		<p>
-		As student from Washington D.C. I've found numerous places to fuel my never ending curiosity from building 
+		As a student from Washington D.C. I've found numerous places to fuel my never ending curiosity from building 
 		robots to performing magic on the streets. I've been involved with my high school's robotics team being 
 		co-captain three years and president my senior year. We compete in <a class="links" href="http://www.botball.org/">Botball</a> 
 		and <a class="links" href="http://www.usfirst.org/roboticsprograms/ftc">FTC</a> and have won awards and honors 
@@ -78,12 +78,7 @@
 		place for the animatronics event for the state of Virginia my first two years.
 		</p>
 		<p>
-		I am a performing magician. I taught myself the basics of some card tricks when I was in middle school and 
-		was immediately fascinated with the combination of dexterity and thought that goes into fooling people. Since 
-		then I have explored other fields of magic from large stage illusions to hypnotism. 
-		</p>
-		<p>
-		I can ride a unicycle.
+		
 		</p>
 	</div>
 
@@ -97,11 +92,17 @@
 		Hey! This is where I'll type up short blurbs/essays about topics that interest me.
 		</p>
 		<div align="center">
-			<a class="pagesbutton">Arts &#9662;</a>
-			<a class="pagesbutton">Sciences &#9662;</a>
+			<a id="artsbtn" class="pagesbutton">Arts &#9662;</a>
+			<a id="sciencesbtn" class="pagesbutton">Sciences &#9662;</a>
 		</div>
-		<div align="center">
+		<div id="arts" align="center">
+			<div class="topics shift"><a>Arts</a></div>
 			<div class="topics shift"><a>walnuts</a></div>
+			<div class="topics shift"><a>walnuts</a></div>
+			<div class="topics shift"><a>walnuts</a></div>
+		</div>
+		<div id="sciences" align="center">
+			<div class="topics shift"><a>Science</a></div>
 			<div class="topics shift"><a>walnuts</a></div>
 			<div class="topics shift"><a>walnuts</a></div>
 			<div class="topics shift"><a>walnuts</a></div>
@@ -209,6 +210,20 @@
 	.mouseleave(
 		function() {
 			$("#mymusic").hide();
+		}
+	);
+	<!-- ------------ -->
+	<!-- PAGES BUTTON -->
+	$("#artsbtn").click(
+		function() {
+			$("#sciences").fadeOut(0);
+			$("#arts").slideToggle(300);
+		}
+	);
+	$("#sciencesbtn").click(
+		function() {
+			$("#arts").fadeOut(0);
+			$("#sciences").slideToggle(300);
 		}
 	);
 	<!-- ------------ -->

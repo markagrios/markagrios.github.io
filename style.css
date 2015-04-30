@@ -112,11 +112,16 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	background-color: #D8D8D8;
 	cursor: pointer;
 }
+#arts,#sciences {
+	display: none;
+}
 .topics {
+	width: 20%;
 	padding-top: 10px;
 	font-family: "Lobster";
 	font-size: 110%;
 }
+.shift {cursor: pointer;}
 .shift:hover {
 	
 	animation-name: shift;
@@ -130,6 +135,9 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	
 	animation-iteration-count: 1;
 	-webkit-animation-iteration-count: 1;
+
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
 }
 .pagesbutton:active {
 	background-color: #C0C0C0;
@@ -162,8 +170,8 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	animation-name: hatch;
 	-webkit-animation-name: hatch;	
 
-	animation-duration: 2s;	
-	-webkit-animation-duration: 2s;
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
 
 	animation-timing-function: ease-in-out;	
 	-webkit-animation-timing-function: ease-in-out;
@@ -282,12 +290,14 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 }
 @keyframes hatch {
 	0% {
+		opacity: .3;
 		transform: rotate(0deg) scaleY(0.6);
 	}
 	20% {
 		transform: rotate(-2deg) scaleY(1.05);
 	}
 	35% {
+		opacity: 1;
 		transform: rotate(2deg) scaleY(1);
 	}
 	50% {
@@ -305,12 +315,14 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 }
 @-webkit-keyframes hatch {
 	0% {
+		opacity: .3;
 		-webkit-transform: rotate(0deg) scaleY(0.6);
 	}
 	20% {
 		-webkit-transform: rotate(-2deg) scaleY(1.05);
 	}
 	35% {
+		opacity: 1;
 		-webkit-transform: rotate(2deg) scaleY(1);
 	}
 	50% {
@@ -328,20 +340,20 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 }
 @keyframes shift {
 	0% {
-		transform: translateX(0%);
+		transform: translateX(0px);
 		opacity: .3;
 	}
 	100% {
-		transform: translateX(2%);
+		transform: translateX(10px);
 	}
 }
 @-webkit-keyframes shift {
 	0% {
-		-webkit-transform: translateX(0%);
+		-webkit-transform: translateX(0px);
 		opacity: .3;
 	}
 	100% {
-		-webkit-transform: translateX(2%);
+		-webkit-transform: translateX(10px);
 	}
 }
 
