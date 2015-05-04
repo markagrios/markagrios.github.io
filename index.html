@@ -120,6 +120,15 @@
 	</div>
 
 	<div class="separator">.</div>
+	<div id="sayhibtncontent">
+		<div align="center"><!--<img src="talkbubbleicon.png" class="contenticon"/>-->
+		<p class="lobster">
+		Say hi.
+		</p>
+		</div>
+	</div>
+
+	<div class="separator">.</div>
 	<div id="sayhicontent">
 		<p class="lobster sayhiwords">I love talking to people!</p>
 		
@@ -160,18 +169,22 @@
 	$("#aboutme").click(
 		function() {
 			$("#pagescontent").fadeOut(0);
+			$("#sayhibtncontent").fadeOut(0);
 			$("#aboutmecontent").slideToggle(400);
 		}
 	);
 	$("#pages").click(
 		function() {
 			$("#aboutmecontent").fadeOut(0);
+			$("#sayhibtncontent").fadeOut(0);
 			$("#pagescontent").slideToggle(400);
 		}
 	);
 	$("#sayhi").click(
 		function() {
-			
+			$("#aboutmecontent").fadeOut(0);
+			$("#pagescontent").fadeOut(0);
+			$("#sayhibtncontent").slideToggle(400);
 		}
 	);
 	<!-- ------------ -->

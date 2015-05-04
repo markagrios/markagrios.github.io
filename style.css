@@ -142,6 +142,13 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 .pagesbutton:active {
 	background-color: #C0C0C0;
 }
+#sayhibtncontent {
+	background-color: #FCFCFC;
+	font-family: "Merriweather Sans";
+	padding-left: 300px;
+	padding-right: 300px;
+	display: none;
+}
 .lobster {
 	font-family: "Lobster";
 	font-size: 120%;
