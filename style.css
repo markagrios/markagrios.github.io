@@ -2,7 +2,6 @@ body {
 	margin: 0px;
 	background-color: #FDFDFD;
 }
-.separator {height: 1%; visibility: hidden;}
 h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float: bottom;}
 #address {text-align: center; font-size: 120%; color: #870B0B}
 #dock {
