@@ -1,6 +1,7 @@
 <html>
 <head>
   <title>markagrios</title>
+  <meta charset="UTF-8">
   <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="css/animations.css">
@@ -105,27 +106,30 @@
 			<a id="sciencesbtn" class="pagesbutton">Sciences &#9662;</a>
 		</div>
 		<div id="arts" align="center">
-			<div class="topics shift"><a>Arts</a></div>
-			<div class="topics shift"><a>walnuts</a></div>
-			<div class="topics shift"><a>walnuts</a></div>
-			<div class="topics shift"><a>walnuts</a></div>
+			<div class="topics shift"><a>Arts (coming soon)</a></div>
 		</div>
 		<div id="sciences" align="center">
-			<div class="topics shift"><a>Science</a></div>
-			<div class="topics shift"><a>walnuts</a></div>
-			<div class="topics shift"><a>walnuts</a></div>
-			<div class="topics shift"><a>walnuts</a></div>
-			<div class="topics shift"><a>walnuts</a></div>
+			<div class="topics shift"><a>Sciences (coming soon)</a></div>
 		</div>
 	</div>
 
 	<div class="separator">.</div>
 	<div id="sayhibtncontent">
-		<div align="center"><!--<img src="talkbubbleicon.png" class="contenticon"/>-->
+		<div align="center"><img src="sayhiicon.png" class="contenticon"/></div>
 		<p class="lobster">
 		Say hi.
 		</p>
-		</div>
+		<p>
+		I'd love to get in contact with anyone who stumbles upon this website! Shoot me an email at magrios@gmail.com!
+		</p>
+		<p>
+		I also started a currently small hopefully bigger later clothing company with my brother. Check out <a class="links" href="http://www.starcatcc.com">starcatcc.com</a> 
+		to buy some cool hats and sunglasses.
+		</p>
+		<p>
+		I'm not sure why you would give me money but if really you want to send me some bitcoins at this address! <br> 
+		<a id="address">1M4QZeXNQJXtCAMcpa522UTtvzwDiCmXsS</a>
+		</p>
 	</div>
 
 	<div class="separator">.</div>
@@ -205,7 +209,7 @@
 	);
 	$("#inboxicon").click(
 		function() {
-			$("#contact_form").slideToggle();
+			$("#sayhibtncontent").slideToggle();
 		}
 	);
 	$("#githublogo").mouseover(

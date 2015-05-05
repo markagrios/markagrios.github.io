@@ -4,6 +4,7 @@ body {
 }
 .separator {height: 1%; visibility: hidden;}
 h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float: bottom;}
+#address {text-align: center; font-size: 120%; color: #870B0B}
 #dock {
 	font-family: "Lobster";
 	background-color: #ECECEC;
@@ -88,7 +89,7 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 }
 .links {
 	text-decoration: none;
-	color: 369091;
+	color: #369091;
 }
 .links:hover {
 	color: #870B0B;
@@ -116,10 +117,11 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	display: none;
 }
 .topics {
-	width: 20%;
+	width: 50%;
 	padding-top: 10px;
 	font-family: "Lobster";
 	font-size: 110%;
+	color: grey;
 }
 .shift {cursor: pointer;}
 .shift:hover {
