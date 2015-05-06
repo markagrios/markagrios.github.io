@@ -67,7 +67,7 @@
 		</p>
 		<p>
 		As a student from Washington D.C. I've found numerous places to fuel my never ending curiosity from building 
-		robots to performing magic on the streets. 
+		robots to unicycling to performing magic on the streets. 
 		</p>
 		<p>
 		I love building robots. I've been involved with my high school's robotics team being 
@@ -84,6 +84,13 @@
 		techtonic plates move and how landmasses form to get a more organic looking map to be generated.
 		</p>
 		<p>
+		I'm interested in almost everything. I love reading novels by F. Scott Fitzgerald just as much as I do exploring 
+		concepts of mathematics in my spare time. I can play some coherent tunes on the guitar, bass, ukulele and piano and 
+		even taught myself to read music. After my years of taking Spanish in highschool, I decided I was bored in the western 
+		latin alphabet and endeavored to learn Korean, which seems to be going well. I can ride a unicycle and I can't count 
+		how many times I've been asked if it is twice as hard as riding a bike..
+		</p>
+		<p>
 		As fascinated as I am with computers and science and math, I am also a performing magician and hypnotist. I have 
 		always loved interacting with people and having a way of doing that where I also entertain as well as learn makes 
 		magic something I enjoy very much. I started with a deck of cards when I was in seventh grade and have since then 
@@ -98,7 +105,7 @@
 		<p class="lobster">
 		Pages.
 		</p>
-		<p>
+		<p align="center">
 		Hey! This is where I'll type up short blurbs/essays about topics that interest me.
 		</p>
 		<div align="center">
@@ -106,13 +113,13 @@
 			<a id="sciencesbtn" class="pagesbutton">Sciences &#9662;</a>
 		</div>
 		<div id="arts" align="center">
-			<div class="topics shift"><a>Design of this website</a></div>
-			<div class="page">
+			<div id="topic-design" class="topics shift"><a>Design of this website</a></div>
+			<div id="page-design" class="page">
 			<p>
 			This website is the product of my fascination of both aesthetics and function. My interest in simple design, 
 			typography, and contrast has lead the design of this website to the place it is now. The animations and layout 
 			utilize certain principles of psychology and mathematics to make the design appealing. See if you can find the 
-			golden ratio in the spacing of certain elements. Also, you might notice how most of the animations I made have 
+			golden ratio in the spacing of certain elements ;D. Also, you might noticed how most of the animations I made have 
 			small change in opacity somewhere in them which plays on the brain's response to something seeming to appear rather 
 			than something changing that was already there. 
 			</p>
@@ -136,7 +143,7 @@
 		I also started a company with my brother! We are a small hat design and distribution company located at <a class="links" href="http://starcatcc.com">starcatcc.com</a>
 		</p>
 		<p>
-		I'm not sure why you would give me money but if really you want to send me some bitcoins at this address! <br> 
+		I'm not sure why you would give me money but if really you want to, send me some bitcoins at this address! <br> 
 		<a id="address">1M4QZeXNQJXtCAMcpa522UTtvzwDiCmXsS</a>
 		</p>
 	</div>
@@ -259,6 +266,13 @@
 		function() {
 			$("#arts").fadeOut(0);
 			$("#sciences").slideToggle(300);
+		}
+	);
+	<!-- ------------ -->
+	<!-- TOPIC BUTTONS -->
+	$("#topic-design").click(
+		function() {
+			$("#page-design").slideToggle(300);
 		}
 	);
 	<!-- ------------ -->

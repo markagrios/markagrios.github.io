@@ -96,8 +96,8 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 #pagescontent {
 	background-color: #FCFCFC;
 	font-family: "Merriweather Sans";
-	padding-left: 300px;
-	padding-right: 300px;
+	padding-left: 100px;
+	padding-right: 100px;
 	display: none;
 }
 .pagesbutton {
@@ -114,6 +114,7 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 }
 #arts,#sciences {
 	display: none;
+	width: 100%;
 }
 .topics {
 	width: 50%;
@@ -146,6 +147,9 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 .page {
 	font-family: "Merriweather Sans";
 	font-size: 100%;
+	text-align: left;
+	width: 100%;
+	display: none;
 }
 #sayhibtncontent {
 	background-color: #FCFCFC;
