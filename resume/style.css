@@ -23,16 +23,18 @@ body {
 	float: right;
 }
 .block {
+	text-align: left;
 	border: 0px;
 	padding: 0px;
-	padding-left: 20px;
+	padding-left: 90px;
+	padding-right: 40px;
 	padding-top: 10px;
 	margin: 0px;
-	font-size: 170%;
+	font-size: 120%;
 }
 .title {
 	font-family: "Forum";
-	font-size: 150%;
+	font-size: 170%;
 }
 #one, #three {background-color: #f0f0f0;}
-#two {background-color: #EBEBEB;}
+#two, #four {background-color: #EBEBEB;}
