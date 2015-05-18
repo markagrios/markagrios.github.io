@@ -79,7 +79,7 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	padding-left: 300px;
 	padding-right: 300px;
 }
-#aboutmecontent {
+#aboutmecontent,#projectscontent {
 	background-color: #FCFCFC;
 	font-family: "Merriweather Sans";
 	padding-left: 300px;

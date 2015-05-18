@@ -20,6 +20,7 @@
 		<div id="rightdock">
 			<a id="aboutme" class="dockclick">about me</a>
 			<a id="pages" class="dockclick">pages</a>
+			<a id="projects" class="dockclick">projects</a>
 			<a id="sayhi" class="dockclick">say hi</a>
 			<a id="bar" class="docknoclick">|</a>
 			<a id="time" class="docknoclick"></a>
@@ -166,6 +167,17 @@
 		</div>
 	</div>
 
+	<div id="projectscontent">
+		<div align="center"><img src="projecticon.png" class="contenticon"/></div>
+		<p class="lobster">
+		This is where I'll post my current projects, this part is currently under renovation. Thank you for your patience :)
+		</p>
+		<p>
+		<a class="links" href="http://cabrera.io/conquest/">Map generator</a>
+		<a class="links" href="http://markagrios.net/dice">DICE</a>
+		</p>
+	</div>
+
 
 	<div id="sayhibtncontent">
 		<div align="center"><img src="sayhiicon.png" class="contenticon"/></div>
@@ -229,6 +241,7 @@
 		function() {
 			$("#pagescontent").fadeOut(0);
 			$("#sayhibtncontent").fadeOut(0);
+			$("#projectscontent").fadeOut(0);
 			$("#aboutmecontent").slideToggle(400);
 		}
 	);
@@ -236,6 +249,7 @@
 		function() {
 			$("#aboutmecontent").fadeOut(0);
 			$("#sayhibtncontent").fadeOut(0);
+			$("#projectscontent").fadeOut(0);
 			$("#pagescontent").slideToggle(400);
 		}
 	);
@@ -243,7 +257,16 @@
 		function() {
 			$("#aboutmecontent").fadeOut(0);
 			$("#pagescontent").fadeOut(0);
+			$("#projectscontent").fadeOut(0);
 			$("#sayhibtncontent").slideToggle(400);
+		}
+	);
+	$("#projects").click(
+		function() {
+			$("#aboutmecontent").fadeOut(0);
+			$("#pagescontent").fadeOut(0);
+			$("#sayhibtncontent").fadeOut(0);
+			$("#projectscontent").slideToggle(400);
 		}
 	);
 	<!-- ------------ -->
