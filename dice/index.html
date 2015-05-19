@@ -9,12 +9,30 @@
 </head>
 <body>
 
-<canvas id="canvas_1" height="200" width="300">Looks like you live in the stone age, Canvas isn't supported on your browser</canvas>
+<canvas id="canvas_1" height="200" width="300">Canvas doesn't seem to be supported on your browser</canvas>
 <p>Mouse position: <a id="coord"></a></p>
 
 <script>
 var canvas = document.getElementById('canvas_1');
-var context = canvas.getContext('2d');
+var ctx = canvas.getContext('2d');
+
+ctx.strokeStyle = "#000000";
+//ctx.lineJoin = "round";
+ctx.lineWidth = 10;
+ctx.moveTo(190,190);
+ctx.lineTo(200,200);
+ctx.lineTo(200,100);
+ctx.stroke();
+
+for(var i = 0; i < 100; i+=8) {
+	for(var j = 0; j < 100; j+=12) {
+		ctx.strokeStyle = "#870B0B";
+		ctx.lineWidth = 2;
+		ctx.moveTo(150,100);
+		ctx.lineTo(i,j);
+		ctx.stroke();
+	}
+}
 
 function displayCoord(canvas, event) {
 	var rect = canvas.getBoundingClientRect();
