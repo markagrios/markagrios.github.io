@@ -9,35 +9,59 @@
 </head>
 <body>
 
-<canvas id="canvas" height="200" width="200"></canvas>
+<canvas id="canvas_1" height="200" width="300">Looks like you live in the stone age, Canvas isn't supported on your browser</canvas>
+<p id="coord"></p>
 
 <script>
-	
-
-function getMousePos(canvas, evt) {
-    var rect = canvas.getBoundingClientRect();
-    return {
-        x: evt.clientX - rect.left,
-		y: evt.clientY - rect.top
-    };
-}
-function point(x,y,canvas) {
-	var mousePos = getMousePos(canvas, canvas.getBoundingClientRect());
-	canvas.fillRect (mousePos.x,mousePos.y,1,1);
-}
-
-var canvas = document.getElementById('canvas');
+var canvas = document.getElementById('canvas_1');
 var context = canvas.getContext('2d');
 
+//document.getElementById("coord").addEventListener('mousemove', displayCoord(canvas, event).x);
+//canvas.addEventListener('mousemove', displayCoord(canvas, event).x);
+function displayCoord(canvas, event) {
+	var rect = canvas.getBoundingClientRect();
+	
+	return {
+        x: event.clientX - rect.left,
+		y: event.clientY - rect.top	
+	}
+}
+
 canvas.addEventListener('mousemove', function(evt) {
-var mousePos = getMousePos(canvas, evt);
-var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
-//point(mousePos.x,mousePos.y,canvas);
-console.log(message);
+	var mousePos = displayCoord(canvas, event);
+	var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
+	console.log(message);
+	document.getElementById("coord").innerHTML = message;
 });
 
+/*
+function getMousePos(canvas, event) {
+    var rect = canvas.getBoundingClientRect();
+    return {
+        x: event.clientX - rect.left,
+		y: event.clientY - rect.top
+    };
+}
+
+var canvas = document.getElementById('canvas_1');
+var context = canvas.getContext('2d');
+
+var coordObject = {
+	x: getMousePos(canvas, event).x,
+	y: getMousePos(canvas, event).y
+}
 
 
+
+
+//document.getElementById("coord").addEventListener('mousemove', getMousePos(canvas, event) {
+canvas.addEventListener('mousemove', function(evt) {
+function displayCoord() {
+	var mousePos = getMousePos(canvas, event);
+	var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
+	console.log(message);
+});
+*/
 </script>
 
 </body>
