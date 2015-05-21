@@ -10,12 +10,19 @@
 <body>
 
 <canvas id="canvas_1" height="200" width="300">Canvas doesn't seem to be supported on your browser</canvas>
-<p>Mouse position: <a id="coord"></a></p>
+<p>Mouse position: (<a id="coord"></a>)</p>
+<p id="boxalert"></p>
 
 <script>
+alert("This is a current project in progress, do not expect everything to work properly at this time.");
 var canvas = document.getElementById('canvas_1');
 var ctx = canvas.getContext('2d');
+var click = false;
 
+//ctx.fillStyle = "#FFFFFF";
+//ctx.fillRect(0,0,300,200);
+
+/*
 ctx.strokeStyle = "#000000";
 //ctx.lineJoin = "round";
 ctx.lineWidth = 10;
@@ -33,6 +40,7 @@ for(var i = 0; i < 100; i+=8) {
 		ctx.stroke();
 	}
 }
+*/
 
 function displayCoord(canvas, event) {
 	var rect = canvas.getBoundingClientRect();
@@ -47,6 +55,19 @@ canvas.addEventListener('mousemove', function(event) {
 	var message = mousePos.x + ',' + mousePos.y;
 	//console.log(message);
 	document.getElementById("coord").innerHTML = message;
+	
+	if(click == true) {
+		//if((30 <= mousePos.x <= 60) && (30 <= mousePos.y <= 60)) {
+		if(mousePos.x == 50) {
+			document.getElementById("boxalert").innerHTML = "You in the box!";
+		}
+	}
+});
+
+canvas.addEventListener('click', function(event) {
+	ctx.fillStyle = "#3F6263";
+	ctx.fillRect(30,30, 60,60);
+	click = true;
 });
 
 </script>
