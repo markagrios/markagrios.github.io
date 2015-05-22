@@ -25,8 +25,6 @@ var width = x + 30;
 var height = y + 30;
 
 console.log(x +","+ y +","+ width +","+ height);
-//ctx.fillStyle = "#FFFFFF";
-//ctx.fillRect(0,0,300,200);
 
 /*
 ctx.strokeStyle = "#000000";
@@ -63,17 +61,19 @@ canvas.addEventListener('mousemove', function(event) {
 	document.getElementById("coord").innerHTML = message;
 	
 	if(click == true) {
-		//if((30 <= mousePos.x <= 60) && (30 <= mousePos.y <= 60)) {
 		if((mousePos.x > x) && (mousePos.x < x+width) && (mousePos.y > y) && (mousePos.y < y+height)) {
 			document.getElementById("boxalert").innerHTML = "You in the box!";
 		} else {
 			document.getElementById("boxalert").innerHTML = "";
 		}
+	} else {
+		document.getElementById("boxalert").innerHTML = "";
 	}
 });
 
 canvas.addEventListener('click', function(event) {	
-	if(click == true) {
+	var mousePos = displayCoord(canvas, event);
+	if((click == true) && ((mousePos.x > x) && (mousePos.x < x+width) && (mousePos.y > y) && (mousePos.y < y+height))) {
 		ctx.fillStyle = "#FFFFFF";
 		ctx.fillRect(x,y,width,height);
 		click = false;
