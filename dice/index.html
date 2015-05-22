@@ -14,11 +14,17 @@
 <p id="boxalert"></p>
 
 <script>
-alert("This is a current project in progress, do not expect everything to work properly at this time.");
+//alert("This is a current project in progress, do not expect everything to work properly at this time.");
 var canvas = document.getElementById('canvas_1');
 var ctx = canvas.getContext('2d');
 var click = false;
 
+var x = Math.floor((Math.random() * 90) + 30);
+var y = Math.floor((Math.random() * 90) + 30);
+var width = x + 30;
+var height = y + 30;
+
+console.log(x +","+ y +","+ width +","+ height);
 //ctx.fillStyle = "#FFFFFF";
 //ctx.fillRect(0,0,300,200);
 
@@ -58,16 +64,27 @@ canvas.addEventListener('mousemove', function(event) {
 	
 	if(click == true) {
 		//if((30 <= mousePos.x <= 60) && (30 <= mousePos.y <= 60)) {
-		if(mousePos.x == 50) {
+		if((mousePos.x > x) && (mousePos.x < x+width) && (mousePos.y > y) && (mousePos.y < y+height)) {
 			document.getElementById("boxalert").innerHTML = "You in the box!";
+		} else {
+			document.getElementById("boxalert").innerHTML = "";
 		}
 	}
 });
 
-canvas.addEventListener('click', function(event) {
-	ctx.fillStyle = "#3F6263";
-	ctx.fillRect(30,30, 60,60);
-	click = true;
+canvas.addEventListener('click', function(event) {	
+	if(click == true) {
+		ctx.fillStyle = "#FFFFFF";
+		ctx.fillRect(x,y,width,height);
+		click = false;
+		return;
+	}		
+	if(click == false) {
+		ctx.fillStyle = "#3F6263";
+		ctx.fillRect(x,y,width,height);
+		click = true;
+		return;
+	}
 });
 
 </script>
