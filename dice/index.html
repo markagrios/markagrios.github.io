@@ -19,32 +19,15 @@ var canvas = document.getElementById('canvas_1');
 var ctx = canvas.getContext('2d');
 var click = false;
 
-var x = Math.floor((Math.random() * 90) + 30);
-var y = Math.floor((Math.random() * 90) + 30);
-var width = x + 30;
-var height = y + 30;
+var xbox = Math.floor((Math.random() * 90) + 30);
+var ybox = Math.floor((Math.random() * 90) + 30);
+var width = Math.floor((Math.random() * 60) + 30);
+var height = Math.floor((Math.random() * 60) + 30);
 
-console.log(x +","+ y +","+ width +","+ height);
+console.log(xbox +","+ ybox +","+ width +","+ height);
+ctx.fillStyle = "#3F6263";
+ctx.fillRect(xbox,ybox,width,height);
 
-/*
-ctx.strokeStyle = "#000000";
-//ctx.lineJoin = "round";
-ctx.lineWidth = 10;
-ctx.moveTo(190,190);
-ctx.lineTo(200,200);
-ctx.lineTo(200,100);
-ctx.stroke();
-
-for(var i = 0; i < 100; i+=8) {
-	for(var j = 0; j < 100; j+=12) {
-		ctx.strokeStyle = "#870B0B";
-		ctx.lineWidth = 2;
-		ctx.moveTo(150,100);
-		ctx.lineTo(i,j);
-		ctx.stroke();
-	}
-}
-*/
 
 function displayCoord(canvas, event) {
 	var rect = canvas.getBoundingClientRect();
@@ -61,7 +44,7 @@ canvas.addEventListener('mousemove', function(event) {
 	document.getElementById("coord").innerHTML = message;
 	
 	if(click == true) {
-		if((mousePos.x > x) && (mousePos.x < x+width) && (mousePos.y > y) && (mousePos.y < y+height)) {
+		if((mousePos.x > xbox) && (mousePos.x < xbox+width) && (mousePos.y > ybox) && (mousePos.y < ybox+height)) {
 			document.getElementById("boxalert").innerHTML = "You're in the box!";
 		} else {
 			document.getElementById("boxalert").innerHTML = "";
@@ -73,6 +56,12 @@ canvas.addEventListener('mousemove', function(event) {
 
 canvas.addEventListener('click', function(event) {	
 	var mousePos = displayCoord(canvas, event);
+	
+	if(click == false) {
+		copyAtLocation(mousePos.x,mousePos.y);
+		//click = true;
+	}
+	/*
 	if((click == true) && ((mousePos.x > x) && (mousePos.x < x+width) && (mousePos.y > y) && (mousePos.y < y+height))) {
 		ctx.fillStyle = "#FFFFFF";
 		ctx.fillRect(x,y,width,height);
@@ -85,7 +74,15 @@ canvas.addEventListener('click', function(event) {
 		click = true;
 		return;
 	}
+	*/
+	
 });
+
+function copyAtLocation(x,y) {
+	var imgData = ctx.getImageData(xbox,ybox,width,height);
+	ctx.putImageData(imgData,x,y);
+	console.log(x + "," + y);
+}
 
 </script>
 
