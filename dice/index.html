@@ -10,8 +10,8 @@
 <body>
 
 <canvas id="canvas_1" height="200" width="300">Canvas doesn't seem to be supported on your browser</canvas>
-<p>Mouse position: (<a id="coord"></a>)</p>
-<p id="boxalert"></p>
+<p class="info">Mouse position: (<a id="coord"></a>)</p>
+<p id="boxalert" class="info"></p>
 
 <script>
 //alert("This is a current project in progress, do not expect everything to work properly at this time.");
@@ -61,20 +61,6 @@ canvas.addEventListener('click', function(event) {
 		copyAtLocation(mousePos.x,mousePos.y);
 		//click = true;
 	}
-	/*
-	if((click == true) && ((mousePos.x > x) && (mousePos.x < x+width) && (mousePos.y > y) && (mousePos.y < y+height))) {
-		ctx.fillStyle = "#FFFFFF";
-		ctx.fillRect(x,y,width,height);
-		click = false;
-		return;
-	}		
-	if(click == false) {
-		ctx.fillStyle = "#3F6263";
-		ctx.fillRect(x,y,width,height);
-		click = true;
-		return;
-	}
-	*/
 	
 });
 
