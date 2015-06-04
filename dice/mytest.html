@@ -20,15 +20,14 @@
     <input type="button" value="save" id="btn" size="30" onclick="save()" style="position:absolute;top:55%;left:10%;">
     <input type="button" value="clear" id="clr" size="23" onclick="erase()" style="position:absolute;top:55%;left:15%;">
 	-->
-</body>
 
 <script type="text/javascript">
 
 var prevX = 0,
-	currX = 0,
-	prevY = 0,
-	currY = 0,
-	dot_flag = false;
+    currX = 0,
+    prevY = 0,
+    currY = 0,
+    dot_flag = false;
 
 function init() {
 	var canvas = document.getElementById('canvas_1');
@@ -54,10 +53,28 @@ function draw() {
 function displayCoord(canvas, event) {
 	var rect = canvas.getBoundingClientRect();
 	return {
-        x: event.clientX - rect.left,
+        	x: event.clientX - rect.left,
 		y: event.clientY - rect.top	
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -178,4 +195,5 @@ function findxy(res, e) {
 }
 */
 </script>
+</body>
 </html>
