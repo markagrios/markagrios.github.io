@@ -3,5 +3,17 @@ canvas {
 	border: 2px solid #870B0B;
 }
 body {
-	font-family: "Lobster";
+	font-family: "MerriWeather Sans";
+}
+#clear {
+	font-family: "MerriWeather Sans";
+	font-size: 120%;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-shadow: 0px 3px 0px #888888;
+	height: 30px;
+	width: 200px;
+	border-radius: 5px;
+	background-color: #D8D8D8;
+	cursor: pointer;
 }

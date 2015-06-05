@@ -1,11 +1,15 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 </head>
 <body onload="init()">
     <canvas id="canvas_1" height="200" width="300"></canvas>
-    <p>Mouse position: (<a id="coord"></a>)</p>
-	<p id="boxalert"></p>
+	<p class="info">Mouse position: (<a id="coord"></a>)</p>
+	<p id="boxalert" class="info"></p>
+	<p><a id="clear" onclick="clear()">clear</a></p>
     <!--
     <div style="position:absolute;top:12%;left:43%;">Choose Color</div>
     <div style="position:absolute;top:15%;left:45%;width:10px;height:10px;background:green;" id="green" onclick="color(this)"></div>
@@ -23,44 +27,90 @@
 
 <script type="text/javascript">
 
+var canvas = document.getElementById('canvas_1');
+var ctx = canvas.getContext("2d");
+
 var prevX = 0,
     currX = 0,
     prevY = 0,
     currY = 0,
+    color = "black",
     dot_flag = false;
 
 function init() {
-	var canvas = document.getElementById('canvas_1');
-	var ctx = canvas.getContext("2d");
 	var height = canvas.height;
 	var width = canvas.width;
-
-	canvas.addEventListener("mousemove", function(event) {
-		
-	});
+	      
+	canvas.addEventListener("mousemove", function (e) {
+        var mousePos = displayCoord(canvas, event);
+		var message = mousePos.x + ',' + mousePos.y;
+		document.getElementById("coord").innerHTML = message;
+		findxy('move', e)
+    }, false);
+    canvas.addEventListener("mousedown", function (e) {
+        findxy('down', e)
+    }, false);
+    canvas.addEventListener("mouseup", function (e) {
+        findxy('up', e)
+    }, false);
+    canvas.addEventListener("mouseout", function (e) {
+        findxy('out', e)
+    }, false);
 }
 
 function draw() {
     ctx.beginPath();
     ctx.moveTo(prevX, prevY);
     ctx.lineTo(currX, currY);
-    ctx.strokeStyle = x;
-    ctx.lineWidth = y;
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 2;
     ctx.stroke();
     ctx.closePath();
+}
+
+function clear() {
+	ctx.fillStyle = "#FFFFFF";
+	ctx.fillRect(0,0,300,200);
 }
 
 function displayCoord(canvas, event) {
 	var rect = canvas.getBoundingClientRect();
 	return {
-        	x: event.clientX - rect.left,
+        x: event.clientX - rect.left,
 		y: event.clientY - rect.top	
 	}
 }
 
+function findxy(res, e) {
+    if (res == 'down') {
+        prevX = currX;
+        prevY = currY;
+        currX = e.clientX - canvas.offsetLeft;
+        currY = e.clientY - canvas.offsetTop;
 
-
-
+        flag = true;
+        dot_flag = true;
+        if (dot_flag) {
+            ctx.beginPath();
+            ctx.fillStyle = x;
+            ctx.fillRect(currX, currY, 2, 2);
+            ctx.closePath();
+            dot_flag = false;
+        }
+    }
+    if (res == 'up' || res == "out") {
+        flag = false;
+    }
+    if (res == 'move') {
+        if (flag) {
+            prevX = currX;
+            prevY = currY;
+            currX = e.clientX - canvas.offsetLeft;
+            currY = e.clientY - canvas.offsetTop;
+            draw();
+        }
+    }
+}
 
 
 
