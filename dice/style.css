@@ -1,12 +1,12 @@
 canvas {
 	display: inline-block;
 	border: 2px solid #870B0B;
+	cursor: pointer;
 }
 body {
 	font-family: "MerriWeather Sans";
 }
 #clear {
-	font-family: "MerriWeather Sans";
 	font-size: 120%;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -16,4 +16,7 @@ body {
 	border-radius: 5px;
 	background-color: #D8D8D8;
 	cursor: pointer;
+}
+#clear:active {
+	background-color: #C0C0C0;
 }
