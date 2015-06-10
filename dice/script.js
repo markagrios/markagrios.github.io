@@ -1,0 +1,124 @@
+
+var canvas = document.getElementById('canvas_1');
+var ctx = canvas.getContext("2d");
+var height = canvas.height;
+var width = canvas.width;
+var prevX = 0,
+    currX = 0,
+    prevY = 0,
+    currY = 0,
+    color = "black",
+    dot_flag = false;
+
+function init() {	      
+	canvas.addEventListener("mousemove", function (e) {
+        var mousePos = displayCoord(canvas, event);
+		var message = mousePos.x + ',' + mousePos.y;
+		document.getElementById("coord").innerHTML = message;
+		findxy('move', e)
+    }, false);
+    canvas.addEventListener("mousedown", function (e) {
+        findxy('down', e)
+    }, false);
+    canvas.addEventListener("mouseup", function (e) {
+        findxy('up', e)
+    }, false);
+    canvas.addEventListener("mouseout", function (e) {
+        findxy('out', e)
+    }, false);
+}
+
+function draw() {
+    ctx.beginPath();
+    ctx.moveTo(prevX, prevY);
+    ctx.lineTo(currX, currY);
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 2;
+    ctx.stroke();
+    ctx.closePath();
+}
+
+function clear() {
+	ctx.clearRect(0,0,canvas.width,canvas.height);
+}
+
+function displayCoord(canvas, event) {
+	var rect = canvas.getBoundingClientRect();
+	return {
+        x: event.clientX - rect.left,
+		y: event.clientY - rect.top	
+	}
+}
+
+function findxy(res, e) {
+    if (res == 'down') {
+        prevX = currX;
+        prevY = currY;
+        currX = e.clientX - canvas.offsetLeft;
+        currY = e.clientY - canvas.offsetTop;
+
+        flag = true;
+        dot_flag = true;
+        if (dot_flag) {
+            ctx.beginPath();
+            ctx.fillStyle = color;
+            ctx.fillRect(currX, currY, 2, 2);
+            ctx.closePath();
+            dot_flag = false;
+        }
+    }
+    if (res == 'up' || res == "out") {
+        flag = false;
+    }
+    if (res == 'move') {
+        if (flag) {
+            prevX = currX;
+            prevY = currY;
+            currX = e.clientX - canvas.offsetLeft;
+            currY = e.clientY - canvas.offsetTop;
+            draw();
+        }
+    }
+}
+
+/******ARRAY MANIPULATION******/
+imageData = ctx.createImageData(width,height);
+imageData.width;
+imageData.height;
+imageData.data;
+
+function setPixel(imageData,x,y,r,g,b,a) {
+	index = ((x + y * imageData.width) * 4);
+	imageData.data[index+0] = r;
+	imageData.data[index+1] = g;
+	imageData.data[index+2] = b;
+	imageData.data[index+3] = a;
+}
+function getPixel(imageData,x,y) {
+	index = ((x + y * imageData.width) * 4);
+	return {
+		r: imageData.data[index+0],
+		g: imageData.data[index+1],
+		b: imageData.data[index+2],
+		a: imageData.data[index+3]
+	};
+}
+
+for(i = 0; i < width; i++) {
+	for(j = 0; j < height; j++) {
+		r = Math.random() * 256 | 0;
+		g = Math.random() * 256 | 0;
+		b = Math.random() * 256 | 0;
+		a = Math.random() * 256 | 0;
+		setPixel(imageData,i,j,r,g,b,a);
+	}
+}	
+
+
+/******************************/
+
+
+/******JQUERY******/
+$("#clear").click(function() {
+	clear();
+});
