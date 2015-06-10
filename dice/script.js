@@ -104,8 +104,8 @@ function getPixel(imageData,x,y) {
 	};
 }
 
-for(i = 0; i < width; i++) {
-	for(j = 0; j < height; j++) {
+for(i = 0; i < imageData.width; i++) {
+	for(j = 0; j < imageData.height; j++) {
 		r = Math.random() * 256 | 0;
 		g = Math.random() * 256 | 0;
 		b = Math.random() * 256 | 0;
@@ -114,6 +114,8 @@ for(i = 0; i < width; i++) {
 	}
 }	
 
+ctx.putImageData(imageData,0,0);
+console.log(getPixel(imageData,26,26).r, getPixel(imageData,26,26).g, getPixel(imageData,26,26).b, getPixel(imageData,26,26).a);
 
 /******************************/
 
