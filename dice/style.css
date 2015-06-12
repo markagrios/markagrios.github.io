@@ -6,7 +6,7 @@ canvas {
 body {
 	font-family: "MerriWeather Sans";
 }
-#clear {
+#clear,#draw {
 	font-size: 120%;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -17,6 +17,6 @@ body {
 	background-color: #D8D8D8;
 	cursor: pointer;
 }
-#clear:active {
+#clear:active, #draw:active {
 	background-color: #C0C0C0;
 }

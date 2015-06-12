@@ -88,9 +88,9 @@ imageData.height;
 imageData.data;
 
 function toMatrix(imageData) { //put imageData into a 2D array  of rgba values instead of a list
-	var matrix = new Array(imageData.width);
+	var matrix = []
 	for(i = 0; i < imageData.width; i++) {
-		matrix[i] = new Array(imageData.height);
+		matrix[i] = [];
 	}
 	for(i = 0; i < imageData.width; i++) {
 		for(j = 0; j < imageData.height; j++) {
