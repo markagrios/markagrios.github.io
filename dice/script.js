@@ -87,6 +87,19 @@ imageData.width;
 imageData.height;
 imageData.data;
 
+function toMatrix(imageData) { //put imageData into a 2D array  of rgba values instead of a list
+	var matrix = new Array(imageData.width);
+	for(i = 0; i < imageData.width; i++) {
+		matrix[i] = new Array(imageData.height);
+	}
+	for(i = 0; i < imageData.width; i++) {
+		for(j = 0; j < imageData.height; j++) {
+			matrix[i][j] = getPixel(imageData,i,j);
+		}
+	}
+	return matrix;
+}
+
 function setPixel(imageData,x,y,r,g,b,a) {
 	index = ((x + y * imageData.width) * 4);
 	imageData.data[index+0] = r;
@@ -96,12 +109,8 @@ function setPixel(imageData,x,y,r,g,b,a) {
 }
 function getPixel(imageData,x,y) {
 	index = ((x + y * imageData.width) * 4);
-	return {
-		r: imageData.data[index+0],
-		g: imageData.data[index+1],
-		b: imageData.data[index+2],
-		a: imageData.data[index+3]
-	};
+	var value = (imageData.data[index+0].toString(16) + imageData.data[index+1].toString(16) + imageData.data[index+2].toString(16)); 
+	return value;
 }
 
 for(i = 0; i < imageData.width; i++) {
@@ -115,8 +124,8 @@ for(i = 0; i < imageData.width; i++) {
 }	
 
 ctx.putImageData(imageData,0,0);
-console.log(getPixel(imageData,26,26).r, getPixel(imageData,26,26).g, getPixel(imageData,26,26).b, getPixel(imageData,26,26).a);
-
+console.log(getPixel(imageData,26,26));
+console.log(toMatrix(imageData));
 /******************************/
 
 
