@@ -14,7 +14,9 @@ function init() {
 	canvas.addEventListener("mousemove", function (e) {
         var mousePos = displayCoord(canvas, event);
 		var message = mousePos.x + ',' + mousePos.y;
+		color = getPixel(imageData,mousePos.x,mousePos.y);
 		document.getElementById("coord").innerHTML = message;
+		document.getElementById("color").innerHTML = color;
 		findxy('move', e)
     }, false);
     canvas.addEventListener("mousedown", function (e) {
@@ -114,6 +116,11 @@ function getPixel(imageData,x,y) { // why is it not always 8 digits?...
 	return value;
 }
 
+function pyth(x1,y1,x2,y2) {
+	return Math.sqrt(((x2-x1)^2) + ((y2-y1)^2));
+}
+/******************************/
+
 for(i = 0; i < imageData.width; i++) {
 	for(j = 0; j < imageData.height; j++) {
 		distance = Math.sqrt(i*i + j*j);
@@ -129,7 +136,8 @@ for(i = 0; i < imageData.width; i++) {
 ctx.putImageData(imageData,0,0);
 console.log(getPixel(imageData,26,26));
 console.log(toMatrix(imageData));
-/******************************/
+console.log(pyth(0,0,3,4));
+//console.log(imageData);
 
 
 /******JQUERY******/
