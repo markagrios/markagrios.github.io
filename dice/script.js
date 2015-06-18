@@ -107,14 +107,17 @@ function setPixel(imageData,x,y,r,g,b,a) {
 	imageData.data[index+2] = b;
 	imageData.data[index+3] = a;
 }
-function getPixel(imageData,x,y) {
+function getPixel(imageData,x,y) { // why is it not always 8 digits?...
 	index = ((x + y * imageData.width) * 4);
 	var value = (imageData.data[index+0].toString(16) + imageData.data[index+1].toString(16) + imageData.data[index+2].toString(16)); 
+	//var value = imageData.data[index+0].toString(16).concat(imageData.data[index+1].toString(16)).concat(imageData.data[index+2].toString(16)).concat(imageData.data[index+3].toString(16))
 	return value;
 }
 
 for(i = 0; i < imageData.width; i++) {
 	for(j = 0; j < imageData.height; j++) {
+		distance = Math.sqrt(i*i + j*j);
+		
 		r = Math.random() * 256 | 0;
 		g = Math.random() * 256 | 0;
 		b = Math.random() * 256 | 0;
