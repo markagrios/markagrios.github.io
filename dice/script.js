@@ -40,9 +40,6 @@ function draw() {
     ctx.closePath();
 }
 
-function clear() {
-	ctx.clearRect(0,0,canvas.width,canvas.height);
-}
 
 function displayCoord(canvas, event) {
 	var rect = canvas.getBoundingClientRect();
@@ -109,22 +106,43 @@ function setPixel(imageData,x,y,r,g,b,a) {
 	imageData.data[index+2] = b;
 	imageData.data[index+3] = a;
 }
-function getPixel(imageData,x,y) { // why is it not always 8 digits?...
+function getPixel(imageData,x,y) { // why is it not always 6 digits?...
 	index = ((x + y * imageData.width) * 4);
 	var value = (imageData.data[index+0].toString(16) + imageData.data[index+1].toString(16) + imageData.data[index+2].toString(16)); 
 	//var value = imageData.data[index+0].toString(16).concat(imageData.data[index+1].toString(16)).concat(imageData.data[index+2].toString(16)).concat(imageData.data[index+3].toString(16))
 	return value;
 }
 
-function pyth(x1,y1,x2,y2) {
-	return Math.sqrt(((x2-x1)^2) + ((y2-y1)^2));
+function distance(x1,y1,x2,y2) {
+	return Math.sqrt(((x2-x1)*(x2-x1)) + ((y2-y1)*(y2-y1)));
+}
+/******************************/
+
+/*******BUTTONS****************/
+function clear() {
+	ctx.clearRect(0,0,width,height);
+	imageData = ctx.createImageData(width,height);
+}
+
+function generate() {
+	for(i = 0; i < imageData.width; i++) {
+		for(j = 0; j < imageData.height; j++) {		
+			d = (distance(56,56,i,j));
+			t = Math.sin(d/7.0);
+			
+			r = (200 + t * 20) % t;
+			g = (t * 200);
+			b = (100 + t * 50);
+			a = 200;
+			setPixel(imageData,i,j,r,g,b,a);
+		}
+	}
+	ctx.putImageData(imageData,0,0);		
 }
 /******************************/
 
 for(i = 0; i < imageData.width; i++) {
-	for(j = 0; j < imageData.height; j++) {
-		distance = Math.sqrt(i*i + j*j);
-		
+	for(j = 0; j < imageData.height; j++) {		
 		r = Math.random() * 256 | 0;
 		g = Math.random() * 256 | 0;
 		b = Math.random() * 256 | 0;
@@ -136,7 +154,7 @@ for(i = 0; i < imageData.width; i++) {
 ctx.putImageData(imageData,0,0);
 console.log(getPixel(imageData,26,26));
 console.log(toMatrix(imageData));
-console.log(pyth(0,0,3,4));
+console.log(distance(0,0,7,24));
 //console.log(imageData);
 
 
@@ -144,3 +162,24 @@ console.log(pyth(0,0,3,4));
 $("#clear").click(function() {
 	clear();
 });
+
+genclick = false;
+document.getElementById("generate").innerHTML = "generate"; // &#9662 for arrow
+if(genclick == false) {
+	$("#generate").click(function() {
+		generate();
+		$("form").slideDown(300);
+		document.getElementById("generate").innerHTML = "go";
+	});
+	genclick = true;
+}
+if(genclick == true) {
+	$("#generate").click(function() {
+		generate();
+	});	
+}
+
+
+
+
+
