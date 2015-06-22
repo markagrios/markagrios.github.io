@@ -125,7 +125,7 @@ function clear() {
 }
 
 function generate() {
-	for(i = 0; i < imageData.width; i++) {
+/*	for(i = 0; i < imageData.width; i++) {
 		for(j = 0; j < imageData.height; j++) {		
 			d = (distance(56,56,i,j));
 			t = Math.sin(d/7.0);
@@ -137,6 +137,16 @@ function generate() {
 			setPixel(imageData,i,j,r,g,b,a);
 		}
 	}
+*/	
+	center = document.getElementById("center").value;
+	red = document.getElementById("red").value;
+	green = document.getElementById("green").value;
+	blue = document.getElementById("blue").value;
+	console.log(center);
+	console.log(red);
+	console.log(green);
+	console.log(blue);
+
 	ctx.putImageData(imageData,0,0);		
 }
 /******************************/
@@ -154,7 +164,6 @@ for(i = 0; i < imageData.width; i++) {
 ctx.putImageData(imageData,0,0);
 console.log(getPixel(imageData,26,26));
 console.log(toMatrix(imageData));
-console.log(distance(0,0,7,24));
 //console.log(imageData);
 
 
@@ -165,20 +174,16 @@ $("#clear").click(function() {
 
 genclick = false;
 document.getElementById("generate").innerHTML = "generate"; // &#9662 for arrow
-if(genclick == false) {
-	$("#generate").click(function() {
+$("#generate").click(function() {
+	if(genclick == true) {
 		generate();
+	}
+	if(genclick == false) {
 		$("form").slideDown(300);
 		document.getElementById("generate").innerHTML = "go";
-	});
-	genclick = true;
-}
-if(genclick == true) {
-	$("#generate").click(function() {
-		generate();
-	});	
-}
-
+		genclick = true;
+	}
+});
 
 
 
