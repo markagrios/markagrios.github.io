@@ -125,28 +125,24 @@ function clear() {
 }
 
 function generate() {
-/*	for(i = 0; i < imageData.width; i++) {
+	center = document.getElementById("center").value.split(",");
+	red = document.getElementById("red").value;
+	green = document.getElementById("green").value;
+	blue = document.getElementById("blue").value;
+	
+	for(i = 0; i < imageData.width; i++) {
 		for(j = 0; j < imageData.height; j++) {		
-			d = (distance(56,56,i,j));
+			d = (distance(center[0],center[1],i,j));
 			t = Math.sin(d/7.0);
 			
-			r = (200 + t * 20) % t;
-			g = (t * 200);
-			b = (100 + t * 50);
+			r = (red + t * 20) % t;
+			g = (t * blue);
+			b = (100 + t * green);
 			a = 200;
 			setPixel(imageData,i,j,r,g,b,a);
 		}
 	}
-*/	
-	center = document.getElementById("center").value;
-	red = document.getElementById("red").value;
-	green = document.getElementById("green").value;
-	blue = document.getElementById("blue").value;
-	console.log(center);
-	console.log(red);
-	console.log(green);
-	console.log(blue);
-
+	
 	ctx.putImageData(imageData,0,0);		
 }
 /******************************/
