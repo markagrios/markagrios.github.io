@@ -248,8 +248,8 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	animation-name: colorcycle;
 	-webkit-animation-name: colorcycle;	
 
-	animation-duration: 70s;	
-	-webkit-animation-duration: 70s;
+	animation-duration: 60s;	
+	-webkit-animation-duration: 60s;
 
 	animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;	
@@ -400,18 +400,18 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 	}
 }
 @keyframes colorcycle {
-	0% {color: #870B0B;}
-	20% {color: #FACE16;}
-	40% {color: #5c16fa;}
-	60% {color: #16fa5c;}
-	80% {color: #fa1642;}
-	100% {color: #fa5c16;}
+	0% {color: #000000;}
+	20% {color: #585858;}
+	40% {color: #A292BC;}
+	60% {color: #A29288;}
+	80% {color: #4579A3;}
+	100% {color: #088F0;}
 }
 @-webkit-keyframes colorcycle {
-	0% {color: #870B0B;}
-	20% {color: #FACE16;}
-	40% {color: #5c16fa;}
-	60% {color: #16fa5c;}
-	80% {color: #fa1642;}
-	100% {color: #fa5c16;}
+	0% {color: #000000;}
+	20% {color: #585858;}
+	40% {color: #A292BC;}
+	60% {color: #A29288;}
+	80% {color: #4579A3;}
+	100% {color: #088F0;}
 }

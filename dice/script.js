@@ -9,6 +9,7 @@ var prevX = 0,
     currY = 0,
     color = "black",
     dot_flag = false;
+var totalpath = 0;
 
 function init() {	      
 	canvas.addEventListener("mousemove", function (e) {
@@ -35,9 +36,11 @@ function draw() {
     ctx.moveTo(prevX, prevY);
     ctx.lineTo(currX, currY);
     ctx.strokeStyle = color;
-    ctx.lineWidth = 2;
+    ctx.lineWidth = 1;
     ctx.stroke();
     ctx.closePath();
+    totalpath++;
+    document.getElementById("drawn").innerHTML = totalpath;
 }
 
 
@@ -122,6 +125,7 @@ function distance(x1,y1,x2,y2) {
 function clear() {
 	ctx.clearRect(0,0,width,height);
 	imageData = ctx.createImageData(width,height);
+	document.getElementById("drawn").innerHTML = 0;
 }
 
 function generate() {
@@ -133,12 +137,12 @@ function generate() {
 	for(i = 0; i < imageData.width; i++) {
 		for(j = 0; j < imageData.height; j++) {		
 			d = (distance(center[0],center[1],i,j));
-			t = Math.sin(d/7.0);
+			t = Math.sin(d/7);
 			
 			r = (red + t * 20) % t;
-			g = (t * blue);
-			b = (100 + t * green);
-			a = 200;
+			g = (t * green);
+			b = (100 + t * blue);
+			a = 200
 			setPixel(imageData,i,j,r,g,b,a);
 		}
 	}
@@ -157,10 +161,16 @@ for(i = 0; i < imageData.width; i++) {
 	}
 }	
 
+/****CORRECTION********************************************************************************/
+
+
+/**********************************************************************************************/
+
 ctx.putImageData(imageData,0,0);
 console.log(getPixel(imageData,26,26));
-console.log(toMatrix(imageData));
+console.log(toMatrix(imageData)[26][26]);
 //console.log(imageData);
+
 
 
 /******JQUERY******/
@@ -180,6 +190,14 @@ $("#generate").click(function() {
 		genclick = true;
 	}
 });
+
+
+
+
+
+
+
+
 
 
 
