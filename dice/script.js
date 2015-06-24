@@ -39,8 +39,7 @@ function draw() {
     ctx.lineWidth = 1;
     ctx.stroke();
     ctx.closePath();
-    totalpath++;
-    document.getElementById("drawn").innerHTML = totalpath;
+    document.getElementById("drawn").innerHTML = totalpath++;
 }
 
 
