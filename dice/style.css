@@ -1,22 +1,36 @@
+body {
+	font-family: "MerriWeather Sans";
+}
 canvas {
 	display: inline-block;
 	border: 2px solid #870B0B;
 	cursor: pointer;
 }
-body {
-	font-family: "MerriWeather Sans";
+#switch_container {
+	display: inline-block;
+	width: 40%;
 }
-#clear,#generate {
+.button {
 	font-size: 120%;
 	text-align: center; 
-	padding-left: 10px;
-	padding-right: 10px;
+
 	box-shadow: 0px 3px 0px #888888;
-	height: 30px;
-	width: 82px;
+
 	border-radius: 5px;
 	background-color: #D8D8D8;
 	cursor: pointer;
+}
+#clear,#generate {
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 30px;
+	width: 82px;
+}
+#onbtn,#offbtn {
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 30px;
+	width: 82px;
 }
 #clear:active, #generate:active {
 	background-color: #C0C0C0;

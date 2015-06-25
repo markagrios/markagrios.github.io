@@ -149,7 +149,7 @@ function generate() {
 	ctx.putImageData(imageData,0,0);		
 }
 /******************************/
-
+/*
 for(i = 0; i < imageData.width; i++) {
 	for(j = 0; j < imageData.height; j++) {		
 		r = Math.random() * 256 | 0;
@@ -159,9 +159,24 @@ for(i = 0; i < imageData.width; i++) {
 		setPixel(imageData,i,j,r,g,b,a);
 	}
 }	
+*/
 
 /****CORRECTION********************************************************************************/
+/*function find_start(array) {
+	
+	
+	return
+		x: ,
+		y:
+}*/
 
+function straighten(array,x,y) { // space it is acting on and starting coordinates
+	
+}
+
+function smooth(array,x,y) { // space it is acting on and starting coordinates
+		
+}
 
 /**********************************************************************************************/
 
@@ -169,7 +184,6 @@ ctx.putImageData(imageData,0,0);
 console.log(getPixel(imageData,26,26));
 console.log(toMatrix(imageData)[26][26]);
 //console.log(imageData);
-
 
 
 /******JQUERY******/
