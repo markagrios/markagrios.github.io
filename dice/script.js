@@ -162,16 +162,12 @@ for(i = 0; i < imageData.width; i++) {
 */
 
 /****CORRECTION********************************************************************************/
-/*function find_start(array) {
-	
-	
-	return
-		x: ,
-		y:
-}*/
-
-function straighten(array,x,y) { // space it is acting on and starting coordinates
-	
+function straighten(array,width,height,x,y) { // space it is acting on, width, height, and starting coordinates
+	for(i = 0; i < width; i++) {
+		for(j = 0; j < height; j++) {
+			
+		}
+	}
 }
 
 function smooth(array,x,y) { // space it is acting on and starting coordinates
@@ -204,7 +200,19 @@ $("#generate").click(function() {
 	}
 });
 
-
+toggle = false;
+$("#toggle").click(function() {
+	if(toggle == true) {
+		document.getElementById("toggle").innerHTML = "off";
+		toggle = false;
+		return;
+	}	
+	if(toggle == false) {
+		document.getElementById("toggle").innerHTML = "on";
+		toggle = true;
+		return;
+	}
+});
 
 
 
