@@ -7,9 +7,13 @@ var prevX = 0,
     currX = 0,
     prevY = 0,
     currY = 0,
-    color = "black",
+    draw_color = 0x000000,
     dot_flag = false;
 var totalpath = 0;
+var endpoint1_x,
+	endpoint1_y,
+	endpoint2_x,
+	endpoint2_y;
 
 function init() {	      
 	canvas.addEventListener("mousemove", function (e) {
@@ -18,16 +22,31 @@ function init() {
 		color = getPixel(imageData,mousePos.x,mousePos.y);
 		document.getElementById("coord").innerHTML = message;
 		document.getElementById("color").innerHTML = color;
-		findxy('move', e)
+		findxy('move', e);
     }, false);
     canvas.addEventListener("mousedown", function (e) {
-        findxy('down', e)
+        findxy('down', e);
+        
+        totalpath = 0;
+        
+        endpoint1_x = displayCoord(canvas,event).x;
+        endpoint1_y = displayCoord(canvas,event).y;
+        
     }, false);
     canvas.addEventListener("mouseup", function (e) {
-        findxy('up', e)
+        findxy('up', e);
+        
+        endpoint2_x = displayCoord(canvas,event).x;
+        endpoint2_y = displayCoord(canvas,event).y;
+        
+        console.log(endpoint1_x,endpoint1_y,endpoint2_x,endpoint2_y);
+        console.log(sinuosity());
+        
+        refresh();
+        
     }, false);
     canvas.addEventListener("mouseout", function (e) {
-        findxy('out', e)
+        findxy('out', e);
     }, false);
 }
 
@@ -35,7 +54,7 @@ function draw() {
     ctx.beginPath();
     ctx.moveTo(prevX, prevY);
     ctx.lineTo(currX, currY);
-    ctx.strokeStyle = color;
+    ctx.strokeStyle = draw_color;
     ctx.lineWidth = 1;
     ctx.stroke();
     ctx.closePath();
@@ -62,7 +81,7 @@ function findxy(res, e) {
         dot_flag = true;
         if (dot_flag) {
             ctx.beginPath();
-            ctx.fillStyle = color;
+            ctx.fillStyle = draw_color;
             ctx.fillRect(currX, currY, 2, 2);
             ctx.closePath();
             dot_flag = false;
@@ -162,16 +181,22 @@ for(i = 0; i < imageData.width; i++) {
 */
 
 /****CORRECTION********************************************************************************/
-function straighten(array,width,height,x,y) { // space it is acting on, width, height, and starting coordinates
-	for(i = 0; i < width; i++) {
-		for(j = 0; j < height; j++) {
-			
-		}
-	}
+function refresh() {
+	ctx.beginPath();
+    ctx.moveTo(endpoint1_x,endpoint1_y);
+    ctx.lineTo(endpoint2_x,endpoint2_y);
+    ctx.strokeStyle = draw_color | 0xff0000;
+    ctx.lineWidth = 1;
+    ctx.stroke();
+    ctx.closePath();
 }
 
-function smooth(array,x,y) { // space it is acting on and starting coordinates
-		
+function sinuosity() {
+	return (totalpath/(distance(endpoint1_x,endpoint1_y,endpoint2_x,endpoint2_y)));
+}
+
+function isLine() {
+	
 }
 
 /**********************************************************************************************/
@@ -179,7 +204,6 @@ function smooth(array,x,y) { // space it is acting on and starting coordinates
 ctx.putImageData(imageData,0,0);
 console.log(getPixel(imageData,26,26));
 console.log(toMatrix(imageData)[26][26]);
-//console.log(imageData);
 
 
 /******JQUERY******/
