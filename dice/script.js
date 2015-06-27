@@ -40,6 +40,9 @@ function init() {
         endpoint2_y = displayCoord(canvas,event).y;
         
         console.log(endpoint1_x,endpoint1_y,endpoint2_x,endpoint2_y);
+        
+        console.log(totalpath);
+        console.log(distance(endpoint1_x,endpoint1_y,endpoint2_x,endpoint2_y));
         console.log(sinuosity());
         
         refresh();
@@ -47,6 +50,13 @@ function init() {
     }, false);
     canvas.addEventListener("mouseout", function (e) {
         findxy('out', e);
+        
+        endpoint2_x = displayCoord(canvas,event).x;
+        endpoint2_y = displayCoord(canvas,event).y;
+        console.log(endpoint1_x,endpoint1_y,endpoint2_x,endpoint2_y);
+        console.log(sinuosity());
+        refresh();
+
     }, false);
 }
 
