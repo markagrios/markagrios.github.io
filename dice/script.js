@@ -14,6 +14,10 @@ var endpoint1_x,
 	endpoint1_y,
 	endpoint2_x,
 	endpoint2_y;
+	
+var smoothingx = new LinkedList();
+var smoothingy = new LinkedList();
+var smoothLen = 0;
 
 function init() {	      
 	canvas.addEventListener("mousemove", function (e) {
@@ -42,8 +46,10 @@ function init() {
         console.log(endpoint1_x,endpoint1_y,endpoint2_x,endpoint2_y);
         
         console.log(totalpath);
-        console.log(distance(endpoint1_x,endpoint1_y,endpoint2_x,endpoint2_y));
-        console.log(sinuosity());
+        //console.log(distance(endpoint1_x,endpoint1_y,endpoint2_x,endpoint2_y));
+        //console.log(sinuosity());
+        console.log(smoothingx);
+        console.log(smoothingy);
         
         refresh();
         
@@ -51,11 +57,11 @@ function init() {
     canvas.addEventListener("mouseout", function (e) {
         findxy('out', e);
         
-        endpoint2_x = displayCoord(canvas,event).x;
-        endpoint2_y = displayCoord(canvas,event).y;
-        console.log(endpoint1_x,endpoint1_y,endpoint2_x,endpoint2_y);
-        console.log(sinuosity());
-        refresh();
+        //endpoint2_x = displayCoord(canvas,event).x;
+        //endpoint2_y = displayCoord(canvas,event).y;
+        //console.log(endpoint1_x,endpoint1_y,endpoint2_x,endpoint2_y);
+        //console.log(sinuosity());
+        //refresh();
 
     }, false);
 }
@@ -69,6 +75,12 @@ function draw() {
     ctx.stroke();
     ctx.closePath();
     document.getElementById("drawn").innerHTML = totalpath++;
+    if((totalpath % 10) == 0) {
+		var mousePos = displayCoord(canvas, event);
+		smoothingx.push(mousePos.x);
+		smoothingy.push(mousePos.y);
+		smoothLen++;
+	}
 }
 
 
@@ -199,6 +211,12 @@ function refresh() {
     ctx.lineWidth = 1;
     ctx.stroke();
     ctx.closePath();
+    
+    ctx.beginPath()
+    for(var i = 0; i < smoothLen; i++) {
+
+	}
+    
 }
 
 function sinuosity() {
@@ -248,7 +266,28 @@ $("#toggle").click(function() {
 	}
 });
 
+/*******************LINKED LIST********************/
+function LinkedList(){  
+  this.head = null;
+}
+LinkedList.prototype.push = function(val){
+    var node = {
+       value: val,
+       next: null
+    }
+    if(!this.head){
+      this.head = node;      
+    }
+    else{
+      current = this.head;
+      while(current.next){
+        current = current.next;
+      }
+      current.next = node;
+    }
+  }
 
+/**************************************************/
 
 
 
