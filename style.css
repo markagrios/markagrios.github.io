@@ -214,7 +214,7 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 
 	visibility: visible !important;	
 }
-#githublogo,#inboxicon,#musicicon {
+#githublogo,#inboxicon,#musicicon,#starcatlogo {
 	height: 40px;
 	width: 40px;
 	display: inline-block;

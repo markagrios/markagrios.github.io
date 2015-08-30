@@ -53,6 +53,7 @@
 		function() {
 			$("#mygithub").hide(0);
 			$("#mymusic").hide(0);
+			$("#starcat").hide(0);
 			$("#myemail").fadeIn();
 		}
 
@@ -71,6 +72,7 @@
 		function() {
 			$("#myemail").hide(0);
 			$("#mymusic").hide(0);
+			$("#starcat").hide(0);
 			$("#mygithub").fadeIn();
 		}
 
@@ -84,6 +86,7 @@
 		function() {
 			$("#myemail").hide(0);
 			$("#mygithub").hide(0);
+			$("#starcat").hide(0);
 			$("#mymusic").fadeIn();
 		}
 
@@ -91,6 +94,20 @@
 	.mouseleave(
 		function() {
 			$("#mymusic").hide();
+		}
+	);
+	$("#starcatlogo").mouseover(
+		function() {
+			$("#myemail").hide(0);
+			$("#mygithub").hide(0);
+			$("#mymusic").hide(0);
+			$("#starcat").fadeIn();
+		}
+
+	)
+	.mouseleave(
+		function() {
+			$("#starcat").hide();
 		}
 	);
 	<!-- ------------ -->
@@ -119,5 +136,11 @@
 			$("#page-hatemath").slideToggle(300);
 		}
 	);	
+	$("#topic-networks").click(
+		function() {
+			$("#page-networks").slideToggle(300);
+		}
+	);	
+
 	<!-- ------------ -->
 	
