@@ -136,9 +136,9 @@
 			$("#page-hatemath").slideToggle(300);
 		}
 	);	
-	$("#topic-networks").click(
+	$("#topic-starcat").click(
 		function() {
-			$("#page-networks").slideToggle(300);
+			$("#page-starcat").slideToggle(300);
 		}
 	);	
 
