@@ -112,16 +112,32 @@
 	);
 	<!-- ------------ -->
 	<!-- PAGES BUTTON -->
+	var sclick = false;
+	var aclick = false;
 	$("#artsbtn").click(
 		function() {
 			$("#sciences").fadeOut(0);
 			$("#arts").slideToggle(300);
+			if(aclick == false) {
+				document.getElementById('artsbtn').innerHTML = "Arts &#8673;";
+				aclick = true;
+			} else {
+				document.getElementById('artsbtn').innerHTML = "Arts &#8675;";
+				aclick = false;				
+			}
 		}
 	);
 	$("#sciencesbtn").click(
 		function() {
 			$("#arts").fadeOut(0);
 			$("#sciences").slideToggle(300);
+			if(sclick == false) {
+				document.getElementById('sciencesbtn').innerHTML = "Sciences &#8673;";
+				sclick = true;
+			} else {
+				document.getElementById('sciencesbtn').innerHTML = "Sciences &#8675;";
+				sclick = false;				
+			}
 		}
 	);
 	<!-- ------------ -->
