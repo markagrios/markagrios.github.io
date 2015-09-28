@@ -1,3 +1,4 @@
+
 body {
 	margin: 0px;
 	background-color: #FDFDFD;
@@ -76,14 +77,14 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 #general {
 	background-color: #FCFCFC;
 	font-family: "Merriweather Sans";
-	padding-left: 300px;
-	padding-right: 300px;
+	width: 50%;
+	margin: auto;
 }
 #aboutmecontent,#projectscontent {
 	background-color: #FCFCFC;
 	font-family: "Merriweather Sans";
-	padding-left: 300px;
-	padding-right: 300px;
+	width: 50%;
+	margin: auto;
 	display: none;
 }
 .links {
@@ -113,8 +114,8 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 #pagescontent {
 	background-color: #FCFCFC;
 	font-family: "Merriweather Sans";
-	padding-left: 100px;
-	padding-right: 100px;
+	width: 80%;
+	margin: auto;
 	display: none;
 }
 .pagesbutton {
@@ -170,8 +171,8 @@ h1 {font-family: "Merriweather Sans"; font-size: 70%; padding-bottom: 0px; float
 #sayhibtncontent {
 	background-color: #FCFCFC;
 	font-family: "Merriweather Sans";
-	padding-left: 300px;
-	padding-right: 300px;
+	width: 50%;
+	margin: auto;
 	display: none;
 }
 .lobster {
