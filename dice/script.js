@@ -83,8 +83,8 @@ function draw() {
 function displayCoord(canvas, event) {
 	var rect = canvas.getBoundingClientRect();
 	return {
-        x: event.clientX - rect.left,
-		y: event.clientY - rect.top	
+        x: Math.floor(event.clientX - rect.left),
+		y: Math.floor(event.clientY - rect.top)	
 	}
 }
 
