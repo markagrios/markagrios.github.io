@@ -20,7 +20,7 @@ var endpoint1_x,
 function init() {	      
 	canvas.addEventListener("mousemove", function (e) {
         var mousePos = displayCoord(canvas, event);
-		var message = mousePos.x + ',' + mousePos.y;
+		var message = Math.floor(mousePos.x) + ',' + Math.floor(mousePos.y);
 		color = getPixel(imageData,mousePos.x,mousePos.y);
 		document.getElementById("coord").innerHTML = message;
 		document.getElementById("color").innerHTML = color;
