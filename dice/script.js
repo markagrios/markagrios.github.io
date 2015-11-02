@@ -148,8 +148,9 @@ function setPixel(imageData,x,y,r,g,b,a) {
 function getPixel(imageData,x,y) { // why is it not always 6 digits?...
 	index = ((x + y * imageData.width) * 4);
 	//var value = (imageData.data[index+0].toString(16) + imageData.data[index+1].toString(16) + imageData.data[index+2].toString(16)); 
+	var value = (imageData.data[index+0] + imageData.data[index+1] + imageData.data[index+2]); 
 	//var value = imageData.data[index+0].toString(16).concat(imageData.data[index+1].toString(16)).concat(imageData.data[index+2].toString(16)).concat(imageData.data[index+3].toString(16))
-	var value = imageData.data[index+0].concat(imageData.data[index+1]).concat(imageData.data[index+2]).concat(imageData.data[index+3]);
+	//var value = imageData.data[index+0].concat(imageData.data[index+1]).concat(imageData.data[index+2]).concat(imageData.data[index+3]);
 	return value;
 }
 
