@@ -16,9 +16,6 @@ var endpoint1_x,
 	endpoint2_x,
 	endpoint2_y;
 	
-var smoothingx = new LinkedList();
-var smoothingy = new LinkedList();
-var smoothLen = 0;
 
 function init() {	      
 	canvas.addEventListener("mousemove", function (e) {
@@ -152,7 +149,8 @@ function setPixel(imageData,x,y,r,g,b,a) {
 }
 function getPixel(imageData,x,y) { // why is it not always 6 digits?...
 	index = ((x + y * imageData.width) * 4);
-	var value = (imageData.data[index+0].toString(16) + imageData.data[index+1].toString(16) + imageData.data[index+2].toString(16)); 
+	//var value = (imageData.data[index+0].toString(16) + imageData.data[index+1].toString(16) + imageData.data[index+2].toString(16)); 
+	var value = (imageData.data[index+0] + imageData.data[index+1] + imageData.data[index+2]); 
 	//var value = imageData.data[index+0].toString(16).concat(imageData.data[index+1].toString(16)).concat(imageData.data[index+2].toString(16)).concat(imageData.data[index+3].toString(16))
 	return value;
 }
