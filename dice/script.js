@@ -46,8 +46,6 @@ function init() {
         console.log(totalpath);
         //console.log(distance(endpoint1_x,endpoint1_y,endpoint2_x,endpoint2_y));
         //console.log(sinuosity());
-        console.log(smoothingx);
-        console.log(smoothingy);
         
         refresh();
         
@@ -75,9 +73,9 @@ function draw() {
     document.getElementById("drawn").innerHTML = totalpath++;
     if((totalpath % 10) == 0) {
 		var mousePos = displayCoord(canvas, event);
-		smoothingx.push(mousePos.x);
-		smoothingy.push(mousePos.y);
-		smoothLen++;
+		//smoothingx.push(mousePos.x);
+		//smoothingy.push(mousePos.y);
+		//smoothLen++;
 	}
 }
 
@@ -212,10 +210,11 @@ function refresh() {
     ctx.closePath();
     
     ctx.beginPath()
+    /*
     for(var i = 0; i < smoothLen; i++) {
 
 	}
-    
+    */
 }
 
 function sinuosity() {
