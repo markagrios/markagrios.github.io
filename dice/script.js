@@ -71,8 +71,11 @@ function draw() {
     ctx.stroke();
     ctx.closePath();
     document.getElementById("drawn").innerHTML = totalpath++;
+    
+    var smoothpoints = [];
     if((totalpath % 10) == 0) {
 		var mousePos = displayCoord(canvas, event);
+		smoothpoints
 		//smoothingx.push(mousePos.x);
 		//smoothingy.push(mousePos.y);
 		//smoothLen++;
