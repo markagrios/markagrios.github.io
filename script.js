@@ -180,7 +180,9 @@
 			$("#arts").slideToggle(300);
 			if(aclick == false) {
 				document.getElementById('artsbtn').innerHTML = "Arts &#8673;";
+				document.getElementById('sciencesbtn').innerHTML = "Sciences &#8675;";
 				aclick = true;
+				sclick = false;
 			} else {
 				document.getElementById('artsbtn').innerHTML = "Arts &#8675;";
 				aclick = false;				
@@ -193,7 +195,9 @@
 			$("#sciences").slideToggle(300);
 			if(sclick == false) {
 				document.getElementById('sciencesbtn').innerHTML = "Sciences &#8673;";
+				document.getElementById('artsbtn').innerHTML = "Arts &#8675;";
 				sclick = true;
+				aclick = false;
 			} else {
 				document.getElementById('sciencesbtn').innerHTML = "Sciences &#8675;";
 				sclick = false;				
