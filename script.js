@@ -216,9 +216,9 @@
 			$("#page-hatemath").slideToggle(300);
 		}
 	);	
-	$("#topic-starcat").click(
+	$("#topic-geography").click(
 		function() {
-			$("#page-starcat").slideToggle(300);
+			$("#page-geography").slideToggle(300);
 		}
 	);	
 
