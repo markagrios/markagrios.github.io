@@ -3,9 +3,30 @@
 }
 
 body {
+	padding: 0px;
+	margin: 0px;
+}
 
+.contrast-text {
+	color: #ffffff;
 }
 
 .block {
-	
+	height: 33.33%;
+}
+
+#about {
+	background-color: #23b190;
+}
+#projects {
+	background-color: #870b0b;
+}
+#sayhi {
+	background-color: #237660;
+}
+
+.title {
+	text-align: right;
+	padding-right: 30px;
+	font-size: 42pt;
 }
