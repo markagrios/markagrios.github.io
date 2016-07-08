@@ -12,17 +12,17 @@ body {
 }
 
 .block {
-	height: 33.33%;
+	font-family: "Cantata One";
 }
 
 #about {
-	background-color: #23b190;
+	
 }
 #projects {
-	background-color: #870b0b;
+	
 }
 #sayhi {
-	background-color: #237660;
+	
 }
 
 .title {
@@ -30,3 +30,14 @@ body {
 	padding-right: 30px;
 	font-size: 42pt;
 }
+
+/************ MOBILE OPT *****************/
+@media only screen and (max-width: 1100px) {
+    
+}
+
+
+
+
+
+/************ ANIMATIONS *****************/
