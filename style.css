@@ -33,22 +33,31 @@ body {
 	display: inline-block;
 }
 
-.contrast-text {
-	color: #ffffff;
+.shadow {
+	padding-left: 5px;
+	padding-right: 5px;
+	box-shadow: 0px 0px 20px #aaaaaa;
 }
 
 #top {
 	text-align: center;
 	font-size: 64pt;
 	font-family: "Raleway";
-	padding-top: 30px;
 }
+#top-pic {
+	width: 100%;
+	height: 300px;
+	opacity: 0.6;
+}
+
 
 #three {
 	text-align: center;
 	clear: both;
 	display: flex;
 	padding-top: 50px;
+	
+	display: none;
 }
 
 .title {
@@ -56,12 +65,20 @@ body {
 	font-family: "Cabin";
 }
 
+.header {
+	font-size: 24pt;
+	font-family: "Raleway";
+}
+
 #content {
 	width: 60%;
 	margin: auto;
 	font-size: 16pt;
+	text-align: justify;
+	text-align-last: left;
 	
-	display: none;
+	//background-color: #ffffff;
+	//display: none;
 }
 
 
