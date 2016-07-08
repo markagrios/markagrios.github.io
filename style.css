@@ -6,6 +6,25 @@ body {
 	padding: 0px;
 	margin: 0px;
 	background-color: #f0f0f0;
+	color: #00001f;
+	font-family: "Cabin";
+}
+
+.click {cursor: pointer;}
+
+.spacer1 {
+	height: 30px;
+}
+
+.border {
+	border-style: solid;
+	border-color: #00000a;
+	border-width: 5px;
+}
+
+.line {
+	background-color: #00000a;
+	height: 5px;
 }
 
 .halign3 {
@@ -22,6 +41,7 @@ body {
 	text-align: center;
 	font-size: 64pt;
 	font-family: "Raleway";
+	padding-top: 30px;
 }
 
 #three {
@@ -31,6 +51,36 @@ body {
 	padding-top: 50px;
 }
 
+.title {
+	font-size: 24pt;
+	font-family: "Cabin";
+}
+
+#content {
+	width: 60%;
+	margin: auto;
+	font-size: 16pt;
+	
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .circle {
 	width: 200px;
 	height: 200px;
@@ -65,6 +115,8 @@ body {
 .content {
 	font-family: "Cabin";
 }
+*/
+
 
 /************ MOBILE OPT *****************/
 @media only screen and (max-width: 1100px) {
