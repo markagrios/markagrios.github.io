@@ -22,6 +22,16 @@ body {
 	color: #870b0b;
 }
 
+.wordlinks {
+	cursor: pointer;
+	text-decoration: none;
+	color: #870b0b;
+	transition: color 0.7s;
+}
+.wordlinks:hover {
+	color: #5897d4;
+}
+
 .blank {
 	visibility: hidden;
 }
@@ -58,7 +68,7 @@ body {
 
 .header {
 	font-family: "Raleway";
-	font-size: 22pt;
+	font-size: 28pt;
 }
 
 .content {
