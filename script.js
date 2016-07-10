@@ -4,6 +4,8 @@ alert("markagrios.net's marverlous makeover is taking place so bear with me as I
 
 $(".about").click(
 	function() {
+		$("#projects-content").fadeOut(0);
+		$("#sayhi-content").fadeOut(0);
 		$("#about-content").fadeToggle(700);
 		$(".lookdown").fadeIn(700);
 	}
@@ -11,6 +13,8 @@ $(".about").click(
 
 $(".projects").click(
 	function() {
+		$("#about-content").fadeOut(0);
+		$("#sayhi-content").fadeOut(0);
 		$("#projects-content").fadeToggle(700);
 		$(".lookdown").fadeIn(700);
 	}
@@ -18,6 +22,8 @@ $(".projects").click(
 
 $(".sayhi").click(
 	function() {
+		$("#about-content").fadeOut(0);
+		$("#projects-content").fadeOut(0);
 		$("#sayhi-content").fadeToggle(700);
 		$(".lookdown").fadeIn(700);
 	}
