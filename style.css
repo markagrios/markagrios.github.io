@@ -3,10 +3,11 @@
 }
 
 body {
+	overflow-y: scroll;
 	padding: 0px;
 	margin: 0px;
 	background-color: #f0f0f0;
-	color: #00001f;
+	color: #000000;
 	font-family: "Cabin";
 }
 
@@ -16,11 +17,22 @@ body {
 	height: 300px;
 }
 
-.links {
+.links1 {
+	color: #555555;
 	cursor: pointer;
 	transition: color 0.5s
 }
-.links:hover {
+.links2 {
+	color: #777777;
+	cursor: pointer;
+	transition: color 0.5s
+}
+.links3 {
+	color: #aaaaaa;
+	cursor: pointer;
+	transition: color 0.5s
+}
+.links1:hover, .links2:hover, .links3:hover {
 	color: #870b0b;
 }
 

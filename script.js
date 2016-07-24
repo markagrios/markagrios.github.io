@@ -2,29 +2,84 @@ console.log("script.js");
 
 alert("markagrios.net's marvelous makeover is taking place so bear with me as I rebuild my website over the next few weeks.");
 
+var aclick = false;
+var pclick = false;
+var sclick = false;
+
 $(".about").click(
 	function() {
-		$("#projects-content").fadeOut(0);
-		$("#sayhi-content").fadeOut(0);
-		$("#about-content").fadeToggle(700);
-		$(".lookdown").fadeIn(700);
+		if(aclick == true) {
+			return;
+		}
+		
+		if(aclick == false) {			
+			$("#projects-content").fadeOut(0);
+			$("#sayhi-content").fadeOut(0);
+			$("#about-content").fadeToggle(700);
+			//$(".lookdown").fadeIn(700);
+			
+			aclick = true;
+			pclick = false;
+			sclick = false;
+		}
+		
+		
+		
 	}
 );
 
 $(".projects").click(
 	function() {
-		$("#about-content").fadeOut(0);
-		$("#sayhi-content").fadeOut(0);
-		$("#projects-content").fadeToggle(700);
-		$(".lookdown").fadeIn(700);
+		if(pclick == true) {
+			return;
+		}	
+		
+		if(pclick == false) {
+			$("#about-content").fadeOut(0);
+			$("#sayhi-content").fadeOut(0);
+			$("#projects-content").fadeToggle(700);
+			//$(".lookdown").fadeIn(700);
+			
+			aclick = false;
+			pclick = true;
+			sclick = false;
+		}
 	}
 );
 
 $(".sayhi").click(
 	function() {
-		$("#about-content").fadeOut(0);
-		$("#projects-content").fadeOut(0);
-		$("#sayhi-content").fadeToggle(700);
-		$(".lookdown").fadeIn(700);
+		if(sclick == true) {
+			return;
+		}	
+		
+		if(sclick == false) {
+			$("#about-content").fadeOut(0);
+			$("#projects-content").fadeOut(0);
+			$("#sayhi-content").fadeToggle(700);
+			//$(".lookdown").fadeIn(700);
+			
+			aclick = false;
+			pclick = false;
+			sclick = true;
+		}
 	}
 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
