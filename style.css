@@ -10,6 +10,8 @@ body {
 	font-family: "Cabin";
 }
 
+.center {text-align: center;}
+
 .spacer {
 	height: 300px;
 }
@@ -51,6 +53,8 @@ body {
 	margin: auto;
 }
 
+#top-alt {display: none;}
+
 .lookdown {
 	display: none;
 	font-family: "Cabin";
@@ -83,7 +87,21 @@ body {
 
 /************ MOBILE OPT *****************/
 @media only screen and (max-width: 885px) {
-    
+	#top {
+		display: none;
+	}
+	
+	#top-alt {
+		display: inline;
+		text-align: left;
+		font-size: 50pt;
+		padding-top: 50px;
+		font-family: "Cutive Mono";
+		
+		width: 80%;
+		margin: auto;
+		
+	}
 }
 
 
