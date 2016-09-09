@@ -8,7 +8,8 @@ body {
 	margin: 0px;
 	background-color: #f0f0f0;
 	color: #000000;
-	font-family: "Cabin";
+	//font-family: "Cabin";
+	font-family: "Source Sans Pro";
 }
 
 .center {text-align: center;}
