@@ -30,20 +30,16 @@
 	padding-top: 20px;
 }
 
-#PME1 {
-	
-}
-
-#PME2, #PME3, #PME4 {
-	position: relative;
-	display: none;
+.dash {
+	margin: auto;
+	width: 50%;
 }
 
 #intro {
 	text-align: left;
 	margin: auto;
 	width: 60%;
-	padding-top: 40px;
+	padding-top: 25px 
 }
 
 
@@ -97,12 +93,10 @@
 
 @keyframes fadein {
 	0% {
-		transform: translateY(-12px);
 		transform: scale(1.5);
 		opacity: 0;
 	}
 	100% {
-		transform: translateY(0px);
 		transform: scale(1);
 		opacity: 1;
 	}
