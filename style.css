@@ -61,7 +61,7 @@ body {
 	font-size: 50pt;
 	padding-top: 50px;
 	font-family: "Cutive Mono";
-	
+
 	width: 80%;
 	margin: auto;
 }
@@ -92,10 +92,17 @@ body {
 	font-size: 22pt;
 }
 
+.subtitle {
+	font-size: 16pt;
+}
+
 .content {
 	font-size: 16pt;
 }
 
+#oldprojects-content {
+	display: none;
+}
 
 
 /************ MOBILE OPT *****************/
@@ -103,14 +110,14 @@ body {
 	#top {
 		display: none;
 	}
-	
+
 	#top-alt {
 		display: inline;
 		text-align: left;
 		font-size: 50pt;
 		padding-top: 50px;
 		font-family: "Cutive Mono";
-		
+
 		width: 80%;
 		margin: auto;
 	}
@@ -118,9 +125,3 @@ body {
 
 
 /************ ANIMATIONS *****************/
-
-
-
-
-
-
