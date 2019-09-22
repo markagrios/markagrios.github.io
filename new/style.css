@@ -1,0 +1,106 @@
+* {
+
+}
+
+body {
+	overflow-y: scroll;
+	padding: 0px;
+	margin: 0px;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+#name-wrapper {
+	padding-top: 10em;
+	height: 10em;
+	text-align: center;
+	position: relative;
+  top: 0;
+  left: 0;
+}
+
+.sig {
+
+}
+
+#sig_black {
+	border: 0px;
+	position: relative;
+  top: 0;
+  left: 0;
+	z-index: 10;
+	cursor: pointer;
+}
+#sig_c {
+	border: 0px;
+	position: relative;
+  top: -155px;
+  left: 0;
+	z-index: 9;
+	display: none;
+}
+#sig_m {
+	border: 0px;
+	position: relative;
+  top: -310px;
+  left: 0;
+	z-index: 8;
+	display: none;
+}
+#sig_y {
+	border: 0px;
+	position: relative;
+  top: -465px;
+  left: 0;
+	z-index: 7;
+	display: none;
+}
+
+#bar {
+	padding-top: 4em;
+	text-align: center;
+	font-family: "Cutive Mono";
+	font-size: 18pt;
+
+	display: none;
+}
+
+.entry {
+	padding: 0.9em;
+	width: 10%;
+	display: inline-block;
+}
+
+#about,#contact {
+	cursor: pointer;
+	background-color: #000000;
+	color: #ffffff;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+
+	transition: background-color 0.5s;
+}
+
+#about:hover {
+	font-family: "Noto Serif";
+	background-color: #ff00ff;
+}
+#contact:hover {
+	background-color: #00ffff;
+	font-family: "Noto Sans";
+}
+
+#content {
+	margin-top: 2em;
+	margin-left: 12em;
+	margin-right: 12em;
+	padding: 0.7em;
+	/* display: inline-block;
+	float: center; */
+	font-family: 'Cutive Mono';
+	font-size: 16pt;
+	background-color: #efefef;
+	color: #000000;
+}
