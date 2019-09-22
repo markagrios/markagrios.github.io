@@ -1,74 +1,43 @@
 console.log("script.js");
 
-
-var aclick = false;
-var pclick = false;
-var sclick = false;
-
-$(".about").click(
+$("#sig_black").mouseenter(
 	function() {
-		if(aclick == true) {
-			return;
-		}
-
-		if(aclick == false) {
-			$("#projects-content").fadeOut(0);
-			$("#sayhi-content").fadeOut(0);
-			$("#about-content").fadeToggle(700);
-			//$(".lookdown").fadeIn(700);
-
-			aclick = true;
-			pclick = false;
-			sclick = false;
-		}
-
-
-
+			$("#sig_c").fadeIn(400);
+			$("#sig_m").fadeIn(600);
+			$("#sig_y").fadeIn(800);
 	}
 );
 
-$(".projects").click(
+$("#sig_black").mouseleave(
 	function() {
-		if(pclick == true) {
-			return;
-		}
+			$("#sig_c").fadeOut(800);
+			$("#sig_m").fadeOut(600);
+			$("#sig_y").fadeOut(400);
+	}
+);
 
-		if(pclick == false) {
+$("#sig_black").click(
+	function() {
+			$("#bar").fadeIn(500);
+	}
+);
+
+$("#about").click(
+	function() {
+			$("#contact-content").fadeOut(0);
+			$("#about-content").fadeIn(700);
+	}
+);
+
+$("#contact").click(
+	function() {
 			$("#about-content").fadeOut(0);
-			$("#sayhi-content").fadeOut(0);
-			$("#projects-content").fadeToggle(700);
-			//$(".lookdown").fadeIn(700);
-
-			aclick = false;
-			pclick = true;
-			sclick = false;
-		}
+			$("#contact-content").fadeIn(700);
 	}
 );
 
-$(".sayhi").click(
-	function() {
-		if(sclick == true) {
-			return;
-		}
-
-		if(sclick == false) {
-			$("#about-content").fadeOut(0);
-			$("#projects-content").fadeOut(0);
-			$("#sayhi-content").fadeToggle(700);
-			//$(".lookdown").fadeIn(700);
-
-			aclick = false;
-			pclick = false;
-			sclick = true;
-		}
-	}
-);
-
-$("#oldprojects").click(
-	function() {
-		if(sclick == false) {
-			$("#oldprojects-content").fadeToggle(700);
-		}
-	}
-);
+// $(".link").hover(
+// 	function() {
+// 			$(".link").innerHTML.style.color = 'blue';
+// 	}
+// );

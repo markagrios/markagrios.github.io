@@ -6,122 +6,122 @@ body {
 	overflow-y: scroll;
 	padding: 0px;
 	margin: 0px;
-	background-color: #f0f0f0;
+	background-color: #ffffff;
 	color: #000000;
-	//font-family: "Cabin";
-	font-family: "Source Sans Pro";
+	background-image: url("img/expanding-cloud.gif");
+	background-repeat: repeat;
+	background-size: 350px;
 }
 
-.center {text-align: center;}
-
-.spacer {
-	height: 300px;
+#name-wrapper {
+	padding-top: 10em;
+	height: 10em;
+	text-align: center;
+	position: relative;
+  top: 0;
+  left: 0;
 }
 
-.links1 {
-	color: #555555;
+.sig {
+
+}
+
+#sig_black {
+	border: 0px;
+	position: relative;
+  top: 0;
+  left: 0;
+	z-index: 10;
 	cursor: pointer;
-	transition: color 0.5s
 }
-.links2 {
-	color: #777777;
-	cursor: pointer;
-	transition: color 0.5s
+#sig_c {
+	border: 0px;
+	position: relative;
+  top: -155px;
+  left: 0;
+	z-index: 9;
+	display: none;
 }
-.links3 {
-	color: #aaaaaa;
-	cursor: pointer;
-	transition: color 0.5s
+#sig_m {
+	border: 0px;
+	position: relative;
+  top: -310px;
+  left: 0;
+	z-index: 8;
+	display: none;
 }
-.links1:hover, .links2:hover, .links3:hover {
-	color: #870b0b;
+#sig_y {
+	border: 0px;
+	position: relative;
+  top: -465px;
+  left: 0;
+	z-index: 7;
+	display: none;
 }
 
-.wordlinks {
+#bar {
+	padding-top: 4em;
+	text-align: center;
+	font-family: "Cutive Mono";
+	font-size: 18pt;
+
+	display: none;
+}
+
+.entry {
+	padding: 0.9em;
+	width: 10%;
+	display: inline-block;
+}
+
+#about,#contact {
+	cursor: pointer;
+	background-color: #000000;
+	color: #ffffff;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+
+	transition: background-color 0.5s;
+}
+
+#about:hover {
+	font-family: "Noto Serif";
+	background-color: #ff00ff;
+}
+#contact:hover {
+	background-color: #00ffff;
+	font-family: "Noto Sans";
+}
+
+#content {
+	margin-top: 2em;
+	margin-left: 12em;
+	margin-right: 12em;
+	font-family: 'Cutive Mono';
+	font-size: 16pt;
+	text-align: left;
+}
+
+#about-content, #contact-content {
+	background-color: #efefef;
+	color: #000000;
+	padding: 0.7em;
+	display: none;
+}
+
+
+
+.link {
 	cursor: pointer;
 	text-decoration: none;
-	color: #870b0b;
-	transition: color 0.7s;
+	background-color: #000000;
+	animation: flash 1s linear infinite;
 }
-.wordlinks:hover {
-	color: #5897d4;
+@keyframes flash {
+	0% {color: #ffffff;}
+	33% {color: #00ffff;}
+	67% {color: #ff00ff;}
+	100% {color: #ffff00;}
 }
-
-.blank {
-	visibility: hidden;
-}
-
-.cw {
-	padding: 0px;
-	margin: 0px;
-}
-
-#top {
-	text-align: left;
-	font-size: 50pt;
-	padding-top: 50px;
-	font-family: "Cutive Mono";
-
-	width: 80%;
-	margin: auto;
-}
-
-#top-alt {display: none;}
-
-.lookdown {
-	display: none;
-	font-family: "Cabin";
-	font-size: 16pt;
-}
-
-.topic {
-	display: none;
-}
-
-#words {
-	width: 70%;
-	margin: auto;
-}
-
-.header {
-	font-family: "Raleway";
-	font-size: 28pt;
-}
-
-.title {
-	font-size: 22pt;
-}
-
-.subtitle {
-	font-size: 16pt;
-}
-
-.content {
-	font-size: 16pt;
-}
-
-#oldprojects-content {
-	display: none;
-}
-
-
-/************ MOBILE OPT *****************/
-@media only screen and (max-width: 885px) {
-	#top {
-		display: none;
-	}
-
-	#top-alt {
-		display: inline;
-		text-align: left;
-		font-size: 50pt;
-		padding-top: 50px;
-		font-family: "Cutive Mono";
-
-		width: 80%;
-		margin: auto;
-	}
-}
-
-
-/************ ANIMATIONS *****************/
