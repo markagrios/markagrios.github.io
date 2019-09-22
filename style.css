@@ -13,6 +13,10 @@ body {
 	background-size: 350px;
 }
 
+#spacer {
+	height: 300px;
+}
+
 #name-wrapper {
 	padding-top: 10em;
 	height: 10em;
@@ -110,6 +114,21 @@ body {
 	padding: 0.7em;
 	display: none;
 }
+#contact-content {
+	text-align: center;
+}
+
+.paper {
+	padding-left: 2em;
+}
+
+
+
+
+
+
+
+
 
 
 
