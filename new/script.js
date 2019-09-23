@@ -1,5 +1,6 @@
 console.log("script.js");
 
+
 $("#sig_black").mouseenter(
 	function() {
 			$("#sig_c").fadeIn(200);
