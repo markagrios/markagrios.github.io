@@ -1,5 +1,27 @@
 console.log("script.js");
 
+images = ['img/cloud2.gif',
+					'img/cloud1.gif',
+					'img/cloud3.gif',
+					'img/cloud4.gif',
+					'img/cloud5.gif',
+					'img/cloud6.gif',
+					'img/expanding-cloud.gif'];
+
+// var i = 0;
+// var changer = document.getElementById("body");
+// setInterval(function() {
+//       changer.style.backgroundImage = "url(" + images[i] + ")";
+//       i = i + 1;
+//       if (i == images.length) {
+//         i =  0;
+//       }
+// }, 3000);
+
+
+
+
+
 $("#sig_black").mouseenter(
 	function() {
 			$("#sig_c").fadeIn(400);
@@ -36,8 +58,15 @@ $("#contact").click(
 	}
 );
 
-// $(".link").hover(
-// 	function() {
-// 			$(".link").innerHTML.style.color = 'blue';
-// 	}
-// );
+i = 0;
+j = 0;
+$("#button-clicker").click(
+	function() {
+		document.getElementById("body").style.backgroundImage = "url(" + images[i] + ")";
+		// document.getElementById("button").style.backgroundImage = "url(" + images[j] + ")";
+		i = (i+1) % images.length;
+		j = (j+2) % images.length;
+
+		console.log(i)
+	}
+);
