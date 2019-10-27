@@ -95,8 +95,8 @@ body {
 	background-color: #ff00ff;
 }
 #contact:hover {
+	font-family: "Noto Serif";
 	background-color: #00ffff;
-	font-family: "Noto Sans";
 }
 
 #content {

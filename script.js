@@ -8,6 +8,14 @@ images = ['img/cloud2.gif',
 					'img/cloud6.gif',
 					'img/expanding-cloud.gif'];
 
+
+fonts = ['Carter One',
+				 'Cinzel',
+				 'Gloria Hallelujah',
+				 'Modak',
+				 'Righteous'
+				];
+
 // var i = 0;
 // var changer = document.getElementById("body");
 // setInterval(function() {
@@ -43,6 +51,7 @@ $("#sig_black").click(
 			$("#bar").fadeIn(500);
 	}
 );
+
 
 $("#about").click(
 	function() {
