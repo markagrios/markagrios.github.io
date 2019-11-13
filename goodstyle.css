@@ -17,19 +17,26 @@ body {
 	height: 300px;
 }
 
+#name {
+	/* width: 90%; */
+}
+
 #name-wrapper {
 	padding-top: 10em;
 	height: 10em;
-	width: 900px;
-	margin: auto;
 	text-align: center;
 	position: relative;
   top: 0;
   left: 0;
 }
 
+.sig {
+
+}
+
 #sig_black {
-	position:	relative;
+	border: 0px;
+	position: relative;
   top: 0;
   left: 0;
 	z-index: 10;
