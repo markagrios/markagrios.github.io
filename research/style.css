@@ -1,0 +1,102 @@
+* {
+
+}
+
+body {
+	overflow-y: scroll;
+	padding: 0px;
+	margin: 0px;
+	background-color: #ffffff;
+	color: #000000;
+
+}
+
+#research {
+	font-size: 36pt;
+	font-family: "Cutive Mono";
+	padding: 1.5em;
+	padding-bottom: 0.7em;
+}
+
+.small {
+	font-size: 18pt;
+}
+
+#back {
+	text-decoration: none;
+	/* padding-top: 2em; */
+	/* margin-left: 1em; */
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	font-size: 18pt;
+	color: #ffffff;
+	background-color: #000000;
+}
+
+.header {
+	padding-left: 2em;
+	padding-top: 2em;
+	padding-bottom: 1.5em;
+	font-family: "Cutive Mono";
+	font-size: 18pt;
+	color: #000000;
+}
+
+.content {
+	position: absolute;
+
+}
+
+p {
+	font-family: "Noto Sans";
+	font-size: 12pt;
+	padding-left: 3em;
+	margin: 0;
+	color: #5f5f5f;
+	width: 80%;
+}
+
+.line {
+	width: 80%;
+	border: none;
+	height: 1px;
+	float: left;
+	background-color: #000000; /* Modern Browsers */
+}
+
+
+
+
+
+
+
+
+
+.subtle-link {
+	text-decoration: none;
+	/* cursor: pointer; */
+	color: #ff00ff;
+	background-color: #ffffff;
+	transition: color, 0.5s;
+	transition: background-color, 0.5;
+
+}
+.subtle-link:hover {
+	color: #ffffff;
+	background-color: #000000;
+}
+
+
+.link {
+	cursor: pointer;
+	text-decoration: none;
+	background-color: #000000;
+	animation: flash 2s linear infinite;
+
+}
+@keyframes flash {
+	0% {color: #ffffff;}
+	33% {color: #00ffff;}
+	67% {color: #ff00ff;}
+	100% {color: #ffff00;}
+}
