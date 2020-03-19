@@ -43,11 +43,6 @@ body {
 }
 
 .content {
-	position: absolute;
-
-}
-
-p {
 	font-family: "Noto Sans";
 	font-size: 12pt;
 	padding-left: 3em;
@@ -64,6 +59,20 @@ p {
 	background-color: #000000; /* Modern Browsers */
 }
 
+.papers {
+	background-color: #f0f0f0;
+	margin-left: 5em;
+	margin-top: 2em;
+	padding: 0.4em;
+}
+
+.papers-header {
+	padding-bottom: 0.5em;
+}
+
+.paper-entry {
+	padding: 0.2em;
+}
 
 
 
@@ -71,23 +80,56 @@ p {
 
 
 
+
+.line-link {
+	text-decoration: none;
+	position: relative;
+	color: #ff00ff;
+	cursor: pointer;
+}
+.line-link:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: -3;
+	left: 0;
+	background-color: #00ffff;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+.line-link:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(.7);
+	transform: scaleX(.7);
+}
 
 .subtle-link {
 	text-decoration: none;
-	/* cursor: pointer; */
-	color: #ff00ff;
-	background-color: #ffffff;
+	cursor: pointer;
+	color: #0fdd00;
+	/* background-color: #ffffff; */
 	transition: color, 0.5s;
 	transition: background-color, 0.5;
 
 }
 .subtle-link:hover {
 	color: #ffffff;
-	background-color: #000000;
+	background-color: #0000ff;
 }
 
+.chaotic-link {
+	text-decoration: none;
+	cursor: pointer;
+}
+.chaotic-link:hover {
+	
+}
 
-.link {
+.flashy-link {
 	cursor: pointer;
 	text-decoration: none;
 	background-color: #000000;
