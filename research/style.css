@@ -74,12 +74,37 @@ body {
 	padding: 0.2em;
 }
 
+#spacer {
+	height: 150pt;
+}
 
 
 
 
 
 
+/* ****************** LINKS ****************** */
+.move-link {
+	text-decoration: underline;
+	cursor: pointer;
+	background-color: #000000;
+	color: #ffffff;
+	transition: font-size, 0.3s;
+}
+.move-link:hover {
+	font-size: 14pt;
+}
+
+.gradient-link {
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+	color: #5500bb;
+	transition: background-image, 0.5;
+}
+.gradient-link:hover {
+	background-image: linear-gradient(-90deg, red, yellow);;
+}
 
 .line-link {
 	text-decoration: none;
@@ -124,9 +149,15 @@ body {
 .chaotic-link {
 	text-decoration: none;
 	cursor: pointer;
+	background-color: #12aaff;
+	color: #000000;
+	transition: content, 0.5;
 }
-.chaotic-link:hover {
-	
+.chaotic-link:hover:before {
+	content: "\214A \2697	\2686 \2751"
+}
+.chaotic-link:hover:after {
+	content: "\272A \266E \2608 \2137"
 }
 
 .flashy-link {
@@ -141,4 +172,15 @@ body {
 	33% {color: #00ffff;}
 	67% {color: #ff00ff;}
 	100% {color: #ffff00;}
+}
+
+
+
+/* cool scrolly bar from socket.io */
+#bar {
+    position: fixed;
+    background: url(img/dekooning1.jpg);
+    width: 100%;
+    height: 10px;
+    z-index: 2;
 }
