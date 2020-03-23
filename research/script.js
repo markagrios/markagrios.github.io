@@ -19,7 +19,8 @@ for (i=0;i<links.length;i++) {
 
 
 /******* Cool Scrolling Bar on Socket.io ********/
-bar_pics = ["dekooning1.jpg", "dekooning2.jpg", "dekooning3.jpg"];
+bar_pics = ["dekooning1.jpg", "dekooning2.jpg", "dekooning3.jpg", "galaxy.jpg", "alex.jpg"];
+// bar_pics = ["alex.jpg"];
 choice = Math.floor(Math.random()*(bar_pics.length));
 $('#bar').css({"background": "url(img/" + bar_pics[choice] + ")"});
 
