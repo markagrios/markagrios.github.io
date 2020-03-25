@@ -160,12 +160,9 @@ var Z = {
         var str_arr = str.split(''),
             output = str_arr.map(function(a) {
                 if(a == " ") return a;
-                for(var i = 0, l = Z.random(16);
-                    i<l;i++){
-                        var rand = Z.random(3);
-                    a += Z.chars[rand][
-                        Z.random(Z.chars[rand].length)
-                        ];
+                for(var i = 0, l = Z.random(16); i<l;i++){
+                    var rand = Z.random(3);
+                    a += Z.chars[rand][Z.random(Z.chars[rand].length)];
                  }
                 return a;
             });
@@ -173,12 +170,13 @@ var Z = {
     }
 };
 
-$(".zalgo-link").hover(function() {
-  ori_text = this.innerHTML;
-  zalgo = Z.generate(this.innerHTML);
-  this.innerHTML = zalgo;
-  $(this).css({"font-size": "inherit"})
-  // $(this).css({"font-family": "Noto Sans"});
-}, function() {this.innerHTML = ori_text;}
+$(".zalgo-link").hover(
+  function() {  // first function is for mouseover
+    ori_text = this.innerHTML;
+    zalgo = Z.generate(this.innerHTML);
+    this.innerHTML = zalgo;
+    $(this).css({"font-size": "inherit"})
+    // $(this).css({"font-family": "Noto Sans"});
+}, function() {this.innerHTML = ori_text;}  // second function is for mouseleave
 
 );
