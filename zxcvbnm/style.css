@@ -1,0 +1,21 @@
+* {
+
+}
+
+body {
+	padding-top: 200px;
+	text-align: center;
+	font-size: 18pt;
+	font-family: "Cutive Mono";
+
+	background-color: #aaaadd;
+	color: #000000;
+}
+
+.link {
+	text-decoration: none;
+	color: #000000;
+	background-color: #ffffff;
+	cursor: pointer;
+	padding: 0.2em;
+}
