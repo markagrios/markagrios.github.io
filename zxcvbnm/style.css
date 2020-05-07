@@ -32,49 +32,49 @@ body {
 	width: 200px;
 	z-index: -1;
 	position: fixed;
-	left: 100px;
-	top: 20px;
+	left: 10%;
+	top: 5%;
 
 }
 #tree {
 	width: 200px;
 	z-index: -1;
 	position: fixed;
-	right: 300px;
-	bottom: 50px;
+	right: 20%;
+	bottom: 5%;
 }
 #patrick {
 	width: 300px;
 	z-index: -1;
 	position: fixed;
-	left: 0px;
-	bottom: 100px;
+	left: 0%;
+	bottom: 10%;
 }
 #torus {
 	width: 150px;
 	z-index: -1;
 	position: fixed;
-	right: 100px;
-	bottom: 300px;
+	right: 10%;
+	bottom: 40%;
 }
 #dollar {
 	width: 350px;
 	z-index: -1;
 	position: fixed;
-	left: 400px;
-	bottom: 30px;
+	left: 30%;
+	bottom: 5%;
 }
 #iconic {
 	width: 150px;
 	z-index: -1;
 	position: fixed;
-	right: 200px;
-	top: 130px;
+	right: 10%;
+	top: 13%;
 }
 #astro {
 	width: 250px;
 	z-index: -1;
 	position: fixed;
-	right: 600px;
-	top: 130px;
+	right: 50%;
+	top: 20%;
 }
