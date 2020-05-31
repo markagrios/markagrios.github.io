@@ -1,0 +1,82 @@
+* {
+
+}
+
+body {
+	text-align: left;
+	font-size: 14pt;
+	/* font-family: "Cutive Mono"; */
+	font-family: serif;
+
+	background-color: #ffffff;
+}
+
+#content {
+	/* padding-top: 7em; */
+}
+
+p {
+	margin: 0.1em;
+}
+
+.link {
+	cursor: pointer;
+}
+
+#pup {
+	display: none;
+	width: 200px;
+	z-index: -1;
+	position: fixed;
+	left: 10%;
+	top: 5%;
+
+}
+#tree {
+	display: none;
+	width: 200px;
+	z-index: -1;
+	position: fixed;
+	right: 20%;
+	bottom: 5%;
+}
+#patrick {
+	display: none;
+	width: 300px;
+	z-index: -1;
+	position: fixed;
+	left: 0%;
+	bottom: 10%;
+}
+#torus {
+	display: none;
+	width: 150px;
+	z-index: -1;
+	position: fixed;
+	right: 10%;
+	bottom: 40%;
+}
+#dollar {
+	display: none;
+	width: 350px;
+	z-index: -1;
+	position: fixed;
+	left: 30%;
+	bottom: 5%;
+}
+#iconic {
+	display: none;
+	width: 150px;
+	z-index: -1;
+	position: fixed;
+	right: 10%;
+	top: 13%;
+}
+#astro {
+	display: none;
+	width: 250px;
+	z-index: -1;
+	position: fixed;
+	right: 50%;
+	top: 20%;
+}

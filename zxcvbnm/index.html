@@ -24,8 +24,25 @@
 <img id="astro" src="img/astro.gif">
 
 <div id="content">
+	<div id="fade" class="black_overlay"></div>
+
 	<p><a class="link" href="http://markagrios.net/docs/sheaf.pdf">Introduction to Sheaves</a></p>
-	<p><a class="link">The Pablo Bola Sphere Table Lamp</a></p>
+
+	<p><a class="link" href="javascript:void(0)" onclick="document.getElementById('lamp_light').style.display='block';document.getElementById('fade').style.display='block'">The Pablo Bola Sphere Table Lamp</a></p>
+	<div id="lamp_light" class="lamp_content">
+		It's a dope lamp
+		<a href="javascript:void(0)" onclick="document.getElementById('lamp_light').style.display='none';document.getElementById('fade').style.display='none'"> close </a>
+	</div>
+
+	<p><a class="link" href="javascript:void(0)" onclick="document.getElementById('neuroinfo_light').style.display='block';document.getElementById('fade').style.display='block'">Review: <i>Principles of Neural Information Theory</i> - James Stone</a></p>
+	<div id="neuroinfo_light" class="neuroinfo_content">
+		good book
+		<a href="javascript:void(0)" onclick="document.getElementById('neuroinfo_light').style.display='none';document.getElementById('fade').style.display='none'"> close </a>
+	</div>
+
+
+
+	<!-- <p><a class="link">Review: <i>Principles of Neural Information Theory</i> - James Stone</a></p> -->
 
 </div>
 
