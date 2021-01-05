@@ -79,3 +79,7 @@ $("#button-clicker").click(
 		console.log(i)
 	}
 );
+
+
+// tell them to click if they don't do anything for 5 seconds
+// setInterval(function(){ alert("Hello"); }, 3000);

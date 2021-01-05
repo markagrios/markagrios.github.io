@@ -37,6 +37,11 @@
   padding-left: 1em;
   padding-top: 1em;
 }
+.line {
+  width: 80%;
+  border-color: #000000;
+  /* height: 1px; */
+}
 
 
 .link {
@@ -47,4 +52,28 @@
 }
 .link:hover {
   color: #a80c6c;
+}
+
+.paper-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #00aadd;
+}
+.paper-link:before {
+  content: '\00BB';
+  opacity: 0;
+  transition: 0.5s;
+  color: #a80c6c;
+}
+.paper-link:hover:before {
+  opacity: 1;
+}
+.paper-link:after {
+  content: '\00AB';
+  opacity: 0;
+  transition: 0.5s;
+  color: #a80c6c;
+}
+.paper-link:hover:after {
+  opacity: 1;
 }
