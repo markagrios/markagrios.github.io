@@ -11,9 +11,9 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
-
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 
 
 </head>
@@ -42,21 +42,27 @@
 <hr class="line">
 
 <div class="entry">
-	<div class="topic">Information Theory &mdash;</div>
+	<div class="topic">Stimulus Coding in Retinal Ganglion Cells &mdash;</div>
 	<div class="content">
-		Recently, I've been fascinated by the mathematical structures called sheaves. Originating in algebraic geometry, sheaves are incredibly
-		powerful tools that can connect seemingly distant ideas in beautiful ways. Their ability to fit into so many mathematical concepts comes
-		at the cost of being very abstract and hard to pin down. Just look at <a class="link" href="https://ncatlab.org/nlab/show/sheaf">the
-		mathematical definition of a sheaf</a>. It makes like no sense unless you already know what a sheaf is. In short, a sheaf is a tool that
-		allows us to look at something at a very small resolution and stitch together our "local" observations to construct a "global" understanding
-		of the object in question.	</div>
+  	Currently, I'm working on modeling two different types of cells in the mouse retina and trying to understand why they exhibit
+		the behavior they do. Suppressed-by-contrast cells are ganglion cells that burst fairly regularly and then turn off when the
+		eye detects a change in luminance (contrast). The other type, off-sustained-alpha cells, tonically spike and then turn off when
+		presented with contrast, these cells are also particularly sensitive so they are good at detecting small changes in luminance.
+		My project is trying to determine why the retina has two different types of cells that respond to the same stimulus, contrast, and
+		why they exhibit different behavior, bursting versus spiking.
+		<br>
+		<br>
+		We think that these cells encode different features of the same stimulus. Suppressed-by-contrast cells we think encode
+		<i>when</i> the stimulus  appears (timing) and the off-sustained-alpha cells encode <i>how much</i> contrast there is (magnitude).
+		So we are working on creating a model that simulates the different behaviors of these two neurons and testing whether different
+		spiking patterns better encode different features of contrast.
+	</div>
 	<div class="content list">
-		<a class="paper-link" href="https://www.math.upenn.edu/~jhansen/content/gentleintroduction.pdf"> Jakob Hansen's Gentle Introduction to Sheaves on Graphs </a> </br>
-		<a class="paper-link" href="https://www.math.upenn.edu/~jhansen/publications/learningsheaves.pdf"> Jakob Hansen, Prof Rob Ghrist, Learning Sheaf Laplacians from Smooth Signals  </a> </br>
-		<a class="paper-link" href="http://www.drmichaelrobinson.net/20170802_AAG.pdf"> Prof Michael Robinson's presentation </a> </br>
+		<a class="paper-link" href="https://www.frontiersin.org/articles/10.3389/fncel.2018.00269/full"> read about suppressed-by-contrast cells! </a> </br>
+		<a class="paper-link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5533432/"> and off-sustained-alpha cells!  </a> </br>
 	</div>
 </div>
-<hr class="line">
+<!-- <hr class="line"> -->
 
 
 <!-- <script src="script.js"></script> -->

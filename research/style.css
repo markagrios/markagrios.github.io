@@ -4,7 +4,7 @@
 
 #title-wrapper {
   text-align: center;
-  padding: 1em;
+  padding-top: 2em;
 }
 #title {
   font-family: "Noto Serif";
@@ -25,7 +25,7 @@
   padding: 5em;
 }
 .topic {
-  font-family: "Noto Sans";
+  font-family: "Jost";
   font-size: 24pt;
   padding-bottom: 1em;
 }
