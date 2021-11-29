@@ -57,12 +57,14 @@ $("#about").click(
 	function() {
 			$("#contact-content").fadeOut(0);
 			$("#about-content").fadeIn(700);
+			$("#publications").fadeIn(700);
 	}
 );
 
 $("#contact").click(
 	function() {
 			$("#about-content").fadeOut(0);
+			$("#publications").fadeOut(0);
 			$("#contact-content").fadeIn(700);
 	}
 );

@@ -105,7 +105,7 @@ body {
 	text-align: left;
 }
 
-#about-content, #contact-content {
+#about-content, #contact-content, #publications {
 	background-color: #efefef;
 	color: #000000;
 	padding: 0.7em;
@@ -115,8 +115,18 @@ body {
 	text-align: center;
 }
 
+#pubtitle {
+	font-size: 20pt;
+	/* text-decoration: underline; */
+}
+.papertype {
+	/* text-decoration: underline; */
+}
+.authors::before {
+	content: '>';
+}
 .paper {
-	padding-left: 2em;
+	padding-left: 0em;
 }
 
 #button {
@@ -148,6 +158,16 @@ body {
 	background-color: #000000;
 	animation: flash 1s linear infinite;
 }
+.paperlink {
+	cursor: pointer;
+	text-decoration: none;
+	/* font-weight: bold; */
+}
+.paperlink:hover {
+	background-color: #000000;
+	animation: flash 0.5s linear infinite;
+}
+
 @keyframes flash {
 	0% {color: #ffffff;}
 	33% {color: #00ffff;}
