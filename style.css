@@ -165,7 +165,7 @@ body {
 }
 .paperlink:hover {
 	background-color: #000000;
-	animation: flash 0.5s linear infinite;
+	animation: flash 0.6s linear infinite;
 }
 
 @keyframes flash {
@@ -173,4 +173,16 @@ body {
 	33% {color: #00ffff;}
 	67% {color: #ff00ff;}
 	100% {color: #ffff00;}
+}
+
+@keyframes blink {
+	0% {text-decoration: underline;}
+	25% {text-decoration: line-through;}
+	50% {text-decoration: overline;}
+	75% {text-decoration: line-through;}
+	100% {text-decoration: underline;}
+	/* 25% {color: #00a0d0;}
+	50% {color: #0f001a;}
+	75% {color: #f44cff;}
+	100% {color: #fff03d;} */
 }
