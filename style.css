@@ -119,6 +119,9 @@ body {
 	font-size: 20pt;
 	/* text-decoration: underline; */
 }
+.fa_marker {
+	font-size: 14pt;
+}
 .papertype {
 	/* text-decoration: underline; */
 }
@@ -160,7 +163,10 @@ body {
 }
 .paperlink {
 	cursor: pointer;
-	text-decoration: none;
+	text-decoration: underline;
+	color: #000000;
+	/* background-color: #dddddd; */
+
 	/* font-weight: bold; */
 }
 .paperlink:hover {
