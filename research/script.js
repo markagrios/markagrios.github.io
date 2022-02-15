@@ -175,8 +175,8 @@ $(".zalgo-link").hover(
     ori_text = this.innerHTML;
     zalgo = Z.generate(this.innerHTML);
     this.innerHTML = zalgo;
-    $(this).css({"font-size": "inherit"})
-    // $(this).css({"font-family": "Noto Sans"});
+    // $(this).css({"font-size": "inherit"})
+    $(this).css({"font-family": "Cutive Mono"});
 }, function() {this.innerHTML = ori_text;}  // second function is for mouseleave
 
 );

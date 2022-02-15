@@ -2,102 +2,60 @@
 <head>
 	<title>Mark Agrios</title>
 
-	<meta name="title" content="Mark Agrios">
-	<meta name="description" content="Mark's personal website because his ego is so big it needs to fill space on someone else's server">
-
 	<link rel='shortcut icon' type='image/x-icon' href='../img/favicon.ico'/>
 	<link rel="stylesheet" type="text/css" href="style.css">
-
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 
 </head>
 <body id="body">
 
-<a id="back" href="../">&#9756; back </a>
-<div id="title-wrapper">
-	<a id="title"> Research </a>
+<!-- <div id="bar"></div> -->
+
+<a id="back" href="../">&#9756; back</a>
+<div id='title-wrapper'>
+	<a id='title'> Research </a>
+	</br>
 </div>
 
-<div class="entry">
-	<div class="topic">Sheaves &mdash;</div>
-	<div class="content">
-		Recently, I've been fascinated by the mathematical structures called sheaves. Originating in algebraic geometry, sheaves are incredibly
-		powerful tools that can connect seemingly distant ideas in beautiful ways. Their ability to fit into so many mathematical concepts comes
-		at the cost of being very abstract and hard to pin down. Just look at <a class="link" href="https://ncatlab.org/nlab/show/sheaf">the
-		mathematical definition of a sheaf</a>. It makes like no sense unless you already know what a sheaf is. In short, a sheaf is a tool that
-		allows us to look at something at a very small resolution and stitch together our "local" observations to construct a "global" understanding
-		of the object in question.	</div>
-	<div class="content list">
-		<a class="paper-link" href="../docs/intro_to_sheaves.pdf"> A paper I wrote as an introduction to sheaves </a> </br>
-		<a class="paper-link" href="https://www.math.upenn.edu/~jhansen/content/gentleintroduction.pdf"> Jakob Hansen's Gentle Introduction to Sheaves on Graphs </a> </br>
-		<a class="paper-link" href="http://www.drmichaelrobinson.net/20170802_AAG.pdf"> Prof Michael Robinson's presentation </a> </br>
-	</div>
-</div>
-<hr class="line">
+<!-- <hr/ class='line'> -->
 
-<div class="entry">
-	<div class="topic">Stimulus Coding in Retinal Ganglion Cells &mdash;</div>
-	<div class="content">
-  	Currently, I'm working on modeling two different types of cells in the mouse retina and trying to understand why they exhibit
-		the behavior they do. Suppressed-by-contrast cells are ganglion cells that burst fairly regularly and then turn off when the
-		eye detects a change in luminance (contrast). The other type, off-sustained-alpha cells, tonically spike and then turn off when
-		presented with contrast, these cells are also particularly sensitive so they are good at detecting small changes in luminance.
-		My project is trying to determine why the retina has two different types of cells that respond to the same stimulus, contrast, and
-		why they exhibit different behavior, bursting versus spiking.
-		<br>
-		<br>
-		We think that these cells encode different features of the same stimulus. Suppressed-by-contrast cells we think encode
-		<i>when</i> the stimulus  appears (timing) and the off-sustained-alpha cells encode <i>how much</i> contrast there is (magnitude).
-		So we are working on creating a model that simulates the different behaviors of these two neurons and testing whether different
-		spiking patterns better encode different features of contrast.
-	</div>
-	<div class="content list">
-		<a class="paper-link" href="https://www.frontiersin.org/articles/10.3389/fncel.2018.00269/full"> read about suppressed-by-contrast cells! </a> </br>
-		<a class="paper-link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5533432/"> and off-sustained-alpha cells!  </a> </br>
-	</div>
-</div>
+<div id="topics-wrapper">
+	<div id="fade" class="black_overlay"></div>
 
-<hr class="line">
+	<p class='topic topiclink' href="javascript:void(0)" onclick="document.getElementById('sheaves_light').style.display='block';document.getElementById('fade').style.display='block'">Sheaves</a>
+	<p class='topic topiclink' href="javascript:void(0)" onclick="document.getElementById('fcimmc_light').style.display='block';document.getElementById('fade').style.display='block'">Functional connectivity in mouse motor cortex</a>
+	<!-- <p class='topic topiclink'>Purkinje cell spikelet coding</a>
+	<p class='topic topiclink'>Spike timing in retinal ganglion cells</a> -->
 
-<div class="entry">
-	<div class="topic">Functional Connectivity in Motor Cortex &mdash;</div>
-	<div class="content">
-  	The brain has many different areas that all fulfill different purposes and are populated by a variety of distinct cell types.
-		Ongoing work with the <a class="link" href="https://www.mirilab.org/">Miri Lab</a> is investigating how various regions of
-		the mouse motor cortex communicate to generate complex movement. One technique we are using is called
-		<a class="link" href="https://en.wikipedia.org/wiki/Transfer_entropy">transfer entropy</a>, which measures information-theoretic
-		relationships, in this case, between neurons. Transfer entropy is a very assumption-free metric to determine when a neuron has
-		any causal influence over another. It does not tell us if two neurons are synaptically connected, so if there is a significant amount
-		transfer entropy observed between two cells then they might be one, two, three, or more synapses apart or maybe just have a common
-		input. This gives us one way to measure how different brain areas interact and we are using this technique in conjuction with other
-		metrics to get a more holistic view of motor-cortical regions to understand both the high-level information flow as well as anatomical
-		synaptic organization of the motor cortex.
-		<!-- <br><br>
-		<div style="text-align: center;"><img src="img/TEmatrix.png" height="50%"></div> -->
-		<br>
-		<div class="content list">
-			<a class="paper-link" >paper coming soon! </a> </br>
-		</div>
+
+	<div id="sheaves_light" class="topic_content">
+		Sheaves are an incredible interesting concept in mathematics and there is a lot of potential applications
+		for them in science. Unfortunately, the mathematical details are extremely dense and it is hard to gain an intuition
+		for what's actually going on. So I wrote a <a class='link' href='https://arxiv.org/abs/2202.01379'>paper</a>
+		doing my best to explain them in a very elementary way with lots of
+		concrete examples and anaologies instead of the one-sentence definitions only intelligible by people who already know
+		what a sheaf is.
+		<a href="javascript:void(0)" onclick="document.getElementById('sheaves_light').style.display='none';document.getElementById('fade').style.display='none'">close</a>
+	</div>
+
+	<div id="fcimmc_light" class="topic_content">
+		Coming soon!
+		<a href="javascript:void(0)" onclick="document.getElementById('fcimmc_light').style.display='none';document.getElementById('fade').style.display='none'">close</a>
 	</div>
 
 
 
-	<!-- </div>
-	<div class="content list">
-		<a class="paper-link" href="https://www.frontiersin.org/articles/10.3389/fncel.2018.00269/full"> read about suppressed-by-contrast cells! </a> </br>
-		<a class="paper-link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5533432/"> and off-sustained-alpha cells!  </a> </br>
-	</div> -->
+
+
+
 </div>
 
-<!-- <hr class="line"> -->
 
 
-<!-- <script src="script.js"></script> -->
+<script src="script.js"></script>
 </body>
 </html>

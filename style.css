@@ -88,11 +88,12 @@ body {
 }
 
 #about:hover {
-	font-family: "Noto Serif";
+	/* font-family: "Noto Serif"; */
 	background-color: #ff00ff;
 }
+
 #contact:hover {
-	font-family: "Noto Serif";
+	/* font-family: "Noto Serif"; */
 	background-color: #00ffff;
 }
 

@@ -1,0 +1,81 @@
+* {
+
+}
+
+#title-wrapper {
+  text-align: center;
+  padding-top: 2em;
+}
+#title {
+  font-family: "Noto Serif";
+  font-size: 32pt;
+}
+#back {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  font-family: "Noto Serif";
+  font-size: 24pt;
+  text-decoration: none;
+  cursor: pointer;
+  color: #000000;
+}
+
+.entry {
+  padding: 5em;
+}
+.topic {
+  font-family: "Jost";
+  font-size: 24pt;
+  padding-bottom: 1em;
+}
+.content {
+  font-family: "Noto Serif";
+  font-size: 16pt;
+}
+.list {
+  padding-left: 1em;
+  padding-top: 1em;
+}
+.line {
+  width: 80%;
+  border-color: #000000;
+  /* height: 1px; */
+}
+
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #00aadd;
+  transition: color 0.4s;
+}
+.link:hover {
+  color: #a80c6c;
+}
+
+.paper-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #00aadd;
+}
+.paper-link:before {
+  content: '\00BB';
+  opacity: 0;
+  transition: 0.5s;
+  color: #a80c6c;
+}
+.paper-link:hover:before {
+  opacity: 1;
+}
+.paper-link:after {
+  content: '\00AB';
+  opacity: 0;
+  transition: 0.5s;
+  color: #a80c6c;
+}
+.paper-link:hover:after {
+  opacity: 1;
+}
+
+/* testing comment????? */
