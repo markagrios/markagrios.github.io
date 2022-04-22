@@ -122,6 +122,7 @@ body {
 }
 .fa_marker {
 	font-size: 14pt;
+	font-weight: bold;
 }
 .papertype {
 	/* text-decoration: underline; */
