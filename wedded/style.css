@@ -1,0 +1,40 @@
+* {
+
+}
+
+body {
+	overflow-y: scroll;
+	padding: 0px;
+	margin: 0px;
+	background-color: #ffffff;
+	color: #000000;
+	background-image: url("img/tdfw01.gif");
+
+	background-repeat: repeat;
+	/* background-size: 1050px; */
+	background-size: 60%;
+}
+
+.spacer {
+	height: 64px;
+}
+
+#title-wrapper {
+	font-family: "Cutive Mono";
+	text-align: center;
+	padding-top: 5em;
+}
+
+#wedding-title {
+	font-size: 64pt;
+	background-color: white;
+
+}
+#date {
+	font-size: 48pt;
+	background-color: white;
+}
+.place {
+	font-size: 32pt;
+	background-color: white;
+}

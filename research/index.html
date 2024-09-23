@@ -44,7 +44,23 @@
 	</div>
 
 	<div id="fcimmc_light" class="topic_content">
-		Coming soon!
+		A long standing hypothesis is that premotor cortex plans movement and sends those signals to the primary motor cortex which executes those movements. 
+		This is simplifying things greatly, but that is what we set out to investigate using new the technology available in Neuropixel Probes, which can measure from hundreds of neurons simultaneously.
+		By recording neural activity in primary motor cortex and optogenetically inactiviting neural activity in premotor cortex, as well as vice versa, in a mouse doing a skilled reaching task, 
+		we were able to see how this hypothesis held at a level of granularity never achieved before. Consistent with the idea of hierarchy, the premotor cortex 
+		had a much stronger influence on primary motor cortex than the reverse direction. 
+		<br><br>
+		This was exciting and so the next step was to record from both of these regions simultaneously and use functional connectivity metrics to measure the flow of 
+		information between the two regions in as many ways as possible, to make sure that we weren't missing anything. To our surprise, every single time we measured 
+		the information going from premotor to primary motor cortex, we saw just as much information going from primary to premotor cortex. This went completely against 
+		the hypothesis of hierarchy and told us that the interactions between these brain regions was much more bidirectional than previously thought.  
+		<br><br>
+		So what we did next was build a recurrent neural network model. We wanted to see if we could train it to produce both of the seemingly contrasting results 
+		we observed in our real data, the assymetric influence with perturbations and perfectly-symmetric functional connectivities. It worked, and when we went to 
+		look inside the model, we found that our simulated premotor cortex had stronger within-region inhibitory connections amongst its neurons. This finding 
+		allowed us to conclude that asymmetric reciprocal influence can emerge in these networks from local recurrent connectivity, rather than asymmetric interregional 
+		connectivity, providing a novel framework for how neural populations organize at the mesoscale level. 
+		<br><br>
 		<a href="javascript:void(0)" onclick="document.getElementById('fcimmc_light').style.display='none';document.getElementById('fade').style.display='none'">close</a>
 	</div>
 
