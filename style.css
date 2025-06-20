@@ -84,7 +84,7 @@ body {
 	padding-left: 1em;
 	padding-right: 1em;
 
-	transition: background-color 0.5s;
+	transition: background-color 0.3s;
 }
 
 #about:hover {
@@ -114,6 +114,10 @@ body {
 }
 #contact-content {
 	text-align: center;
+}
+
+#orcid-note {
+	font-size: 16pt;
 }
 
 #pubtitle {

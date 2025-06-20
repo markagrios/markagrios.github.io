@@ -32,8 +32,8 @@ fonts = ['Carter One',
 
 $("#sig_black").mouseenter(
 	function() {
-			$("#sig_c").fadeIn(200);
-			$("#sig_m").fadeIn(400);
+			$("#sig_c").fadeIn(100);
+			$("#sig_m").fadeIn(300);
 			$("#sig_y").fadeIn(600);
 	}
 );
@@ -41,8 +41,8 @@ $("#sig_black").mouseenter(
 $("#sig_black").mouseleave(
 	function() {
 			$("#sig_c").fadeOut(600);
-			$("#sig_m").fadeOut(400);
-			$("#sig_y").fadeOut(200);
+			$("#sig_m").fadeOut(300);
+			$("#sig_y").fadeOut(100);
 	}
 );
 
@@ -55,16 +55,17 @@ $("#sig_black").click(
 
 $("#about").click(
 	function() {
+			$("#publications").fadeOut(0);
 			$("#contact-content").fadeOut(0);
 			$("#about-content").fadeIn(700);
-			$("#publications").fadeIn(700);
+			
 	}
 );
 
 $("#contact").click(
 	function() {
 			$("#about-content").fadeOut(0);
-			$("#publications").fadeOut(0);
+			$("#publications").fadeIn(700);
 			$("#contact-content").fadeIn(700);
 	}
 );
