@@ -29,20 +29,28 @@ fonts = ['Carter One',
 
 
 
-
+f1 = 150;
+f2 = 300;
+f3 = 450;
 $("#sig_black").mouseenter(
 	function() {
-			$("#sig_c").fadeIn(100);
-			$("#sig_m").fadeIn(300);
-			$("#sig_y").fadeIn(600);
+			$("#sig_c").fadeIn(f1,'swing');
+			$("#sig_m").fadeIn(f2,'swing');
+			$("#sig_y").fadeIn(f3,'swing');
+			// $("#sig_c").fadeIn(20);
+			// setTimeout(() => {console.log("This message appears after a 2-second delay.");}, 1000);
+			// $("#sig_m").fadeIn(20);
+			// setTimeout(() => {console.log("This message appears after a 2-second delay.");}, 1000);
+			// $("#sig_y").fadeIn(20);
+			
 	}
 );
 
 $("#sig_black").mouseleave(
 	function() {
-			$("#sig_c").fadeOut(600);
-			$("#sig_m").fadeOut(300);
-			$("#sig_y").fadeOut(100);
+			$("#sig_c").fadeOut(f3,'swing');
+			$("#sig_m").fadeOut(f2,'swing');
+			$("#sig_y").fadeOut(f1,'swing');
 	}
 );
 
